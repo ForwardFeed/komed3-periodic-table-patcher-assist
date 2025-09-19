@@ -1,0 +1,1234 @@
+{
+  "$ref": "#/definitions/MainstreamStructure",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "MainstreamAbundance": {
+      "additionalProperties": false,
+      "properties": {
+        "crust": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "human": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "meteorite": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "stream": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "sun": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "universe": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "water": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "required": [
+        "universe",
+        "sun",
+        "meteorite",
+        "crust",
+        "water",
+        "stream",
+        "human"
+      ],
+      "type": "object"
+    },
+    "MainstreamAppearance": {
+      "additionalProperties": false,
+      "properties": {
+        "de": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "la": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "MainstreamClassification": {
+      "additionalProperties": false,
+      "properties": {
+        "cas": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValueLabel"
+          },
+          "type": "array"
+        },
+        "echa": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValue"
+          },
+          "type": "array"
+        },
+        "eg": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValue"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "cas",
+        "eg",
+        "echa"
+      ],
+      "type": "object"
+    },
+    "MainstreamDensity": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValueUnit"
+          },
+          "type": "array"
+        },
+        "label": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "label",
+        "value",
+        "unit",
+        "condition"
+      ],
+      "type": "object"
+    },
+    "MainstreamDiscovery": {
+      "additionalProperties": false,
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "by",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MainstreamElementData": {
+      "additionalProperties": false,
+      "properties": {
+        "@modified": {
+          "type": "string"
+        },
+        "abundance": {
+          "$ref": "#/definitions/MainstreamAbundance"
+        },
+        "appearance": {
+          "$ref": "#/definitions/MainstreamAppearance"
+        },
+        "atomic_mass": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "basicity": {
+          "type": "string"
+        },
+        "block": {
+          "type": "string"
+        },
+        "classification": {
+          "$ref": "#/definitions/MainstreamClassification"
+        },
+        "column": {
+          "type": "number"
+        },
+        "crystal_structure": {
+          "type": "string"
+        },
+        "density": {
+          "items": {
+            "$ref": "#/definitions/MainstreamDensity"
+          },
+          "type": "array"
+        },
+        "discovery": {
+          "$ref": "#/definitions/MainstreamDiscovery"
+        },
+        "electron_config": {
+          "type": "string"
+        },
+        "enthalpy": {
+          "$ref": "#/definitions/MainstreamEnthalpy"
+        },
+        "era": {
+          "type": "string"
+        },
+        "goldschmidt": {
+          "type": "string"
+        },
+        "group": {
+          "type": "number"
+        },
+        "hazard": {
+          "$ref": "#/definitions/MainstreamHazard"
+        },
+        "heat": {
+          "$ref": "#/definitions/MainstreamHeat"
+        },
+        "image": {
+          "$ref": "#/definitions/MainstreamImage"
+        },
+        "ionization": {
+          "$ref": "#/definitions/MainstreamMultipleValuesUnit"
+        },
+        "magnetic_ordering": {
+          "type": "string"
+        },
+        "magnetic_susceptibility": {
+          "$ref": "#/definitions/MainstreamValueUnitCondition"
+        },
+        "molar_volume": {
+          "$ref": "#/definitions/MainstreamLabelValueUnit"
+        },
+        "names": {
+          "$ref": "#/definitions/MainstreamNames"
+        },
+        "natural_occurrence": {
+          "type": "string"
+        },
+        "negativity": {
+          "$ref": "#/definitions/MainstreamNegativity"
+        },
+        "number": {
+          "type": "number"
+        },
+        "optical": {
+          "$ref": "#/definitions/MainstreamOptical"
+        },
+        "oxidation_state": {
+          "type": "string"
+        },
+        "period": {
+          "type": "number"
+        },
+        "phase": {
+          "type": "string"
+        },
+        "price": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "properties": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "radius": {
+          "$ref": "#/definitions/MainstreamRadius"
+        },
+        "set": {
+          "type": "string"
+        },
+        "shell": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "sound_speed": {
+          "$ref": "#/definitions/MainstreamValueUnitCondition"
+        },
+        "standard_atomic_weight": {
+          "$ref": "#/definitions/MainstreamStandardAtomicWeight"
+        },
+        "standard_potential": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "superconductivity": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "temperature": {
+          "$ref": "#/definitions/MainstreamTemperature"
+        },
+        "weblinks": {
+          "items": {
+            "$ref": "#/definitions/MainstreamWebLink"
+          },
+          "type": "array"
+        },
+        "wiki": {
+          "$ref": "#/definitions/MainstreamWiki"
+        }
+      },
+      "required": [
+        "@modified",
+        "abundance",
+        "appearance",
+        "atomic_mass",
+        "basicity",
+        "block",
+        "classification",
+        "column",
+        "crystal_structure",
+        "density",
+        "discovery",
+        "electron_config",
+        "enthalpy",
+        "era",
+        "goldschmidt",
+        "group",
+        "hazard",
+        "heat",
+        "image",
+        "ionization",
+        "magnetic_ordering",
+        "magnetic_susceptibility",
+        "molar_volume",
+        "names",
+        "natural_occurrence",
+        "negativity",
+        "number",
+        "optical",
+        "oxidation_state",
+        "period",
+        "phase",
+        "price",
+        "properties",
+        "radius",
+        "set",
+        "shell",
+        "sound_speed",
+        "standard_atomic_weight",
+        "standard_potential",
+        "superconductivity",
+        "symbol",
+        "temperature",
+        "weblinks",
+        "wiki"
+      ],
+      "type": "object"
+    },
+    "MainstreamEnthalpy": {
+      "additionalProperties": false,
+      "properties": {
+        "atomisation": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "fusion": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "vaporisation": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "required": [
+        "fusion",
+        "vaporisation",
+        "atomisation"
+      ],
+      "type": "object"
+    },
+    "MainstreamHazard": {
+      "additionalProperties": false,
+      "properties": {
+        "adr": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ghs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "h": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "hazard": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "nfpa": {
+          "$ref": "#/definitions/MainstreamNFPA"
+        },
+        "p": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "h",
+        "p",
+        "hazard",
+        "ghs",
+        "adr",
+        "nfpa"
+      ],
+      "type": "object"
+    },
+    "MainstreamHeat": {
+      "additionalProperties": false,
+      "properties": {
+        "heat_capacity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "thermal_conductivity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "required": [
+        "heat_capacity",
+        "thermal_conductivity"
+      ],
+      "type": "object"
+    },
+    "MainstreamImage": {
+      "additionalProperties": false,
+      "properties": {
+        "caption": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "caption"
+      ],
+      "type": "object"
+    },
+    "MainstreamLabelValueUnit": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "label",
+        "value",
+        "unit"
+      ],
+      "type": "object"
+    },
+    "MainstreamMultipleValuesUnit": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "type": "object"
+    },
+    "MainstreamNFPA": {
+      "additionalProperties": false,
+      "properties": {
+        "f": {
+          "type": "string"
+        },
+        "h": {
+          "type": "string"
+        },
+        "i": {
+          "type": "string"
+        },
+        "s": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "h",
+        "f",
+        "i",
+        "s"
+      ],
+      "type": "object"
+    },
+    "MainstreamNames": {
+      "additionalProperties": false,
+      "properties": {
+        "de": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "la": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "MainstreamNegativity": {
+      "additionalProperties": false,
+      "properties": {
+        "allen": {
+          "type": "number"
+        },
+        "allred": {
+          "type": "number"
+        },
+        "ghosh_gupta": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "mulliken": {
+          "type": "number"
+        },
+        "nagle": {
+          "type": "number"
+        },
+        "pauling": {
+          "type": "number"
+        },
+        "pearson": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "sanderson": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "pauling",
+        "sanderson",
+        "allred",
+        "mulliken",
+        "allen",
+        "ghosh_gupta",
+        "nagle",
+        "pearson"
+      ],
+      "type": "object"
+    },
+    "MainstreamOptical": {
+      "additionalProperties": false,
+      "properties": {
+        "refractive_index": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValueUnit"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "refractive_index"
+      ],
+      "type": "object"
+    },
+    "MainstreamRadius": {
+      "additionalProperties": false,
+      "properties": {
+        "calculated": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "covalent": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "empirical": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "vdw": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "required": [
+        "empirical",
+        "calculated",
+        "covalent",
+        "vdw"
+      ],
+      "type": "object"
+    },
+    "MainstreamStandardAtomicWeight": {
+      "additionalProperties": false,
+      "properties": {
+        "deviation": {
+          "type": "number"
+        },
+        "range": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "deviation",
+        "range"
+      ],
+      "type": "object"
+    },
+    "MainstreamStructure": {
+      "additionalProperties": false,
+      "properties": {
+        "ac": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ag": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "al": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "am": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ar": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "as": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "at": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "au": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "b": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ba": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "be": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "bh": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "bi": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "bk": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "br": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "c": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ca": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cd": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ce": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cf": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cl": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cm": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cn": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "co": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cs": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "cu": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "db": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ds": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "dy": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "er": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "es": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "eu": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "f": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "fe": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "fl": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "fm": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "fr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ga": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "gd": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ge": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "h": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "he": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "hf": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "hg": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ho": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "hs": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "i": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "in": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ir": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "k": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "kr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "la": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "li": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "lr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "lu": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "lv": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "mc": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "md": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "mg": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "mn": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "mo": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "mt": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "n": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "na": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "nb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "nd": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ne": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "nh": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ni": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "no": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "np": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "o": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "og": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "os": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "p": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pa": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pd": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pm": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "po": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pt": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "pu": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ra": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "rb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "re": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "rf": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "rg": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "rh": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "rn": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ru": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "s": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sc": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "se": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sg": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "si": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sm": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sn": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "sr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ta": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "tb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "tc": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "te": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "th": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ti": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "tl": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "tm": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "ts": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "u": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "v": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "w": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "xe": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "y": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "yb": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "zn": {
+          "$ref": "#/definitions/MainstreamElementData"
+        },
+        "zr": {
+          "$ref": "#/definitions/MainstreamElementData"
+        }
+      },
+      "required": [
+        "h",
+        "he",
+        "li",
+        "be",
+        "b",
+        "c",
+        "n",
+        "o",
+        "f",
+        "ne",
+        "na",
+        "mg",
+        "al",
+        "si",
+        "p",
+        "s",
+        "cl",
+        "ar",
+        "k",
+        "ca",
+        "sc",
+        "ti",
+        "v",
+        "cr",
+        "mn",
+        "fe",
+        "co",
+        "ni",
+        "cu",
+        "zn",
+        "ga",
+        "ge",
+        "as",
+        "se",
+        "br",
+        "kr",
+        "rb",
+        "sr",
+        "y",
+        "zr",
+        "nb",
+        "mo",
+        "tc",
+        "ru",
+        "rh",
+        "pd",
+        "ag",
+        "cd",
+        "in",
+        "sn",
+        "sb",
+        "te",
+        "i",
+        "xe",
+        "cs",
+        "ba",
+        "la",
+        "ce",
+        "pr",
+        "nd",
+        "pm",
+        "sm",
+        "eu",
+        "gd",
+        "tb",
+        "dy",
+        "ho",
+        "er",
+        "tm",
+        "yb",
+        "lu",
+        "hf",
+        "ta",
+        "w",
+        "re",
+        "os",
+        "ir",
+        "pt",
+        "au",
+        "hg",
+        "tl",
+        "pb",
+        "bi",
+        "po",
+        "at",
+        "rn",
+        "fr",
+        "ra",
+        "ac",
+        "th",
+        "pa",
+        "u",
+        "np",
+        "pu",
+        "am",
+        "cm",
+        "bk",
+        "cf",
+        "es",
+        "fm",
+        "md",
+        "no",
+        "lr",
+        "rf",
+        "db",
+        "sg",
+        "bh",
+        "hs",
+        "mt",
+        "ds",
+        "rg",
+        "cn",
+        "nh",
+        "fl",
+        "mc",
+        "lv",
+        "ts",
+        "og"
+      ],
+      "type": "object"
+    },
+    "MainstreamTemperature": {
+      "additionalProperties": false,
+      "properties": {
+        "boiling": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "critical": {
+          "$ref": "#/definitions/MainstreamValueUnitConditionArobase"
+        },
+        "liquid": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "melting": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "triple": {
+          "$ref": "#/definitions/MainstreamValueUnitConditionArobase"
+        }
+      },
+      "required": [
+        "melting",
+        "boiling",
+        "liquid",
+        "triple",
+        "critical"
+      ],
+      "type": "object"
+    },
+    "MainstreamValue": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "type": "object"
+    },
+    "MainstreamValueLabel": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "label"
+      ],
+      "type": "object"
+    },
+    "MainstreamValueUnit": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "type": "object"
+    },
+    "MainstreamValueUnitCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValue"
+          },
+          "type": "array"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "condition"
+      ],
+      "type": "object"
+    },
+    "MainstreamValueUnitConditionArobase": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValue"
+          },
+          "type": "array"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "condition"
+      ],
+      "type": "object"
+    },
+    "MainstreamWebLink": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "text"
+      ],
+      "type": "object"
+    },
+    "MainstreamWiki": {
+      "additionalProperties": false,
+      "properties": {
+        "de": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "la": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}
+
