@@ -14,37 +14,30 @@ export type Elements = typeof Elements[number]
 export const Languages = ["en", "de", "la"] as const
 export type Languages = typeof Languages[number]
 
-
-export type MainstreamValue = {
-    value: string
-}
-
 export type MainstreamValueUnit = {
-    value: number
-    unit: string
+    value: number | null
+    unit?: string
+    "*"?: boolean
+    "@"?: MainstreamValueUnit
+    info?: string
+    condition?: MainstreamValueUnit[]
+    deviation?: number,
+    range?: number[]
+    label?: string
 }
-
 export type MainstreamValueLabel = {
     value: number
     label: string
 }
 
+export type MainstreamValueString = {
+    value: string,
+    label?: string,
+}
+
 export type MainstreamMultipleValuesUnit = {
-    value: number[]
+    values: number[]
     unit: string
-}
-
-export type MainstreamValueUnitCondition = {
-    value: number
-    unit: string,
-    condition: MainstreamValue[]
-}
-
-
-export type MainstreamValueUnitConditionArobase = {
-    value: number
-    unit: string,
-    condition: MainstreamValue[]
 }
 
 export type MainstreamLabelValueUnit = {
@@ -54,13 +47,13 @@ export type MainstreamLabelValueUnit = {
 }
 
 export type MainstreamAbundance = {
-    universe: MainstreamValueUnit
-    sun: MainstreamValueUnit
-    meteorite: MainstreamValueUnit
-    crust: MainstreamValueUnit
-    water: MainstreamValueUnit
-    stream: MainstreamValueUnit
-    human: MainstreamValueUnit
+    universe?: MainstreamValueUnit
+    sun?: MainstreamValueUnit
+    meteorite?: MainstreamValueUnit
+    crust?: MainstreamValueUnit
+    water?: MainstreamValueUnit
+    stream?: MainstreamValueUnit
+    human?: MainstreamValueUnit
 }
 
 export type MainstreamAppearance = {
@@ -68,16 +61,18 @@ export type MainstreamAppearance = {
 }
 
 export type MainstreamClassification = {
-    cas: MainstreamValueLabel[],
-    eg: MainstreamValue[],
-    echa: MainstreamValue[]
+    cas: (MainstreamValueString | MainstreamValueString)[],
+    eg: MainstreamValueString[] | null,
+    echa: MainstreamValueString[] | null
+    atc?: MainstreamValueString[]
 }
 
 export type MainstreamDensity = {
     label: string
     value: number
     unit: string
-    condition: MainstreamValueUnit[]
+    condition?: MainstreamValueUnit[]
+    range?: number[]
 }
 
 export type MainstreamDiscovery = {
@@ -86,11 +81,28 @@ export type MainstreamDiscovery = {
 }
 
 export type MainstreamEnthalpy = {
-    fusion: MainstreamValueUnit,
+    fusion?: MainstreamValueUnit,
     vaporisation: MainstreamValueUnit,
-    atomisation: MainstreamValueUnit
+    atomisation?: MainstreamValueUnit
 }
 
+export type MainstreamElastic = {
+    young?: MainstreamValueUnit,
+    rigidity?: MainstreamValueUnit,
+    bulk?: MainstreamValueUnit,
+    poisson?: number,
+}
+
+export type MainstreamElectrical = {
+    conductivity?: MainstreamValueUnit,
+    resistivity?: MainstreamValueUnit,
+}
+
+export type MainstreamHardness = {
+    mohs?: number,
+    brinell?: MainstreamValueUnit
+    vickers?: MainstreamValueUnit
+}
 
 export type MainstreamNFPA = {
     h: string
@@ -101,16 +113,18 @@ export type MainstreamNFPA = {
 
 export type MainstreamHazard = {
     h: string[],
-    p: string[]
-    hazard: string[]
+    p: string[] | null
+    hazard?: string[]
     ghs: string[]
-    adr: string[],
-    nfpa: MainstreamNFPA
+    adr?: string[],
+    nfpa?: MainstreamNFPA
 }
 
 export type MainstreamHeat = {
-    heat_capacity: MainstreamValueUnit,
+    heat_capacity?: MainstreamValueUnit | MainstreamValueUnit[],
     thermal_conductivity: MainstreamValueUnit
+    thermal_expansion?: MainstreamValueUnit
+    work_function?: MainstreamValueUnit
 }
 
 export type MainstreamImage = {
@@ -121,6 +135,7 @@ export type MainstreamImage = {
 export type MainstreamIonization = {
     values: number[],
     unit: string
+    "*"?: boolean,
 }
 
 export type MainstreamNames = {
@@ -128,39 +143,51 @@ export type MainstreamNames = {
 }
 
 export type MainstreamNegativity = {
-    pauling: number
-    sanderson: number
-    allred: number
-    mulliken: number
-    allen: number
-    ghosh_gupta: MainstreamValueUnit
-    nagle: number
-    pearson: MainstreamValueUnit
+    pauling?: number
+    sanderson?: number
+    allred?: number
+    mulliken?: number
+    allen?: number
+    ghosh_gupta?: MainstreamValueUnit
+    nagle?: number
+    boyd?: number,
+    pearson?: MainstreamValueUnit
 }
 
 export type MainstreamOptical = {
-    refractive_index: MainstreamValueUnit[]
+    refractive_index?: MainstreamValueUnit[] | number | MainstreamValueUnit,
+    reflectivity?: MainstreamValueUnit,
 }
 
 export type MainstreamRadius = {
-    empirical: MainstreamValueUnit
-    calculated: MainstreamValueUnit
-    covalent: MainstreamValueUnit
-    vdw: MainstreamValueUnit
+    empirical?: MainstreamValueUnit
+    calculated?: MainstreamValueUnit
+    covalent?: MainstreamValueUnit
+    vdw?: MainstreamValueUnit
 }
 
 export type MainstreamStandardAtomicWeight = {
     value: number,
     deviation: number,
-    range: number[]
+    range?: number[]
 }
 
 export type MainstreamTemperature = {
-    melting: MainstreamValueUnit
-    boiling: MainstreamValueUnit
-    liquid: MainstreamValueUnit
-    triple: MainstreamValueUnitConditionArobase
-    critical: MainstreamValueUnitConditionArobase
+    melting?: MainstreamValueUnit
+    boiling?: MainstreamValueUnit
+    liquid?: MainstreamValueUnit
+    triple?: MainstreamValueUnit
+    critical?: MainstreamValueUnit
+    transition?: MainstreamValueUnit
+    sublimation?: MainstreamValueUnit
+}
+
+export type MainstreamToxicity = {
+    type: string
+    organism: string,
+    application: string,
+    time?: number,
+    value: MainstreamValueUnit
 }
 
 export type MainstreamWebLink = {
@@ -173,48 +200,55 @@ export type MainstreamWiki = {
 }
 export type MainstreamElementData = {
     "@modified": string
-    abundance: MainstreamAbundance
-    appearance: MainstreamAppearance
-    atomic_mass: MainstreamValueUnit
-    basicity: string
+    abundance?: MainstreamAbundance
+    appearance?: MainstreamAppearance
+    atomic_mass: MainstreamValueUnit,
+    basicity?: string
     block: string
     classification: MainstreamClassification
     column: number
-    crystal_structure: string
-    density: MainstreamDensity[]
-    discovery: MainstreamDiscovery
+    crystal_structure?: string
+    density?: MainstreamDensity[] | MainstreamValueUnit
+    discovery?: MainstreamDiscovery
     electron_config: string
-    enthalpy: MainstreamEnthalpy
+    enthalpy?: MainstreamEnthalpy
     era: string
+    elastic?: MainstreamElastic,
+    electrical?: MainstreamElectrical,
     goldschmidt: string
     group: number
-    hazard: MainstreamHazard
-    heat: MainstreamHeat
-    image: MainstreamImage
-    ionization: MainstreamMultipleValuesUnit
-    magnetic_ordering: string
-    magnetic_susceptibility: MainstreamValueUnitCondition
-    molar_volume: MainstreamLabelValueUnit
+    hardness?: MainstreamHardness,
+    hazard: MainstreamHazard | null
+    heat?: MainstreamHeat
+    image?: MainstreamImage
+    ionization: MainstreamIonization
+    magnetic_ordering?: string
+    magnetic_susceptibility?: MainstreamValueUnit
+    molar_volume?: MainstreamLabelValueUnit | MainstreamValueUnit
     names: MainstreamNames
     natural_occurrence: string
-    negativity: MainstreamNegativity
+    negativity?: MainstreamNegativity
     number: number
-    optical: MainstreamOptical
-    oxidation_state: string
+    optical?: MainstreamOptical
+    oxidation_state?: string
+    oxide_character?: string,
     period: number
-    phase: string
-    price: MainstreamValueUnit
+    phase?: string
+    price?: MainstreamValueUnit
     properties: string[]
-    radius: MainstreamRadius
+    radioactive?: boolean,
+    radioactivity?: string,
+    radius?: MainstreamRadius
     set: string
     shell: number[]
-    sound_speed: MainstreamValueUnitCondition
-    standard_atomic_weight: MainstreamStandardAtomicWeight
-    standard_potential: MainstreamValueUnit
-    superconductivity: string
+    sound_speed?: MainstreamValueUnit | MainstreamValueUnit[]
+    standard_atomic_weight?: MainstreamStandardAtomicWeight
+    standard_potential?: MainstreamValueUnit
+    superconductivity?: string
     symbol: string
-    temperature: MainstreamTemperature,
-    weblinks: MainstreamWebLink[]
+    temperature?: MainstreamTemperature,
+    toxicity?: MainstreamToxicity[]
+    weblinks?: MainstreamWebLink[]
     wiki: MainstreamWiki
 }
 

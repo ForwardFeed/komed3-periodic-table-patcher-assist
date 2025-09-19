@@ -27,15 +27,6 @@
           "$ref": "#/definitions/MainstreamValueUnit"
         }
       },
-      "required": [
-        "universe",
-        "sun",
-        "meteorite",
-        "crust",
-        "water",
-        "stream",
-        "human"
-      ],
       "type": "object"
     },
     "MainstreamAppearance": {
@@ -56,23 +47,43 @@
     "MainstreamClassification": {
       "additionalProperties": false,
       "properties": {
+        "atc": {
+          "items": {
+            "$ref": "#/definitions/MainstreamValueString"
+          },
+          "type": "array"
+        },
         "cas": {
           "items": {
-            "$ref": "#/definitions/MainstreamValueLabel"
+            "$ref": "#/definitions/MainstreamValueString"
           },
           "type": "array"
         },
         "echa": {
-          "items": {
-            "$ref": "#/definitions/MainstreamValue"
-          },
-          "type": "array"
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamValueString"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "eg": {
-          "items": {
-            "$ref": "#/definitions/MainstreamValue"
-          },
-          "type": "array"
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamValueString"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -94,6 +105,12 @@
         "label": {
           "type": "string"
         },
+        "range": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
         "unit": {
           "type": "string"
         },
@@ -104,8 +121,7 @@
       "required": [
         "label",
         "value",
-        "unit",
-        "condition"
+        "unit"
       ],
       "type": "object"
     },
@@ -123,6 +139,36 @@
         "by",
         "value"
       ],
+      "type": "object"
+    },
+    "MainstreamElastic": {
+      "additionalProperties": false,
+      "properties": {
+        "bulk": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "poisson": {
+          "type": "number"
+        },
+        "rigidity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "young": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "type": "object"
+    },
+    "MainstreamElectrical": {
+      "additionalProperties": false,
+      "properties": {
+        "conductivity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "resistivity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
       "type": "object"
     },
     "MainstreamElementData": {
@@ -156,13 +202,26 @@
           "type": "string"
         },
         "density": {
-          "items": {
-            "$ref": "#/definitions/MainstreamDensity"
-          },
-          "type": "array"
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamDensity"
+              },
+              "type": "array"
+            },
+            {
+              "$ref": "#/definitions/MainstreamValueUnit"
+            }
+          ]
         },
         "discovery": {
           "$ref": "#/definitions/MainstreamDiscovery"
+        },
+        "elastic": {
+          "$ref": "#/definitions/MainstreamElastic"
+        },
+        "electrical": {
+          "$ref": "#/definitions/MainstreamElectrical"
         },
         "electron_config": {
           "type": "string"
@@ -179,8 +238,18 @@
         "group": {
           "type": "number"
         },
+        "hardness": {
+          "$ref": "#/definitions/MainstreamHardness"
+        },
         "hazard": {
-          "$ref": "#/definitions/MainstreamHazard"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/MainstreamHazard"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "heat": {
           "$ref": "#/definitions/MainstreamHeat"
@@ -189,16 +258,23 @@
           "$ref": "#/definitions/MainstreamImage"
         },
         "ionization": {
-          "$ref": "#/definitions/MainstreamMultipleValuesUnit"
+          "$ref": "#/definitions/MainstreamIonization"
         },
         "magnetic_ordering": {
           "type": "string"
         },
         "magnetic_susceptibility": {
-          "$ref": "#/definitions/MainstreamValueUnitCondition"
+          "$ref": "#/definitions/MainstreamValueUnit"
         },
         "molar_volume": {
-          "$ref": "#/definitions/MainstreamLabelValueUnit"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/MainstreamLabelValueUnit"
+            },
+            {
+              "$ref": "#/definitions/MainstreamValueUnit"
+            }
+          ]
         },
         "names": {
           "$ref": "#/definitions/MainstreamNames"
@@ -218,6 +294,9 @@
         "oxidation_state": {
           "type": "string"
         },
+        "oxide_character": {
+          "type": "string"
+        },
         "period": {
           "type": "number"
         },
@@ -233,6 +312,12 @@
           },
           "type": "array"
         },
+        "radioactive": {
+          "type": "boolean"
+        },
+        "radioactivity": {
+          "type": "string"
+        },
         "radius": {
           "$ref": "#/definitions/MainstreamRadius"
         },
@@ -246,7 +331,17 @@
           "type": "array"
         },
         "sound_speed": {
-          "$ref": "#/definitions/MainstreamValueUnitCondition"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/MainstreamValueUnit"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamValueUnit"
+              },
+              "type": "array"
+            }
+          ]
         },
         "standard_atomic_weight": {
           "$ref": "#/definitions/MainstreamStandardAtomicWeight"
@@ -263,6 +358,12 @@
         "temperature": {
           "$ref": "#/definitions/MainstreamTemperature"
         },
+        "toxicity": {
+          "items": {
+            "$ref": "#/definitions/MainstreamToxicity"
+          },
+          "type": "array"
+        },
         "weblinks": {
           "items": {
             "$ref": "#/definitions/MainstreamWebLink"
@@ -275,48 +376,24 @@
       },
       "required": [
         "@modified",
-        "abundance",
-        "appearance",
         "atomic_mass",
-        "basicity",
         "block",
         "classification",
         "column",
-        "crystal_structure",
-        "density",
-        "discovery",
         "electron_config",
-        "enthalpy",
         "era",
         "goldschmidt",
         "group",
         "hazard",
-        "heat",
-        "image",
         "ionization",
-        "magnetic_ordering",
-        "magnetic_susceptibility",
-        "molar_volume",
         "names",
         "natural_occurrence",
-        "negativity",
         "number",
-        "optical",
-        "oxidation_state",
         "period",
-        "phase",
-        "price",
         "properties",
-        "radius",
         "set",
         "shell",
-        "sound_speed",
-        "standard_atomic_weight",
-        "standard_potential",
-        "superconductivity",
         "symbol",
-        "temperature",
-        "weblinks",
         "wiki"
       ],
       "type": "object"
@@ -335,10 +412,23 @@
         }
       },
       "required": [
-        "fusion",
-        "vaporisation",
-        "atomisation"
+        "vaporisation"
       ],
+      "type": "object"
+    },
+    "MainstreamHardness": {
+      "additionalProperties": false,
+      "properties": {
+        "brinell": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "mohs": {
+          "type": "number"
+        },
+        "vickers": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
       "type": "object"
     },
     "MainstreamHazard": {
@@ -372,19 +462,23 @@
           "$ref": "#/definitions/MainstreamNFPA"
         },
         "p": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
         "h",
         "p",
-        "hazard",
-        "ghs",
-        "adr",
-        "nfpa"
+        "ghs"
       ],
       "type": "object"
     },
@@ -392,14 +486,29 @@
       "additionalProperties": false,
       "properties": {
         "heat_capacity": {
-          "$ref": "#/definitions/MainstreamValueUnit"
+          "anyOf": [
+            {
+              "$ref": "#/definitions/MainstreamValueUnit"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamValueUnit"
+              },
+              "type": "array"
+            }
+          ]
         },
         "thermal_conductivity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "thermal_expansion": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "work_function": {
           "$ref": "#/definitions/MainstreamValueUnit"
         }
       },
       "required": [
-        "heat_capacity",
         "thermal_conductivity"
       ],
       "type": "object"
@@ -420,6 +529,28 @@
       ],
       "type": "object"
     },
+    "MainstreamIonization": {
+      "additionalProperties": false,
+      "properties": {
+        "*": {
+          "type": "boolean"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "values",
+        "unit"
+      ],
+      "type": "object"
+    },
     "MainstreamLabelValueUnit": {
       "additionalProperties": false,
       "properties": {
@@ -435,25 +566,6 @@
       },
       "required": [
         "label",
-        "value",
-        "unit"
-      ],
-      "type": "object"
-    },
-    "MainstreamMultipleValuesUnit": {
-      "additionalProperties": false,
-      "properties": {
-        "unit": {
-          "type": "string"
-        },
-        "value": {
-          "items": {
-            "type": "number"
-          },
-          "type": "array"
-        }
-      },
-      "required": [
         "value",
         "unit"
       ],
@@ -507,6 +619,9 @@
         "allred": {
           "type": "number"
         },
+        "boyd": {
+          "type": "number"
+        },
         "ghosh_gupta": {
           "$ref": "#/definitions/MainstreamValueUnit"
         },
@@ -526,31 +641,31 @@
           "type": "number"
         }
       },
-      "required": [
-        "pauling",
-        "sanderson",
-        "allred",
-        "mulliken",
-        "allen",
-        "ghosh_gupta",
-        "nagle",
-        "pearson"
-      ],
       "type": "object"
     },
     "MainstreamOptical": {
       "additionalProperties": false,
       "properties": {
+        "reflectivity": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
         "refractive_index": {
-          "items": {
-            "$ref": "#/definitions/MainstreamValueUnit"
-          },
-          "type": "array"
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/MainstreamValueUnit"
+              },
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "$ref": "#/definitions/MainstreamValueUnit"
+            }
+          ]
         }
       },
-      "required": [
-        "refractive_index"
-      ],
       "type": "object"
     },
     "MainstreamRadius": {
@@ -569,12 +684,6 @@
           "$ref": "#/definitions/MainstreamValueUnit"
         }
       },
-      "required": [
-        "empirical",
-        "calculated",
-        "covalent",
-        "vdw"
-      ],
       "type": "object"
     },
     "MainstreamStandardAtomicWeight": {
@@ -595,8 +704,7 @@
       },
       "required": [
         "value",
-        "deviation",
-        "range"
+        "deviation"
       ],
       "type": "object"
     },
@@ -1087,7 +1195,7 @@
           "$ref": "#/definitions/MainstreamValueUnit"
         },
         "critical": {
-          "$ref": "#/definitions/MainstreamValueUnitConditionArobase"
+          "$ref": "#/definitions/MainstreamValueUnit"
         },
         "liquid": {
           "$ref": "#/definitions/MainstreamValueUnit"
@@ -1095,22 +1203,51 @@
         "melting": {
           "$ref": "#/definitions/MainstreamValueUnit"
         },
+        "sublimation": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
+        "transition": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
         "triple": {
-          "$ref": "#/definitions/MainstreamValueUnitConditionArobase"
+          "$ref": "#/definitions/MainstreamValueUnit"
+        }
+      },
+      "type": "object"
+    },
+    "MainstreamToxicity": {
+      "additionalProperties": false,
+      "properties": {
+        "application": {
+          "type": "string"
+        },
+        "organism": {
+          "type": "string"
+        },
+        "time": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/MainstreamValueUnit"
         }
       },
       "required": [
-        "melting",
-        "boiling",
-        "liquid",
-        "triple",
-        "critical"
+        "type",
+        "organism",
+        "application",
+        "value"
       ],
       "type": "object"
     },
-    "MainstreamValue": {
+    "MainstreamValueString": {
       "additionalProperties": false,
       "properties": {
+        "label": {
+          "type": "string"
+        },
         "value": {
           "type": "string"
         }
@@ -1120,44 +1257,33 @@
       ],
       "type": "object"
     },
-    "MainstreamValueLabel": {
-      "additionalProperties": false,
-      "properties": {
-        "label": {
-          "type": "string"
-        },
-        "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value",
-        "label"
-      ],
-      "type": "object"
-    },
     "MainstreamValueUnit": {
       "additionalProperties": false,
       "properties": {
-        "unit": {
-          "type": "string"
+        "*": {
+          "type": "boolean"
         },
-        "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value",
-        "unit"
-      ],
-      "type": "object"
-    },
-    "MainstreamValueUnitCondition": {
-      "additionalProperties": false,
-      "properties": {
+        "@": {
+          "$ref": "#/definitions/MainstreamValueUnit"
+        },
         "condition": {
           "items": {
-            "$ref": "#/definitions/MainstreamValue"
+            "$ref": "#/definitions/MainstreamValueUnit"
+          },
+          "type": "array"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "info": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "range": {
+          "items": {
+            "type": "number"
           },
           "type": "array"
         },
@@ -1165,36 +1291,14 @@
           "type": "string"
         },
         "value": {
-          "type": "number"
+          "type": [
+            "number",
+            "null"
+          ]
         }
       },
       "required": [
-        "value",
-        "unit",
-        "condition"
-      ],
-      "type": "object"
-    },
-    "MainstreamValueUnitConditionArobase": {
-      "additionalProperties": false,
-      "properties": {
-        "condition": {
-          "items": {
-            "$ref": "#/definitions/MainstreamValue"
-          },
-          "type": "array"
-        },
-        "unit": {
-          "type": "string"
-        },
-        "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value",
-        "unit",
-        "condition"
+        "value"
       ],
       "type": "object"
     },
