@@ -16,16 +16,16 @@ export type IsotopeElement = {
     n: number
     radius: number
     unc_r: number
-    abundance: number
-    unc_a: number
+    abundance: number | undefined
+    unc_a: number | undefined
     energy_shift: EnergyShift
     energy: number
-    unc_e: number
-    ripl_shift: number
+    unc_e: number | undefined
+    ripl_shift: number | undefined
     jp: string
     half_life: number | "STABLE"
     operator_hl: Operator_HL
-    unc_hl: string
+    unc_hl: string | undefined
     unit_hl: Unit_HL
     half_life_sec: number
     unc_hls: number
@@ -33,24 +33,24 @@ export type IsotopeElement = {
     decay_1_percent: number
     unc_1: number
     decay_2: string
-    decay_2_percent: number
-    unc_2: number
+    decay_2_percent: number | undefined
+    unc_2: number | undefined
     decay_3: string
-    decay_3_percent: number
-    unc_3: number
+    decay_3_percent: number | undefined
+    unc_3: number | undefined
     isospin: string
     magnetic_dipole: number
     unc_md: number
-    electric_quadrupole: number
-    unc_eq: number
+    electric_quadrupole: number | undefined
+    unc_eq: number | undefined
     qbm: number
     unc_qb: number
-    qbm_n: number
-    unc_qbmn: number
-    qa: number
-    unc_qa: number
-    qec: number
-    unc_qec: number
+    qbm_n: number | undefined
+    unc_qbmn: number | undefined
+    qa: number | undefined
+    unc_qa: number | undefined
+    qec: number | undefined
+    unc_qec: number | undefined
     sn: number
     unc_sn: number
     sp: number
@@ -194,54 +194,80 @@ export async function csv_to_isotope_data(): Promise<IsotopeElementCSV[]>{
         .map(convert_csv_row_into_element)
     
 }
-
 function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
-    const s = (field: CSV_FIELD): string => {
-        const value = row[CSV_FIELD.indexOf(field)]
-        if (value == undefined){
+
+    let latest_field_for_debug: CSV_FIELD = "z"
+    
+    const _ = (field: CSV_FIELD): string | undefined => {
+        latest_field_for_debug = field
+        const str = row[CSV_FIELD.indexOf(field)]
+        if (str == undefined){
             throw `unknown field: ${field}`
+        } 
+        if (str == ""){
+            return undefined
         }
-        return value
+        return str
     }
-    const n = (field: CSV_FIELD, alternative?: (x: string)=>any): number =>{
-        const value_str = s(field)
-        const simple = +value_str
+
+    const s = (field: CSV_FIELD): string  => { //get_value_from_row
+        const str = _(field)
+        if (! str){
+            throw `expected non-empty string, field: ${latest_field_for_debug}`
+        }
+        return str
+    }
+
+    const n = (field: CSV_FIELD): number => {
+        const str = _(field)
+        if (str == undefined){
+            throw `expected non-empty string, field: ${latest_field_for_debug}`
+        }
+        const simple = +str
         if (isNaN(simple)){
-            if (alternative){
-                return alternative(value_str)
-            }
-            console.warn(`field: ${field}, with value: ${value_str}, cannot be simply converted to a number`)
+            throw `field: ${latest_field_for_debug} couldn't parse this number: ${str}`
         }
         return simple
     }
-    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[], alternative?: (x: string)=>any): T => {
-        const str = s(field)
-        // @ts-expect-error dumb ts
-        if (! list.includes(str)){
-            if (alternative){
-                return alternative(str)
-            }
-            console.warn(`field: ${field}, with value ${str}, isn't a member of: ${list}`)
+    
+    const n_u = (field: CSV_FIELD): number | undefined => {
+        const str = _(field)
+        if (str == undefined){
+            return undefined
         }
-        // @ts-expect-error dumb ts
-        return str 
+        const simple = +str
+        if (isNaN(simple)){
+            throw ``
+        }
+        return simple
     }
+
+    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[]): T => {
+        const str = _(field)
+        if (str == undefined){
+            throw `expected non-empty string, field: ${latest_field_for_debug}`
+        }
+        // @ts-expect-error ts is stupid
+        if (! list.includes(str)){
+            throw `field: ${latest_field_for_debug}, with given element: ${str}, wasn't in list: ${list}`
+        }
+        return str as T
+    }
+
     return {
         z: n('z'),
         n: n('n'),
-        symbol: s_a("symbol", Elements, (x: string)=>{
-            return x.toLowerCase()
-        }),
+        symbol: s_a('symbol', Elements),
         radius: n('radius'),
         unc_r: n('unc_r'),
-        abundance: n('abundance'),
-        unc_a: n('unc_a'),
+        abundance: n_u('abundance'),
+        unc_a: n_u('unc_a'),
         energy_shift: s_a('energy_shift', EnergyShift),
         energy: n('energy'),
-        unc_e: n('unc_e'),
-        ripl_shift: n('ripl_shift'),
+        unc_e: n_u('unc_e'),
+        ripl_shift: n_u('ripl_shift'),
         jp: s('jp'),
-        half_life: n('half_life', (x)=>x),
+        half_life: n('half_life',),
         operator_hl: s_a('operator_hl', Operator_HL),
         unc_hl: s('unc_hl'),
         unit_hl: s_a('unit_hl', Unit_HL),
