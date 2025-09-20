@@ -185,7 +185,7 @@ type CSV_FIELD = typeof CSV_FIELD[number]
 
 export async function csv_to_isotope_data(): Promise<IsotopeElementCSV[]>{
     const text = await get_isotope_csv()
-    return text.split("\n")
+    const isotopes = text.split("\n")
         .filter(x => x)
         .map(x => 
             x.split(',')
@@ -193,6 +193,41 @@ export async function csv_to_isotope_data(): Promise<IsotopeElementCSV[]>{
         .slice(1)
         .map(convert_csv_row_into_element)
     
+    const unusued_undefined_check = unused_undefined.reduce((cumu, curr)=>{
+        if (!curr.validated)
+            cumu.push(curr.field)
+        return cumu   
+    }, [] as string[])
+    if (unusued_undefined_check.length){
+        console.warn(`warn: those fields: ${unusued_undefined_check}, 
+were used in a possibly undefined context, while never being undefined`)
+    }
+    return isotopes
+    
+}
+/* This is so I don't missused all undefined like number | undefined
+The end goal being 
+if the value is set to true then it has been validated
+that one field target has given an undefined value*/
+const unused_undefined: {field: CSV_FIELD, validated: boolean}[] = []
+function unused_undefined_f(field: CSV_FIELD, is_undefined: boolean){
+    const index = unused_undefined.findIndex(x => x.field == field) 
+    if (index != -1){
+        const target = unused_undefined[index]
+        if (target === undefined){
+            throw `you gotta explain me how`
+        }
+        if (is_undefined){
+            target.validated = true
+        }
+        return
+    }
+    unused_undefined.push(
+        {
+            field,
+            validated: is_undefined
+        }
+    )
 }
 function convert_csv_row_into_element(row: string[], index: number): IsotopeElementCSV{
 
@@ -217,7 +252,11 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
         }
         return str
     }
-    const s_u = get_value_from_row
+    const s_u = (field: CSV_FIELD): string |undefined => {
+        const str = get_value_from_row(field)
+        unused_undefined_f(field, str == undefined)
+        return str
+    }
 
     const n = (field: CSV_FIELD): number => {
         const str = get_value_from_row(field)
@@ -232,7 +271,8 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
     }
     
     const n_u = (field: CSV_FIELD, value?: string | undefined): number | undefined => {
-        const str = value ? value : get_value_from_row(field) 
+        const str = value ? value : get_value_from_row(field)
+        unused_undefined_f(field, str == undefined)
         if (str == undefined){
             return undefined
         }
