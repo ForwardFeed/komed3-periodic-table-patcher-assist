@@ -1,5 +1,5 @@
 # komed3-periodic-table-patcher-assist
-Tool to assist making patches to another project [periodic-table](github.com/komed3/periodic-table)
+Tool to assist making patches to another project [periodic-table](https://github.com/komed3/periodic-table)
 Bringing types to its DB, and prototypes of tools for conversion.
 
 ## More in depth
