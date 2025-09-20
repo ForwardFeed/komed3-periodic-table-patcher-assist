@@ -1,7 +1,8 @@
+import { get_isotope_csv } from "./filesystem_integration"
 import { Elements, type MainstreamElementData } from "./mainstream_structure"
 import { get_patcheable_object, type DeepPartial } from "./patchable_mainstream_structure"
 
-const Axis = [ "X", "Y", "Z"] as const
+const Axis = [ "", "X", "Y", "Z"] as const
 type Axis = typeof Axis[number]
 const Unit_HL = [ "", "unit_hl", "s", "MeV", "Y", "ms", "keV", "d", "eV", "m", "ns", "ps", "as", "h", "us" ] as const
 type Unit_HL = typeof Unit_HL[number]
@@ -21,10 +22,10 @@ export type IsotopeElement = {
     energy: number
     unc_e: number
     ripl_shift: number
-    jp: number
+    jp: string
     half_life: number | "STABLE"
     operator_hl: Operator_HL
-    unc_hl: number
+    unc_hl: string
     unit_hl: Unit_HL
     half_life_sec: number
     unc_hls: number
@@ -64,11 +65,11 @@ export type IsotopeElement = {
     discovery: string
     ENSDFpublicationcut_off: string
     ENSDFauthors: string
-    Extraction_date: string
+    extraction_date: string
 }
 
 type IsotopeElementCSV = IsotopeElement & {
-    symbol: string
+    symbol: Elements
 }
 
 export type IsotopePatch = {
@@ -141,7 +142,7 @@ const ISOTOPES_ELEMENT_OBJECT_KEYS = Object.keys(
         discovery: "",
         ENSDFpublicationcut_off: "",
         ENSDFauthors: "",
-        Extraction_date: ""
+        extraction_date: ""
     } satisfies IsotopeElement
 )
 export function create_patch_isotopes(isotopes: IsotopeElementCSV[]){
@@ -149,7 +150,17 @@ export function create_patch_isotopes(isotopes: IsotopeElementCSV[]){
         return {isotopes: []}
     }
     const patch: IsotopePatch = {
-        la: _(), h: _(), he: _(), li: _(), be: _(), b: _(), c: _(), n: _(), o: _(), f: _(),       ne: _(), na: _(), mg: _(), al: _(), si: _(), p: _(), s: _(), cl: _(), ar: _(), k: _(), ca: _(),       sc: _(), ti: _(), v: _(), cr: _(), mn: _(), fe: _(), co: _(), ni: _(), cu: _(), zn: _(), ga: _(),       ge: _(), as: _(), se: _(), br: _(), kr: _(), rb: _(), sr: _(), y: _(), zr: _(), nb: _(), mo: _(),       tc: _(), ru: _(), rh: _(), pd: _(), ag: _(), cd: _(), in: _(), sn: _(), sb: _(), te: _(), i: _(),       xe: _(), cs: _(), ba: _(), ce: _(), pr: _(), nd: _(), pm: _(), sm: _(), eu: _(), gd: _(), tb: _(),       dy: _(), ho: _(), er: _(), tm: _(), yb: _(), lu: _(), hf: _(), ta: _(), w: _(), re: _(), os: _(),       ir: _(), pt: _(), au: _(), hg: _(), tl: _(), pb: _(), bi: _(), po: _(), at: _(), rn: _(), fr: _(),       ra: _(), ac: _(), th: _(), pa: _(), u: _(), np: _(), pu: _(), am: _(), cm: _(), bk: _(), cf: _(),       es: _(), fm: _(), md: _(), no: _(), lr: _(), rf: _(), db: _(), sg: _(), bh: _(), hs: _(), mt: _(),       ds: _(), rg: _(), cn: _(), nh: _(), fl: _(), mc: _(), lv: _(), ts: _(), og: _()
+        la: _(), h: _(), he: _(), li: _(), be: _(), b: _(), c: _(), n: _(), o: _(), f: _(),
+        ne: _(), na: _(), mg: _(), al: _(), si: _(), p: _(), s: _(), cl: _(), ar: _(), k: _(), ca: _(),
+        sc: _(), ti: _(), v: _(), cr: _(), mn: _(), fe: _(), co: _(), ni: _(), cu: _(), zn: _(), ga: _(),
+        ge: _(), as: _(), se: _(), br: _(), kr: _(), rb: _(), sr: _(), y: _(), zr: _(), nb: _(), mo: _(),
+        tc: _(), ru: _(), rh: _(), pd: _(), ag: _(), cd: _(), in: _(), sn: _(), sb: _(), te: _(), i: _(),
+        xe: _(), cs: _(), ba: _(), ce: _(), pr: _(), nd: _(), pm: _(), sm: _(), eu: _(), gd: _(), tb: _(),
+        dy: _(), ho: _(), er: _(), tm: _(), yb: _(), lu: _(), hf: _(), ta: _(), w: _(), re: _(), os: _(),
+        ir: _(), pt: _(), au: _(), hg: _(), tl: _(), pb: _(), bi: _(), po: _(), at: _(), rn: _(), fr: _(),
+        ra: _(), ac: _(), th: _(), pa: _(), u: _(), np: _(), pu: _(), am: _(), cm: _(), bk: _(), cf: _(),
+        es: _(), fm: _(), md: _(), no: _(), lr: _(), rf: _(), db: _(), sg: _(), bh: _(), hs: _(), mt: _(),
+        ds: _(), rg: _(), cn: _(), nh: _(), fl: _(), mc: _(), lv: _(), ts: _(), og: _()
     }
     isotopes.forEach(element => {
         const symbol = check_symbol(element.symbol)
@@ -162,7 +173,113 @@ export function create_patch_isotopes(isotopes: IsotopeElementCSV[]){
     });
     return patch
 }
+const CSV_FIELD = [
+  "z", "n", "symbol", "radius", "unc_r", "abundance", "unc_a", "energy_shift", "energy", "unc_e", "ripl_shift",
+  "jp", "half_life", "operator_hl", "unc_hl", "unit_hl", "half_life_sec", "unc_hls", "decay_1", "decay_1_%",
+  "unc_1", "decay_2", "decay_2_%", "unc_2", "decay_3", "decay_3_%", "unc_3", "isospin", "magnetic_dipole",
+  "unc_md", "electric_quadrupole", "unc_eq", "qbm", "unc_qb", "qbm_n", "unc_qbmn", "qa", "unc_qa", "qec",
+  "unc_qec", "sn", "unc_sn", "sp", "unc_sp", "binding", "unc_ba", "atomic_mass", "unc_am", "massexcess",
+  "unc_me", "me_systematics", "discovery", "ENSDFpublicationcut-off", "ENSDFauthors", "Extraction_date"
+] as const
+type CSV_FIELD = typeof CSV_FIELD[number]
 
-export function csv_to_isotope_data(): I{
+export async function csv_to_isotope_data(): Promise<IsotopeElementCSV[]>{
+    const text = await get_isotope_csv()
+    return text.split("\n")
+        .filter(x => x)
+        .map(x => 
+            x.split(',')
+        )
+        .slice(1)
+        .map(convert_csv_row_into_element)
+    
+}
 
+function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
+    const s = (field: CSV_FIELD): string => {
+        const value = row[CSV_FIELD.indexOf(field)]
+        if (value == undefined){
+            throw `unknown field: ${field} `
+        }
+        return value
+    }
+    const n = (field: CSV_FIELD): number =>{
+        const value_str = s(field)
+        const simple = +value_str
+        if (isNaN(simple)){
+            console.warn(`field: ${field}, with value: ${value_str}, cannot be simply converted to a number`)
+        }
+        return simple
+    }
+    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[], correction?: (x: string)=>T): T => {
+        const str = s(field)
+        // @ts-expect-error dumb ts
+        if (! list.includes(str)){
+            if (correction){
+                return correction(str)
+            }
+            console.warn(`field: ${field}, with value ${str}, isn't a member of: ${list}`)
+        }
+        // @ts-expect-error dumb ts
+        return str 
+    }
+    return {
+        z: n('z'),
+        n: n('n'),
+        symbol: s_a("symbol", Elements, (x: string)=>{
+            return x.toLowerCase() as Elements
+        }),
+        radius: n('radius'),
+        unc_r: n('unc_r'),
+        abundance: n('abundance'),
+        unc_a: n('unc_a'),
+        energy_shift: s_a('energy_shift', Axis),
+        energy: n('energy'),
+        unc_e: n('unc_e'),
+        ripl_shift: n('ripl_shift'),
+        jp: s('jp'),
+        half_life: n('half_life'),
+        operator_hl: s_a('operator_hl', Operator_HL),
+        unc_hl: s('unc_hl'),
+        unit_hl: s_a('unit_hl', Unit_HL),
+        half_life_sec: n('half_life_sec'),
+        unc_hls: n('unc_hls'),
+        decay_1: s('decay_1'),
+        decay_1_percent: n('decay_1_%'),
+        unc_1: n('unc_1'),
+        decay_2: s('decay_2'),
+        decay_2_percent: n('decay_2_%'),
+        unc_2: n('unc_2'),
+        decay_3: s('decay_3'),
+        decay_3_percent: n('decay_3_%'),
+        unc_3: n('unc_3'),
+        isospin: n('isospin'),
+        magnetic_dipole: n('magnetic_dipole'),
+        unc_md: n('unc_md'),
+        electric_quadrupole: n('electric_quadrupole'),
+        unc_eq: n('unc_eq'),
+        qbm: n('qbm'),
+        unc_qb: n('unc_qb'),
+        qbm_n: n('qbm_n'),
+        unc_qbmn: n('unc_qbmn'),
+        qa: n('qa'),
+        unc_qa: n('unc_qa'),
+        qec: n('qec'),
+        unc_qec: n('unc_qec'),
+        sn: n('sn'),
+        unc_sn: n('unc_sn'),
+        sp: n('sp'),
+        unc_sp: n('unc_sp'),
+        binding: n('binding'),
+        unc_ba: n('unc_ba'),
+        atomic_mass: n('atomic_mass'),
+        unc_am: n('unc_am'),
+        massexcess: n('massexcess'),
+        unc_me: n('unc_me'),
+        me_systematics: s_a('me_systematics', ME_Systematics),
+        discovery: s('discovery'),
+        ENSDFpublicationcut_off: s('ENSDFpublicationcut-off'),
+        ENSDFauthors: s('ENSDFauthors'),
+        extraction_date: s('Extraction_date')
+    } satisfies IsotopeElementCSV
 }
