@@ -2,8 +2,8 @@ import { get_isotope_csv } from "./filesystem_integration"
 import { Elements, type MainstreamElementData } from "./mainstream_structure"
 import { get_patcheable_object, type DeepPartial } from "./patchable_mainstream_structure"
 
-const Axis = [ "", "X", "Y", "Z"] as const
-type Axis = typeof Axis[number]
+const EnergyShift = [ "", "X", "V", "Z"] as const
+type EnergyShift = typeof EnergyShift[number]
 const Unit_HL = [ "", "unit_hl", "s", "MeV", "Y", "ms", "keV", "d", "eV", "m", "ns", "ps", "as", "h", "us" ] as const
 type Unit_HL = typeof Unit_HL[number]
 const Operator_HL = ["", "LT", "AP", "GT", "GE"] as const
@@ -18,7 +18,7 @@ export type IsotopeElement = {
     unc_r: number
     abundance: number
     unc_a: number
-    energy_shift: Axis
+    energy_shift: EnergyShift
     energy: number
     unc_e: number
     ripl_shift: number
@@ -38,7 +38,7 @@ export type IsotopeElement = {
     decay_3: string
     decay_3_percent: number
     unc_3: number
-    isospin: number
+    isospin: string
     magnetic_dipole: number
     unc_md: number
     electric_quadrupole: number
@@ -95,14 +95,14 @@ const ISOTOPES_ELEMENT_OBJECT_KEYS = Object.keys(
         unc_r: 0,
         abundance: 0,
         unc_a: 0,
-        energy_shift: "Y",
+        energy_shift: "",
         energy: 0,
         unc_e: 0,
         ripl_shift: 0,
-        jp: 0,
+        jp: "",
         half_life: 0,
         operator_hl: "",
-        unc_hl: 0,
+        unc_hl: "",
         unit_hl: "",
         half_life_sec: 0,
         unc_hls: 0,
@@ -115,7 +115,7 @@ const ISOTOPES_ELEMENT_OBJECT_KEYS = Object.keys(
         decay_3: "",
         decay_3_percent: 0,
         unc_3: 0,
-        isospin: 0,
+        isospin: "",
         magnetic_dipole: 0,
         unc_md: 0,
         electric_quadrupole: 0,
@@ -199,24 +199,27 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
     const s = (field: CSV_FIELD): string => {
         const value = row[CSV_FIELD.indexOf(field)]
         if (value == undefined){
-            throw `unknown field: ${field} `
+            throw `unknown field: ${field}`
         }
         return value
     }
-    const n = (field: CSV_FIELD): number =>{
+    const n = (field: CSV_FIELD, alternative?: (x: string)=>any): number =>{
         const value_str = s(field)
         const simple = +value_str
         if (isNaN(simple)){
+            if (alternative){
+                return alternative(value_str)
+            }
             console.warn(`field: ${field}, with value: ${value_str}, cannot be simply converted to a number`)
         }
         return simple
     }
-    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[], correction?: (x: string)=>T): T => {
+    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[], alternative?: (x: string)=>any): T => {
         const str = s(field)
         // @ts-expect-error dumb ts
         if (! list.includes(str)){
-            if (correction){
-                return correction(str)
+            if (alternative){
+                return alternative(str)
             }
             console.warn(`field: ${field}, with value ${str}, isn't a member of: ${list}`)
         }
@@ -227,18 +230,18 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
         z: n('z'),
         n: n('n'),
         symbol: s_a("symbol", Elements, (x: string)=>{
-            return x.toLowerCase() as Elements
+            return x.toLowerCase()
         }),
         radius: n('radius'),
         unc_r: n('unc_r'),
         abundance: n('abundance'),
         unc_a: n('unc_a'),
-        energy_shift: s_a('energy_shift', Axis),
+        energy_shift: s_a('energy_shift', EnergyShift),
         energy: n('energy'),
         unc_e: n('unc_e'),
         ripl_shift: n('ripl_shift'),
         jp: s('jp'),
-        half_life: n('half_life'),
+        half_life: n('half_life', (x)=>x),
         operator_hl: s_a('operator_hl', Operator_HL),
         unc_hl: s('unc_hl'),
         unit_hl: s_a('unit_hl', Unit_HL),
@@ -253,7 +256,7 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
         decay_3: s('decay_3'),
         decay_3_percent: n('decay_3_%'),
         unc_3: n('unc_3'),
-        isospin: n('isospin'),
+        isospin: s('isospin'),
         magnetic_dipole: n('magnetic_dipole'),
         unc_md: n('unc_md'),
         electric_quadrupole: n('electric_quadrupole'),
