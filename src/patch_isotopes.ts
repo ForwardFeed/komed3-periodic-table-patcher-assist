@@ -23,7 +23,7 @@ export type IsotopeElement = {
     unc_e: number | undefined
     ripl_shift: number | undefined
     jp: string | undefined
-    half_life: number | "STABLE" | undefined
+    half_life: number | "STABLE" | undefined | "?"
     operator_hl: Operator_HL
     unc_hl: string | undefined
     unit_hl: Unit_HL
@@ -231,20 +231,20 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
         return simple
     }
     
-    const n_u = (field: CSV_FIELD): number | undefined => {
-        const str = get_value_from_row(field)
+    const n_u = (field: CSV_FIELD, value?: string | undefined): number | undefined => {
+        const str = value ? value : get_value_from_row(field) 
         if (str == undefined){
             return undefined
         }
         const simple = +str
         if (isNaN(simple)){
-            throw ``
+            throw `field: ${latest_field_for_debug} couldn't parse this number: ${str}, index: ${index}`
         }
         return simple
     }
 
-    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[]): T => {
-        const str = get_value_from_row(field)
+    const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[], value?: string | undefined): T => {
+        const str = value ? value : get_value_from_row(field)
         // @ts-expect-error ts is stupid
         if (! list.includes(str)){
             throw `field: ${latest_field_for_debug}, with given element: ${str}, wasn't in list: ${list}, index: ${index}`
@@ -255,7 +255,7 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
     return {
         z: n('z'),
         n: n('n'),
-        symbol: s_a('symbol', Elements),
+        symbol: s_a('symbol', Elements, s('symbol').toLowerCase()),
         radius: n_u('radius'),
         unc_r: n_u('unc_r'),
         abundance: n_u('abundance'),
@@ -265,7 +265,14 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
         unc_e: n_u('unc_e'),
         ripl_shift: n_u('ripl_shift'),
         jp: s_u('jp'),
-        half_life: n_u('half_life',),
+        half_life: ((value: string | undefined)=>{
+            if (value == "STABLE"){
+                return "STABLE"
+            } else if (value == "?"){
+                return "?"
+            }
+            return n_u('half_life')
+        })(s_u('half_life')),
         operator_hl: s_a('operator_hl', Operator_HL),
         unc_hl: s_u('unc_hl'),
         unit_hl: s_a('unit_hl', Unit_HL),
