@@ -2,67 +2,67 @@ import { get_isotope_csv } from "./filesystem_integration"
 import { Elements, type MainstreamElementData } from "./mainstream_structure"
 import { get_patcheable_object, type DeepPartial } from "./patchable_mainstream_structure"
 
-const EnergyShift = [ "", "X", "V", "Z"] as const
+const EnergyShift = [ undefined, "X", "V", "Z"] as const
 type EnergyShift = typeof EnergyShift[number]
-const Unit_HL = [ "", "unit_hl", "s", "MeV", "Y", "ms", "keV", "d", "eV", "m", "ns", "ps", "as", "h", "us" ] as const
+const Unit_HL = [ undefined, "unit_hl", "s", "MeV", "Y", "ms", "keV", "d", "eV", "m", "ns", "ps", "as", "h", "us" ] as const
 type Unit_HL = typeof Unit_HL[number]
-const Operator_HL = ["", "LT", "AP", "GT", "GE"] as const
+const Operator_HL = [ undefined, "LT", "AP", "GT", "GE"] as const
 type Operator_HL = typeof Operator_HL[number]
-const ME_Systematics = ["", "N", "Y"] as const
+const ME_Systematics = [ undefined, "N", "Y"] as const
 type ME_Systematics = typeof ME_Systematics[number]
 
 export type IsotopeElement = {
     z: number
     n: number
-    radius: number
-    unc_r: number
+    radius: number | undefined
+    unc_r: number | undefined
     abundance: number | undefined
     unc_a: number | undefined
     energy_shift: EnergyShift
-    energy: number
+    energy: number | undefined
     unc_e: number | undefined
     ripl_shift: number | undefined
-    jp: string
-    half_life: number | "STABLE"
+    jp: string | undefined
+    half_life: number | "STABLE" | undefined
     operator_hl: Operator_HL
     unc_hl: string | undefined
     unit_hl: Unit_HL
-    half_life_sec: number
-    unc_hls: number
-    decay_1: string
-    decay_1_percent: number
-    unc_1: number
-    decay_2: string
+    half_life_sec: number | undefined
+    unc_hls: number | undefined
+    decay_1: string | undefined
+    decay_1_percent: number | undefined
+    unc_1: number | undefined
+    decay_2: string | undefined
     decay_2_percent: number | undefined
     unc_2: number | undefined
-    decay_3: string
+    decay_3: string | undefined
     decay_3_percent: number | undefined
     unc_3: number | undefined
-    isospin: string
-    magnetic_dipole: number
-    unc_md: number
+    isospin: string | undefined
+    magnetic_dipole: number | undefined
+    unc_md: number | undefined
     electric_quadrupole: number | undefined
     unc_eq: number | undefined
-    qbm: number
-    unc_qb: number
+    qbm: number | undefined
+    unc_qb: number | undefined
     qbm_n: number | undefined
     unc_qbmn: number | undefined
     qa: number | undefined
     unc_qa: number | undefined
     qec: number | undefined
     unc_qec: number | undefined
-    sn: number
-    unc_sn: number
-    sp: number
-    unc_sp: number
-    binding: number
-    unc_ba: number
-    atomic_mass: number
-    unc_am: number
-    massexcess: number
-    unc_me: number
+    sn: number | undefined
+    unc_sn: number | undefined
+    sp: number | undefined
+    unc_sp: number | undefined
+    binding: number | undefined
+    unc_ba: number | undefined
+    atomic_mass: number | undefined
+    unc_am: number | undefined
+    massexcess: number | undefined
+    unc_me: number | undefined
     me_systematics: ME_Systematics
-    discovery: string
+    discovery: string | undefined
     ENSDFpublicationcut_off: string
     ENSDFauthors: string
     extraction_date: string
@@ -95,15 +95,15 @@ const ISOTOPES_ELEMENT_OBJECT_KEYS = Object.keys(
         unc_r: 0,
         abundance: 0,
         unc_a: 0,
-        energy_shift: "",
+        energy_shift: undefined,
         energy: 0,
         unc_e: 0,
         ripl_shift: 0,
         jp: "",
         half_life: 0,
-        operator_hl: "",
+        operator_hl: undefined,
         unc_hl: "",
-        unit_hl: "",
+        unit_hl: undefined,
         half_life_sec: 0,
         unc_hls: 0,
         decay_1: "",
@@ -138,7 +138,7 @@ const ISOTOPES_ELEMENT_OBJECT_KEYS = Object.keys(
         unc_am: 0,
         massexcess: 0,
         unc_me: 0,
-        me_systematics: "",
+        me_systematics: undefined,
         discovery: "",
         ENSDFpublicationcut_off: "",
         ENSDFauthors: "",
@@ -194,11 +194,11 @@ export async function csv_to_isotope_data(): Promise<IsotopeElementCSV[]>{
         .map(convert_csv_row_into_element)
     
 }
-function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
+function convert_csv_row_into_element(row: string[], index: number): IsotopeElementCSV{
 
     let latest_field_for_debug: CSV_FIELD = "z"
     
-    const _ = (field: CSV_FIELD): string | undefined => {
+    const get_value_from_row = (field: CSV_FIELD): string | undefined => {
         latest_field_for_debug = field
         const str = row[CSV_FIELD.indexOf(field)]
         if (str == undefined){
@@ -210,28 +210,29 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
         return str
     }
 
-    const s = (field: CSV_FIELD): string  => { //get_value_from_row
-        const str = _(field)
+    const s = (field: CSV_FIELD): string  => {
+        const str = get_value_from_row(field)
         if (! str){
-            throw `expected non-empty string, field: ${latest_field_for_debug}`
+            throw `expected non-empty string, field: ${latest_field_for_debug}, index: ${index}`
         }
         return str
     }
+    const s_u = get_value_from_row
 
     const n = (field: CSV_FIELD): number => {
-        const str = _(field)
+        const str = get_value_from_row(field)
         if (str == undefined){
-            throw `expected non-empty string, field: ${latest_field_for_debug}`
+            throw `expected non-empty string, field: ${latest_field_for_debug}, index: ${index}`
         }
         const simple = +str
         if (isNaN(simple)){
-            throw `field: ${latest_field_for_debug} couldn't parse this number: ${str}`
+            throw `field: ${latest_field_for_debug} couldn't parse this number: ${str}, index: ${index}`
         }
         return simple
     }
     
     const n_u = (field: CSV_FIELD): number | undefined => {
-        const str = _(field)
+        const str = get_value_from_row(field)
         if (str == undefined){
             return undefined
         }
@@ -243,13 +244,10 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
     }
 
     const s_a = <T>(field: CSV_FIELD, list: T[] | readonly T[]): T => {
-        const str = _(field)
-        if (str == undefined){
-            throw `expected non-empty string, field: ${latest_field_for_debug}`
-        }
+        const str = get_value_from_row(field)
         // @ts-expect-error ts is stupid
         if (! list.includes(str)){
-            throw `field: ${latest_field_for_debug}, with given element: ${str}, wasn't in list: ${list}`
+            throw `field: ${latest_field_for_debug}, with given element: ${str}, wasn't in list: ${list}, index: ${index}`
         }
         return str as T
     }
@@ -258,55 +256,55 @@ function convert_csv_row_into_element(row: string[]): IsotopeElementCSV{
         z: n('z'),
         n: n('n'),
         symbol: s_a('symbol', Elements),
-        radius: n('radius'),
-        unc_r: n('unc_r'),
+        radius: n_u('radius'),
+        unc_r: n_u('unc_r'),
         abundance: n_u('abundance'),
         unc_a: n_u('unc_a'),
         energy_shift: s_a('energy_shift', EnergyShift),
-        energy: n('energy'),
+        energy: n_u('energy'),
         unc_e: n_u('unc_e'),
         ripl_shift: n_u('ripl_shift'),
-        jp: s('jp'),
-        half_life: n('half_life',),
+        jp: s_u('jp'),
+        half_life: n_u('half_life',),
         operator_hl: s_a('operator_hl', Operator_HL),
-        unc_hl: s('unc_hl'),
+        unc_hl: s_u('unc_hl'),
         unit_hl: s_a('unit_hl', Unit_HL),
-        half_life_sec: n('half_life_sec'),
-        unc_hls: n('unc_hls'),
-        decay_1: s('decay_1'),
-        decay_1_percent: n('decay_1_%'),
-        unc_1: n('unc_1'),
-        decay_2: s('decay_2'),
-        decay_2_percent: n('decay_2_%'),
-        unc_2: n('unc_2'),
-        decay_3: s('decay_3'),
-        decay_3_percent: n('decay_3_%'),
-        unc_3: n('unc_3'),
-        isospin: s('isospin'),
-        magnetic_dipole: n('magnetic_dipole'),
-        unc_md: n('unc_md'),
-        electric_quadrupole: n('electric_quadrupole'),
-        unc_eq: n('unc_eq'),
-        qbm: n('qbm'),
-        unc_qb: n('unc_qb'),
-        qbm_n: n('qbm_n'),
-        unc_qbmn: n('unc_qbmn'),
-        qa: n('qa'),
-        unc_qa: n('unc_qa'),
-        qec: n('qec'),
-        unc_qec: n('unc_qec'),
-        sn: n('sn'),
-        unc_sn: n('unc_sn'),
-        sp: n('sp'),
-        unc_sp: n('unc_sp'),
-        binding: n('binding'),
-        unc_ba: n('unc_ba'),
-        atomic_mass: n('atomic_mass'),
-        unc_am: n('unc_am'),
-        massexcess: n('massexcess'),
-        unc_me: n('unc_me'),
+        half_life_sec: n_u('half_life_sec'),
+        unc_hls: n_u('unc_hls'),
+        decay_1: s_u('decay_1'),
+        decay_1_percent: n_u('decay_1_%'),
+        unc_1: n_u('unc_1'),
+        decay_2: s_u('decay_2'),
+        decay_2_percent: n_u('decay_2_%'),
+        unc_2: n_u('unc_2'),
+        decay_3: s_u('decay_3'),
+        decay_3_percent: n_u('decay_3_%'),
+        unc_3: n_u('unc_3'),
+        isospin: s_u('isospin'),
+        magnetic_dipole: n_u('magnetic_dipole'),
+        unc_md: n_u('unc_md'),
+        electric_quadrupole: n_u('electric_quadrupole'),
+        unc_eq: n_u('unc_eq'),
+        qbm: n_u('qbm'),
+        unc_qb: n_u('unc_qb'),
+        qbm_n: n_u('qbm_n'),
+        unc_qbmn: n_u('unc_qbmn'),
+        qa: n_u('qa'),
+        unc_qa: n_u('unc_qa'),
+        qec: n_u('qec'),
+        unc_qec: n_u('unc_qec'),
+        sn: n_u('sn'),
+        unc_sn: n_u('unc_sn'),
+        sp: n_u('sp'),
+        unc_sp: n_u('unc_sp'),
+        binding: n_u('binding'),
+        unc_ba: n_u('unc_ba'),
+        atomic_mass: n_u('atomic_mass'),
+        unc_am: n_u('unc_am'),
+        massexcess: n_u('massexcess'),
+        unc_me: n_u('unc_me'),
         me_systematics: s_a('me_systematics', ME_Systematics),
-        discovery: s('discovery'),
+        discovery: s_u('discovery'),
         ENSDFpublicationcut_off: s('ENSDFpublicationcut-off'),
         ENSDFauthors: s('ENSDFauthors'),
         extraction_date: s('Extraction_date')
