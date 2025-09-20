@@ -9,7 +9,7 @@ export type MainstreamStructurePatch = {
 }
 
 
-function get_patcheable_object(){
+export function get_patcheable_object(){
     return { la: {}, h: {}, he: {}, li: {}, be: {}, b: {}, c: {}, n: {}, o: {}, f: {},
     ne: {}, na: {}, mg: {}, al: {}, si: {}, p: {}, s: {}, cl: {}, ar: {}, k: {}, ca: {},
     sc: {}, ti: {}, v: {}, cr: {}, mn: {}, fe: {}, co: {}, ni: {}, cu: {}, zn: {}, ga: {},
@@ -23,3 +23,5 @@ function get_patcheable_object(){
     ds: {}, rg: {}, cn: {}, nh: {}, fl: {}, mc: {}, lv: {}, ts: {}, og: {}
     } satisfies MainstreamStructurePatch
 }
+
+
