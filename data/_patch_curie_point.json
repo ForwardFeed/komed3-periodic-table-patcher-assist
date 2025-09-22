@@ -1,0 +1,38 @@
+{
+  "fe": {
+    "value": 1043,
+    "unit": "K"
+  },
+  "co": {
+    "value": 1394,
+    "unit": "K"
+  },
+  "ni": {
+    "value": 631,
+    "unit": "K"
+  },
+  "gd": {
+    "value": 292,
+    "unit": "K"
+  },
+  "tb": {
+    "value": 222,
+    "unit": "K"
+  },
+  "dy": {
+    "value": 87,
+    "unit": "K"
+  },
+  "ho": {
+    "value": 20,
+    "unit": "K"
+  },
+  "er": {
+    "value": 32,
+    "unit": "K"
+  },
+  "tm": {
+    "value": 25,
+    "unit": "K"
+  }
+}
