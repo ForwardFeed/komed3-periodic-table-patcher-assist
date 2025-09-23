@@ -1,7 +1,7 @@
 import Ajv from "ajv";
 import { create_patch_isotopes, csv_to_isotope_data } from "./patch_isotopes";
 import { write_isotope_json } from "./filesystem_integration";
-import { create_curie_point_patch } from "./patch_curie_point";
+import { create_magnetism_curie_neel_patch } from "./patch_magnetism_curie_neel";
 
 /* const schema = await Bun.file('./schema.json').json()
 const target = await Bun.file('./data/mainstream.json').json()
@@ -17,4 +17,6 @@ if (!valid){
 const patch = create_patch_isotopes(csv_data)
 write_isotope_json(patch) */
 
-create_curie_point_patch()
+
+// unusued, because i will now use wikipedia only as source of truth
+create_magnetism_curie_neel_patch() 
