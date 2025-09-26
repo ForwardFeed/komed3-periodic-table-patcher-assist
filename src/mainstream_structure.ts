@@ -1,6 +1,6 @@
 
 
-export const Elements = [ "h", "he", "li", "be", "b", "c", "n", "o", "f", "ne", "na", "mg", "al",
+export const Symbols = [ "h", "he", "li", "be", "b", "c", "n", "o", "f", "ne", "na", "mg", "al",
     "si", "p", "s", "cl", "ar", "k", "ca", "sc", "ti", "v", "cr", "mn", "fe", "co", "ni", "cu",
     "zn", "ga", "ge", "as", "se", "br", "kr", "rb", "sr", "y", "zr", "nb", "mo", "tc", "ru", "rh",
     "pd", "ag", "cd", "in", "sn", "sb", "te", "i", "xe", "cs", "ba", "la", "ce", "pr", "nd", "pm",
@@ -9,7 +9,7 @@ export const Elements = [ "h", "he", "li", "be", "b", "c", "n", "o", "f", "ne", 
     "pu", "am", "cm", "bk", "cf", "es", "fm", "md", "no", "lr", "rf", "db", "sg", "bh", "hs", "mt",
     "ds", "rg", "cn", "nh", "fl", "mc", "lv", "ts", "og"
 ] as const
-export type Elements = typeof Elements[number]
+export type Symbols = typeof Symbols[number]
 
 export const Languages = ["en", "de", "la"] as const
 export type Languages = typeof Languages[number]
@@ -254,5 +254,5 @@ export type MainstreamElementData = {
 
 
 export type MainstreamStructure = {
-    [key in Elements]: MainstreamElementData
+    [key in Symbols]: MainstreamElementData
 }

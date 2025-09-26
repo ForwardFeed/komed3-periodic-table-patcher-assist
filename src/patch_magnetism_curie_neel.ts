@@ -1,8 +1,8 @@
 import { get_periodictabledotcom_json, write_periodictabledotcom_patch } from "./filesystem_integration"
-import { Elements, type MainstreamValueUnit } from "./mainstream_structure"
+import { Symbols, type MainstreamValueUnit } from "./mainstream_structure"
 
 export type PTDCCurieNeelPatch = {
-    [key in Elements]?:  {
+    [key in Symbols]?:  {
         curie_point?: MainstreamValueUnit
         neel_point?: MainstreamValueUnit
     }
@@ -12,8 +12,8 @@ export async function create_magnetism_curie_neel_patch(){
     const PTDCData = await get_periodictabledotcom_json()
     const elements: PTDCCurieNeelPatch = {}
     PTDCData.forEach((element)=>{
-        const symbol = element.symbol.toLowerCase() as Elements
-        if (!Elements.includes(symbol)){
+        const symbol = element.symbol.toLowerCase() as Symbols
+        if (!Symbols.includes(symbol)){
             throw `unknown symbol: ${symbol}`
         }
         const curie_point = element.curie_point == "N/A" ? undefined : {

@@ -1,11 +1,11 @@
-import type { Elements, MainstreamElementData } from "./mainstream_structure";
+import type { Symbols, MainstreamElementData } from "./mainstream_structure";
 
 export type DeepPartial<T> = {
     [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
 };
 
 export type MainstreamStructurePatch = {
-    [key in Elements]: DeepPartial<MainstreamElementData>
+    [key in Symbols]: DeepPartial<MainstreamElementData>
 }
 
 

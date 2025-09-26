@@ -1,15 +1,15 @@
 [
     "AlBr3", "Al4C3", "AlCl3", "Al(OH)3", "Al2O3", "Al2(SO4)3", "NH3", "(NH4)2CO3", "NH4Cl", "NH4HCO3", "NH4NO3", "(NH4)2SO4",
-    "AS2O3", "BaCO3", "BaCl2", "Ba(OH)2", "BaO", "BaSO4", "PbCl2", "Pb(NO3)2", "PbO", "Pb3O4", "PbO2", "PbSO4", "PbS", "H3BO3",
+    "As2O3", "BaCO3", "BaCl2", "Ba(OH)2", "BaO", "BaSO4", "PbCl2", "Pb(NO3)2", "PbO", "Pb3O4", "PbO2", "PbSO4", "PbS", "H3BO3",
     "HBr", "CaBr2", "CaC2", "CaCO3",
 
-    "CaCl2", "CaF2", "Ca(OH)2", "Cal2", "Ca(NO3)2", "CaO", "Ca3(PO4)2", "CaSO4", "Hcl", "CrCl2", "Cr2O3", "CoCl2", "HCN", "FeCl3",
-    "FeS2", "Fe(OH)3", "FeO", "Fe3O4", "Fe2O3", "FeSO4", "FeS", "HF", "HI", "KAI(SO4)2", "KBr", "K2CO3", "KClO3", "KCl", "K2CrO4",
+    "CaCl2", "CaF2", "Ca(OH)2", "CaI2", "Ca(NO3)2", "CaO", "Ca3(PO4)2", "CaSO4", "HCl", "CrCl2", "Cr2O3", "CoCl2", "HCN", "FeCl3",
+    "FeS2", "Fe(OH)3", "FeO", "Fe3O4", "Fe2O3", "FeSO4", "FeS", "HF", "HI", "KAl(SO4)2", "KBr", "K2CO3", "KClO3", "KCl", "K2CrO4",
     "KCN", "K2Cr2O7", "KF", "KOH", "KIO3", "KI", "KNO3", "KMnO4", "K3PO4", "K2SO4", "K2O", "CO2", "CS2", "CO",
 
     "CuCl", "CuCl2", "Cu(NO3)2", "Cu2O", "CuO", "CuSO4", "LiCl", "MgBr2", "MgCO3", "MgCl2", "Mg(OH)2", "Mg(NO3)2", "MgO", "MgSO4",
     "MnCl2", "MnO2", "MnO2", "MnSO4", "NaBr", "Na2CO3", "NaCl", "NaHCO3", "NaOH", "NaNO3", "NaNO2", "Na3PO4", "Na2SO4", "Na2S2O3",
-    "O3", "H3PO3", "P4O10", "PCl5", "H3PO4", "HgCl2", "HgCl2", "HgO", "HNO3", "O2", "SO2", "H2SO4", "SO3", "H2S", "AgBR",
+    "O3", "H3PO3", "P4O10", "PCl5", "H3PO4", "HgCl2", "HgCl2", "HgO", "HNO3", "O2", "SO2", "H2SO4", "SO3", "H2S", "AgBr",
 
     "AgCl", "AgI", "AgNO3", "SiO2", "N2O5", "N2O3", "NO2", "NO", "H2O", "H2", "H2O2", "ZnCl2", "ZnO",
 

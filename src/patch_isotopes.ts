@@ -1,5 +1,5 @@
 import { get_isotope_csv } from "./filesystem_integration"
-import { Elements, type MainstreamElementData } from "./mainstream_structure"
+import { Symbols, type MainstreamElementData } from "./mainstream_structure"
 import { get_patcheable_object, type DeepPartial } from "./patchable_mainstream_structure"
 
 const EnergyShift = [ undefined, "X", "V", "Z"] as const
@@ -69,18 +69,18 @@ export type IsotopeElement = {
 }
 
 type IsotopeElementCSV = IsotopeElement & {
-    symbol: Elements
+    symbol: Symbols
 }
 
 export type IsotopePatch = {
-    [key in Elements]: {
+    [key in Symbols]: {
         isotopes: IsotopeElement[]
     }
 }
 
-function check_symbol(str: string): Elements{
+function check_symbol(str: string): Symbols{
     // @ts-ignore dumb ts
-    if (Elements.includes(str)){
+    if (Symbols.includes(str)){
         // @ts-ignore dumb ts
         return str
     }
@@ -295,7 +295,7 @@ function convert_csv_row_into_element(row: string[], index: number): IsotopeElem
     return {
         z: n('z'),
         n: n('n'),
-        symbol: s_a('symbol', Elements, s('symbol').toLowerCase()),
+        symbol: s_a('symbol', Symbols, s('symbol').toLowerCase()),
         radius: n_u('radius'),
         unc_r: n_u('unc_r'),
         abundance: n_u('abundance'),
