@@ -240,14 +240,6 @@
     }
   },
   {
-    "raw_formula": "CaC2",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "c": 2,
-      "ca": 1
-    }
-  },
-  {
     "raw_formula": "CaCO3",
     "name": "Calcium carbonate (precipitated)",
     "formula": {
@@ -445,16 +437,6 @@
     "formula": {
       "h": 1,
       "i": 1
-    }
-  },
-  {
-    "raw_formula": "KAl(SO4)2",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "o": 8,
-      "al": 1,
-      "s": 2,
-      "k": 1
     }
   },
   {
@@ -709,15 +691,6 @@
     "formula": {
       "h": 2,
       "o": 2,
-      "mg": 1
-    }
-  },
-  {
-    "raw_formula": "Mg(NO3)2",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "n": 2,
-      "o": 6,
       "mg": 1
     }
   },
@@ -1106,15 +1079,6 @@
     }
   },
   {
-    "raw_formula": "C6H5BH2",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "h": 7,
-      "b": 1,
-      "c": 6
-    }
-  },
-  {
     "raw_formula": "C14H10",
     "name": "Anthracene",
     "formula": {
@@ -1278,16 +1242,6 @@
       "h": 5,
       "c": 2,
       "cl": 1
-    }
-  },
-  {
-    "raw_formula": "CICH2COOH",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "h": 3,
-      "c": 3,
-      "o": 2,
-      "i": 1
     }
   },
   {
@@ -1489,15 +1443,6 @@
     "formula": {
       "h": 26,
       "c": 12
-    }
-  },
-  {
-    "raw_formula": "C2OH42",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "h": 42,
-      "c": 2,
-      "o": 1
     }
   },
   {
@@ -1869,15 +1814,6 @@
       "h": 10,
       "c": 5,
       "o": 2
-    }
-  },
-  {
-    "raw_formula": "C5H1O",
-    "name": "Chemical Formula Not Found",
-    "formula": {
-      "h": 1,
-      "c": 5,
-      "o": 1
     }
   },
   {

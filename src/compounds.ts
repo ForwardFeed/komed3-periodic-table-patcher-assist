@@ -43,6 +43,9 @@ function convert_formula_with_chem_parse(formula: string): Formula{
 
 
 for (const raw_formula of compounds_list){
+
+    const formula = convert_formula_with_chem_parse(raw_formula)
+
     const filename = `compounds_${raw_formula}.html`
     if (SHOULD_DOWNLOAD_TO_CACHE){
         const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
@@ -65,15 +68,28 @@ for (const raw_formula of compounds_list){
         const document2 = dom2.window.document
         name = document2.title
     }
-    if (name == "Chemical Formula Not Found" && SHOULD_REDOWNLOAD_ON_NOT_FOUND){
-        console.log(raw_formula)
-        //const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
-        //await fetch_and_write_to_cache(URL, filename)
+    if (name == "Chemical Formula Not Found"){
+        if (SHOULD_REDOWNLOAD_ON_NOT_FOUND){
+            const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
+            await fetch_and_write_to_cache(URL, filename)
+        }
+        continue
     }
+    const embeded_formula_parent = document.querySelector('li [title="IUPAC definition of empirical formula"]')?.parentElement
+    if (embeded_formula_parent) {
+        const embeded_formula_parent_parent = embeded_formula_parent.parentElement
+        if (!embeded_formula_parent_parent) throw `you should kill yourself, ⚡NOW⚡`
+        embeded_formula_parent.remove()
+        const embeded_formula = embeded_formula_parent_parent.textContent.trim()
+        if (JSON.stringify(convert_formula_with_chem_parse(embeded_formula)) != JSON.stringify(formula)){
+            console.log(`formulas: ${embeded_formula} and ${raw_formula} aren't the same?`)
+        }
+    }
+    
     compounds.push({
         raw_formula,
         name,
-        formula: convert_formula_with_chem_parse(raw_formula)
+        formula
     })
 }
 
