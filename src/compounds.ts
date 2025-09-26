@@ -6,6 +6,17 @@ import ChemParse from 'chemparse';
 const compounds_list = await get_compounds_list_json()
 
 const SHOULD_DOWNLOAD_TO_CACHE = false
+const SHOULD_REDOWNLOAD_ON_NOT_FOUND = false
+const SHOULD_MANUAL_URL = true
+const MANUAL_DATA = {
+    "CaC2": "https://en.wikipedia.org/wiki/Calcium_carbide",
+    "KAl(SO4)2": "https://en.wikipedia.org/wiki/Potassium_alum",
+    "Mg(NO3)2": "https://en.wikipedia.org/wiki/Magnesium_nitrate",
+    "C6H5BH2": "https://www.chemicalaid.com/tools/molarmass.php?formula=C6H5BH2&hl=en",
+    "CICH2COOH": "https://en.wikipedia.org/wiki/Chloroacetic_acid",
+    "C2OH42": "https://en.wikipedia.org/wiki/Eicosane",
+    "C5H1O": "https://en.wikipedia.org/wiki/C5H10",
+}
 
 export type Compound = {
     raw_formula: string,
@@ -29,6 +40,48 @@ function convert_formula_with_chem_parse(formula: string): Formula{
         return cumu
     }, {} as Formula)
 }
+
+
+for (const raw_formula of compounds_list){
+    const filename = `compounds_${raw_formula}.html`
+    if (SHOULD_DOWNLOAD_TO_CACHE){
+        const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
+        await fetch_and_write_to_cache(URL, filename)
+    }
+    const file_html = await get_from_cache(filename)
+    const dom = new JSDOM(file_html)
+    const document = dom.window.document
+    let name = document.title
+    if (name == "Search Results"){
+         // @ts-expect-error
+        const searches = [...document.querySelectorAll('main>ol>li>a')].map(x => x.href) as string[]
+        if (searches.length < 1){
+            throw `searche didn't give any result for: ${raw_formula}`
+        }
+        const URL = `https://webbook.nist.gov/${searches[0]}`
+        await fetch_and_write_to_cache(URL, filename)
+        const file_html = await get_from_cache(filename)
+        const dom2 = new JSDOM(file_html)
+        const document2 = dom2.window.document
+        name = document2.title
+    }
+    if (name == "Chemical Formula Not Found" && SHOULD_REDOWNLOAD_ON_NOT_FOUND){
+        console.log(raw_formula)
+        //const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
+        //await fetch_and_write_to_cache(URL, filename)
+    }
+    compounds.push({
+        raw_formula,
+        name,
+        formula: convert_formula_with_chem_parse(raw_formula)
+    })
+}
+
+await write_compounds_data(compounds)
+
+
+
+
 
 /* function break_down_formula(formula: string): Formula{
     const basic_breakdown = formula.split(/(\([^\)]+\))/).map(x => x.split(/([A-Z][a-z0-9]+)/).filter(x => x))
@@ -66,37 +119,3 @@ function convert_formula_with_chem_parse(formula: string): Formula{
     return formulat_to_return
 }
  */
-
-for (const raw_formula of compounds_list){
-    const filename = `compounds_${raw_formula}.html`
-    if (SHOULD_DOWNLOAD_TO_CACHE){
-        const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
-        await fetch_and_write_to_cache(URL, filename)
-    }
-    const file_html = await get_from_cache(filename)
-    const dom = new JSDOM(file_html)
-    const document = dom.window.document
-    let name = document.title
-    if (name == "Search Results"){
-         // @ts-expect-error
-        const searches = [...document.querySelectorAll('main>ol>li>a')].map(x => x.href) as string[]
-        if (searches.length < 1){
-            throw `searche didn't give any result for: ${raw_formula}`
-        }
-        const URL = `https://webbook.nist.gov/${searches[0]}`
-        await fetch_and_write_to_cache(URL, filename)
-        const file_html = await get_from_cache(filename)
-        const dom2 = new JSDOM(file_html)
-        const document2 = dom2.window.document
-        name = document2.title
-        
-    }
-
-    compounds.push({
-        raw_formula,
-        name,
-        formula: convert_formula_with_chem_parse(raw_formula)
-    })
-}
-
-await write_compounds_data(compounds)
