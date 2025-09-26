@@ -9,7 +9,7 @@ const SHOULD_DOWNLOAD_TO_CACHE = false
 
 export type Compound = {
     raw_formula: string,
-    name: string | {url: string, name: string}[],
+    name: string,
     formula: Formula
     // cas: string
 }
@@ -66,6 +66,7 @@ function convert_formula_with_chem_parse(formula: string): Formula{
     return formulat_to_return
 }
  */
+
 for (const raw_formula of compounds_list){
     const filename = `compounds_${raw_formula}.html`
     if (SHOULD_DOWNLOAD_TO_CACHE){
@@ -75,15 +76,20 @@ for (const raw_formula of compounds_list){
     const file_html = await get_from_cache(filename)
     const dom = new JSDOM(file_html)
     const document = dom.window.document
-    let name: string | { url: string; name: string; }[] = document.title
+    let name = document.title
     if (name == "Search Results"){
-        name = [...document.querySelectorAll('main>ol>li>a')].map((x, i) => {
-            return {
-                // @ts-expect-error
-                url: `https://webbook.nist.gov/${x.href}`,
-                name: x.textContent + ";" + i
-            }
-        })
+         // @ts-expect-error
+        const searches = [...document.querySelectorAll('main>ol>li>a')].map(x => x.href) as string[]
+        if (searches.length < 1){
+            throw `searche didn't give any result for: ${raw_formula}`
+        }
+        const URL = `https://webbook.nist.gov/${searches[0]}`
+        await fetch_and_write_to_cache(URL, filename)
+        const file_html = await get_from_cache(filename)
+        const dom2 = new JSDOM(file_html)
+        const document2 = dom2.window.document
+        name = document2.title
+        
     }
 
     compounds.push({
