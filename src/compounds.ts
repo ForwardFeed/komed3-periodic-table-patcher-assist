@@ -19,9 +19,10 @@ const MANUAL_DATA = {
 }
 
 export type Compound = {
-    raw_formula: string,
-    empirical_formula: string,
+    original_formula: string,
+    nist_formula: string,
     name: string,
+    mol_weight: number,
     cas_number: string | undefined,
     inchi_number: string | undefined,
     inchi_key: string | undefined
@@ -46,13 +47,13 @@ function convert_formula_with_chem_parse(formula: string): Formula{
 
 
 
-for (const raw_formula of compounds_list){
+for (const original_formula of compounds_list){
 
-    const formula = convert_formula_with_chem_parse(raw_formula)
+    const formula = convert_formula_with_chem_parse(original_formula)
 
-    const filename = `compounds_${raw_formula}.html`
+    const filename = `compounds_${original_formula}.html`
     if (SHOULD_DOWNLOAD_TO_CACHE){
-        const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
+        const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${original_formula}&NoIon=on&Units=SI`
         await fetch_and_write_to_cache(URL, filename)
     }
     const file_html = await get_from_cache(filename)
@@ -62,7 +63,7 @@ for (const raw_formula of compounds_list){
     if (name == "Search Results"){
         const searches = [...document.querySelectorAll<HTMLAnchorElement>('main>ol>li>a')].map(x => x.href) as string[]
         if (searches.length < 1){
-            throw `searche didn't give any result for: ${raw_formula}`
+            throw `searche didn't give any result for: ${original_formula}`
         }
         const URL = `https://webbook.nist.gov/${searches[0]}`
         await fetch_and_write_to_cache(URL, filename)
@@ -73,7 +74,7 @@ for (const raw_formula of compounds_list){
     }
     if (name == "Chemical Formula Not Found"){
         if (SHOULD_REDOWNLOAD_ON_NOT_FOUND){
-            const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${raw_formula}&NoIon=on&Units=SI`
+            const URL = `https://webbook.nist.gov/cgi/cbook.cgi?Formula=${original_formula}&NoIon=on&Units=SI`
             await fetch_and_write_to_cache(URL, filename)
         }
         continue
@@ -97,26 +98,34 @@ for (const raw_formula of compounds_list){
         return parent.textContent.trim()
     }
     
-    const empirical_formula = get_data_1('li [title="IUPAC definition of empirical formula"]')
-    if (empirical_formula && JSON.stringify(convert_formula_with_chem_parse(empirical_formula)) != JSON.stringify(formula)){
-        console.warn(`formulas: ${empirical_formula} and ${raw_formula} aren't the same?`)
+    const nist_formula = get_data_1('li [title="IUPAC definition of empirical formula"]')
+    if (nist_formula && JSON.stringify(convert_formula_with_chem_parse(nist_formula)) != JSON.stringify(formula)){
+        console.warn(`formulas: ${nist_formula} and ${original_formula} aren't the same?`)
     }
-    const molecular_weight = get_data_1('li [title="IUPAC definition of relative molecular mass (molecular weight)"]')
+    let molecular_weight_str = get_data_1('li [title="IUPAC definition of relative molecular mass (molecular weight)"]')
+    let molecular_weight_num = -1
+    if (molecular_weight_str){
+        if (isNaN(+molecular_weight_str)){
+            throw `unrecognized mol weight: ${molecular_weight_str} for ${original_formula}`
+        }
+        molecular_weight_num = +molecular_weight_str
+    }
     const InChI_number = document.querySelector('.inchi-text')?.textContent.trim()
     const InChI_key = document.querySelectorAll('.inchi-text')?.[1]?.textContent.trim()
     const CAS_number = get_data_2('CAS Registry Number:')
     const chemical_structure_URL = document.querySelector<HTMLImageElement>('.struct')?.src
 
-    if (!empirical_formula) throw `no empirical formula found for :${raw_formula}`
+    if (!nist_formula) throw `no empirical formula found for :${original_formula}`
 
     compounds.push({
-        raw_formula,
+        original_formula: original_formula,
         name,
-        empirical_formula,
+        nist_formula: nist_formula,
         cas_number: CAS_number,
         inchi_number: InChI_number,
         inchi_key: InChI_key,
-        chemical_structure_url: chemical_structure_URL
+        chemical_structure_url: chemical_structure_URL,
+        mol_weight: molecular_weight_num
     })
 }
 
