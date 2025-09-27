@@ -1,7 +1,7 @@
 import type { PTDCCurieNeelPatch } from "./patch_magnetism_curie_neel"
 import type { IsotopePatch } from "./patch_isotopes"
 import type { PTDCElementRefined } from "./periodictabledotcom"
-import type { Compound } from "./compounds"
+import type { NIST_Compound } from "./compounds/compounds_nist"
 
 
 const MAINSTREAM_JSON = "./data/mainstream.json"
@@ -81,6 +81,6 @@ export async function fetch_and_write_to_cache(url: string, filename: string): P
 }
 
 
-export async function write_nist_compounds_data(compounds: Compound[]){
+export async function write_nist_compounds_data(compounds: NIST_Compound[]){
     Bun.write(NIST_COMPOUNDS_DATA_JSON, JSON.stringify(compounds, null, 2))
 }

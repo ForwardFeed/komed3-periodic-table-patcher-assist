@@ -1,26 +1,17 @@
-import { fetch_and_write_to_cache, get_compounds_list_json, get_from_cache, write_nist_compounds_data } from "./filesystem_integration";
+import { fetch_and_write_to_cache, get_compounds_list_json, get_from_cache, write_nist_compounds_data } from "../filesystem_integration";
 import {JSDOM} from "jsdom"
-import { Symbols } from "./mainstream_structure";
+import { Symbols } from "../mainstream_structure";
 import ChemParse from 'chemparse';
+import { manual_nist_patching } from "./compounds_nist_manual_patch";
 
 const compounds_list = await get_compounds_list_json()
 
 const SHOULD_DOWNLOAD_TO_CACHE = false
 const SHOULD_REDOWNLOAD_ON_NOT_FOUND = false
-const SHOULD_MANUAL_URL = true
-const MANUAL_DATA = {
-    "CaC2": "https://en.wikipedia.org/wiki/Calcium_carbide",
-    "KAl(SO4)2": "https://en.wikipedia.org/wiki/Potassium_alum",
-    "Mg(NO3)2": "https://en.wikipedia.org/wiki/Magnesium_nitrate",
-    "C6H5BH2": "https://www.chemicalaid.com/tools/molarmass.php?formula=C6H5BH2&hl=en",
-    "CICH2COOH": "https://en.wikipedia.org/wiki/Chloroacetic_acid",
-    "C2OH42": "https://en.wikipedia.org/wiki/Eicosane",
-    "C5H1O": "https://en.wikipedia.org/wiki/C5H10",
-}
 
-export type Compound = {
+export type NIST_Compound = {
     original_formula: string,
-    nist_formula: string,
+    nist_formula: string | undefined, // if undefined means that it was manually fed
     name: string,
     mol_weight: number,
     cas_number: string | undefined,
@@ -29,7 +20,7 @@ export type Compound = {
     chemical_structure_url: string | undefined
 }
 
-const compounds:Compound[] = []
+const compounds:NIST_Compound[] = manual_nist_patching
 
 type Formula = {
     [key in Symbols]?: number
