@@ -113,14 +113,16 @@ for (const original_formula of compounds_list){
     const InChI_number = document.querySelector('.inchi-text')?.textContent.trim()
     const InChI_key = document.querySelectorAll('.inchi-text')?.[1]?.textContent.trim()
     const CAS_number = get_data_2('CAS Registry Number:')
-    const chemical_structure_URL = document.querySelector<HTMLImageElement>('.struct')?.src
-
+    let chemical_structure_URL = document.querySelector<HTMLImageElement>('.struct')?.src
+    if (chemical_structure_URL){
+        chemical_structure_URL = `https://webbook.nist.gov/${chemical_structure_URL}`
+    }
     if (!nist_formula) throw `no empirical formula found for :${original_formula}`
 
     compounds.push({
         original_formula: original_formula,
-        name,
         nist_formula: nist_formula,
+        name,
         cas_number: CAS_number,
         inchi_number: InChI_number,
         inchi_key: InChI_key,

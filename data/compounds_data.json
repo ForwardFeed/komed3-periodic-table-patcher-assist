@@ -1,1972 +1,2206 @@
 [
   {
-    "raw_formula": "AlBr3",
+    "original_formula": "AlBr3",
+    "nist_formula": "AlBr3",
     "name": "aluminium bromide",
-    "empirical_formula": "AlBr3",
-    "cas_number": "7727-15-3"
+    "cas_number": "7727-15-3",
+    "mol_weight": 266.694
   },
   {
-    "raw_formula": "Al4C3",
+    "original_formula": "Al4C3",
+    "nist_formula": "C3Al4",
     "name": "tetraaluminium tricarbide",
-    "empirical_formula": "C3Al4",
-    "cas_number": "1299-86-1"
+    "cas_number": "1299-86-1",
+    "mol_weight": 143.9583
   },
   {
-    "raw_formula": "AlCl3",
+    "original_formula": "AlCl3",
+    "nist_formula": "AlCl3",
     "name": "aluminium chloride",
-    "empirical_formula": "AlCl3",
-    "cas_number": "7446-70-0"
+    "cas_number": "7446-70-0",
+    "mol_weight": 133.341
   },
   {
-    "raw_formula": "Al(OH)3",
+    "original_formula": "Al(OH)3",
+    "nist_formula": "AlH3O3",
     "name": "aluminium hydroxide",
-    "empirical_formula": "AlH3O3",
-    "cas_number": "21645-51-2"
+    "cas_number": "21645-51-2",
+    "mol_weight": 78.0036
   },
   {
-    "raw_formula": "Al2O3",
+    "original_formula": "Al2O3",
+    "nist_formula": "Al2O3",
     "name": "aluminium oxide",
-    "empirical_formula": "Al2O3",
-    "cas_number": "1344-28-1"
+    "cas_number": "1344-28-1",
+    "mol_weight": 101.9613
   },
   {
-    "raw_formula": "Al2(SO4)3",
+    "original_formula": "Al2(SO4)3",
+    "nist_formula": "Al2O12S3",
     "name": "aluminium sulphate",
-    "empirical_formula": "Al2O12S3",
-    "cas_number": "10043-01-3"
+    "cas_number": "10043-01-3",
+    "mol_weight": 342.151
   },
   {
-    "raw_formula": "NH3",
+    "original_formula": "NH3",
+    "nist_formula": "H3N",
     "name": "Ammonia",
-    "empirical_formula": "H3N",
     "cas_number": "7664-41-7",
     "inchi_number": "InChI=1S/H3N/h1H3",
     "inchi_key": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664417&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7664417&Type=Color",
+    "mol_weight": 17.0305
   },
   {
-    "raw_formula": "(NH4)2CO3",
+    "original_formula": "(NH4)2CO3",
+    "nist_formula": "CH8N2O3",
     "name": "Ammonium carbonate",
-    "empirical_formula": "CH8N2O3",
     "inchi_number": "InChI=1S/CH2O3.2H3N/c2-1(3)4;;/h(H2,2,3,4);2*1H3",
     "inchi_key": "PRKQVKDSMLBJBJ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B6002848&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=B6002848&Type=Color",
+    "mol_weight": 96.0858
   },
   {
-    "raw_formula": "NH4Cl",
+    "original_formula": "NH4Cl",
+    "nist_formula": "ClH4N",
     "name": "Ammonium Chloride",
-    "empirical_formula": "ClH4N",
     "cas_number": "12125-02-9",
     "inchi_number": "InChI=1S/ClH.H3N/h1H;1H3",
     "inchi_key": "NLXLAEXVIDQMFP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C12125029&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C12125029&Type=Color",
+    "mol_weight": 53.491
   },
   {
-    "raw_formula": "NH4HCO3",
+    "original_formula": "NH4HCO3",
+    "nist_formula": "CH5NO3",
     "name": "Ammonium bicarbonate",
-    "empirical_formula": "CH5NO3",
     "cas_number": "1066-33-7",
     "inchi_number": "InChI=1S/CH2O3.H3N/c2-1(3)4;/h(H2,2,3,4);1H3",
     "inchi_key": "ATRRKUHOCOJYRX-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1066337&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1066337&Type=Color",
+    "mol_weight": 79.0553
   },
   {
-    "raw_formula": "NH4NO3",
+    "original_formula": "NH4NO3",
+    "nist_formula": "H4N2O3",
     "name": "Ammonium nitrate",
-    "empirical_formula": "H4N2O3",
     "cas_number": "6484-52-2",
     "inchi_number": "InChI=1S/H4N2O3/c1-5-2(3)4/h1H4",
     "inchi_key": "ASFXIDPWCNUKTK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C6484522&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C6484522&Type=Color",
+    "mol_weight": 80.0434
   },
   {
-    "raw_formula": "(NH4)2SO4",
+    "original_formula": "(NH4)2SO4",
+    "nist_formula": "H8N2O4S",
     "name": "Ammonium sulfate",
-    "empirical_formula": "H8N2O4S",
     "cas_number": "7783-20-2",
     "inchi_number": "InChI=1S/H8N2O4S/c1-5-7(3,4)6-2/h1-2H4",
     "inchi_key": "KTMPTTWZBSFVPI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783202&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7783202&Type=Color",
+    "mol_weight": 132.14
   },
   {
-    "raw_formula": "As2O3",
+    "original_formula": "As2O3",
+    "nist_formula": "As2O3",
     "name": "diarsenic trioxide",
-    "empirical_formula": "As2O3",
-    "cas_number": "1327-53-3"
+    "cas_number": "1327-53-3",
+    "mol_weight": 197.8414
   },
   {
-    "raw_formula": "BaCO3",
+    "original_formula": "BaCO3",
+    "nist_formula": "CBaO3",
     "name": "barium carbonate",
-    "empirical_formula": "CBaO3",
-    "cas_number": "513-77-9"
+    "cas_number": "513-77-9",
+    "mol_weight": 197.336
   },
   {
-    "raw_formula": "BaCl2",
+    "original_formula": "BaCl2",
+    "nist_formula": "BaCl2",
     "name": "Barium dichloride",
-    "empirical_formula": "BaCl2",
     "cas_number": "10361-37-2",
     "inchi_number": "InChI=1S/Ba.2ClH/h;2*1H/q+2;;/p-2",
     "inchi_key": "WDIHJSXYQDMJHN-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10361372&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10361372&Type=Color",
+    "mol_weight": 208.233
   },
   {
-    "raw_formula": "Ba(OH)2",
+    "original_formula": "Ba(OH)2",
+    "nist_formula": "BaH2O2",
     "name": "barium hydroxide",
-    "empirical_formula": "BaH2O2",
     "cas_number": "17194-00-2",
     "inchi_number": "InChI=1S/Ba.2H2O/h;2*1H2/q+2;;/p-2",
     "inchi_key": "RQPZNWPYLFFXCP-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C17194002&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C17194002&Type=Color",
+    "mol_weight": 171.342
   },
   {
-    "raw_formula": "BaO",
+    "original_formula": "BaO",
+    "nist_formula": "BaO",
     "name": "barium oxide, obtained by calcining witherite",
-    "empirical_formula": "BaO",
     "cas_number": "1304-28-5",
     "inchi_number": "InChI=1S/Ba.O",
     "inchi_key": "QVQLCTNNEUAWMS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1304285&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1304285&Type=Color",
+    "mol_weight": 153.326
   },
   {
-    "raw_formula": "BaSO4",
+    "original_formula": "BaSO4",
+    "nist_formula": "BaO4S",
     "name": "barium sulfate",
-    "empirical_formula": "BaO4S",
     "cas_number": "7727-43-7",
     "inchi_number": "InChI=1S/Ba.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "TZCXTZWJZNENPQ-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7727437&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7727437&Type=Color",
+    "mol_weight": 233.39
   },
   {
-    "raw_formula": "PbCl2",
+    "original_formula": "PbCl2",
+    "nist_formula": "Cl2Pb",
     "name": "Lead dichloride",
-    "empirical_formula": "Cl2Pb",
     "cas_number": "7758-95-4",
     "inchi_number": "InChI=1S/2ClH.Pb/h2*1H;/q;;+2/p-2",
     "inchi_key": "HWSZZLVAJGOAAY-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758954&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7758954&Type=Color",
+    "mol_weight": 278.1
   },
   {
-    "raw_formula": "Pb(NO3)2",
+    "original_formula": "Pb(NO3)2",
+    "nist_formula": "N2O6Pb",
     "name": "lead dinitrate",
-    "empirical_formula": "N2O6Pb",
-    "cas_number": "10099-74-8"
+    "cas_number": "10099-74-8",
+    "mol_weight": 331.2
   },
   {
-    "raw_formula": "PbO",
+    "original_formula": "PbO",
+    "nist_formula": "OPb",
     "name": "Lead oxide",
-    "empirical_formula": "OPb",
     "cas_number": "1317-36-8",
     "inchi_number": "InChI=1S/O.Pb",
     "inchi_key": "YEXPOXQUZXUXJW-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317368&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1317368&Type=Color",
+    "mol_weight": 223.2
   },
   {
-    "raw_formula": "Pb3O4",
+    "original_formula": "Pb3O4",
+    "nist_formula": "O4Pb3",
     "name": "orange lead",
-    "empirical_formula": "O4Pb3",
     "cas_number": "1314-41-6",
     "inchi_number": "InChI=1S/4O.3Pb",
     "inchi_key": "XMFOQHDPRMAJNU-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314416&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1314416&Type=Color",
+    "mol_weight": 685.6
   },
   {
-    "raw_formula": "PbO2",
+    "original_formula": "PbO2",
+    "nist_formula": "O2Pb",
     "name": "lead dioxide",
-    "empirical_formula": "O2Pb",
-    "cas_number": "1309-60-0"
+    "cas_number": "1309-60-0",
+    "mol_weight": 239.2
   },
   {
-    "raw_formula": "PbSO4",
+    "original_formula": "PbSO4",
+    "nist_formula": "O4PbS",
     "name": "lead sulphate",
-    "empirical_formula": "O4PbS",
     "cas_number": "7446-14-2",
     "inchi_number": "InChI=1S/H2O4S.Pb/c1-5(2,3)4;/h(H2,1,2,3,4);/q;+2/p-2",
     "inchi_key": "KEQXNNJHMWSZHK-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446142&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7446142&Type=Color",
+    "mol_weight": 303.3
   },
   {
-    "raw_formula": "PbS",
+    "original_formula": "PbS",
+    "nist_formula": "PbS",
     "name": "lead sulphide",
-    "empirical_formula": "PbS",
     "cas_number": "1314-87-0",
     "inchi_number": "InChI=1S/Pb.S",
     "inchi_key": "XCAUINMIESBTBL-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314870&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1314870&Type=Color",
+    "mol_weight": 239.3
   },
   {
-    "raw_formula": "H3BO3",
+    "original_formula": "H3BO3",
+    "nist_formula": "BH3O3",
     "name": "Boric acid",
-    "empirical_formula": "BH3O3",
     "cas_number": "10043-35-3",
     "inchi_number": "InChI=1S/BH3O3/c2-1(3)4/h2-4H",
     "inchi_key": "KGBXLFKZBHKPEV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10043353&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10043353&Type=Color",
+    "mol_weight": 61.833
   },
   {
-    "raw_formula": "HBr",
+    "original_formula": "HBr",
+    "nist_formula": "BrH",
     "name": "Hydrogen bromide",
-    "empirical_formula": "BrH",
     "cas_number": "10035-10-6",
     "inchi_number": "InChI=1S/BrH/h1H",
     "inchi_key": "CPELXLSAUQHCOX-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10035106&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10035106&Type=Color",
+    "mol_weight": 80.912
   },
   {
-    "raw_formula": "CaBr2",
+    "original_formula": "CaBr2",
+    "nist_formula": "Br2Ca",
     "name": "calcium bromide",
-    "empirical_formula": "Br2Ca",
-    "cas_number": "7789-41-5"
+    "cas_number": "7789-41-5",
+    "mol_weight": 199.886
   },
   {
-    "raw_formula": "CaCO3",
+    "original_formula": "CaCO3",
+    "nist_formula": "CCaO3",
     "name": "Calcium carbonate (precipitated)",
-    "empirical_formula": "CCaO3",
     "cas_number": "471-34-1",
     "inchi_number": "InChI=1S/CH2O3.Ca/c2-1(3)4;/h(H2,2,3,4);/q;+2/p-2",
     "inchi_key": "VTYYLEPIZMXCLO-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C471341&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C471341&Type=Color",
+    "mol_weight": 100.087
   },
   {
-    "raw_formula": "CaCl2",
+    "original_formula": "CaCl2",
+    "nist_formula": "CaCl2",
     "name": "calcium chloride",
-    "empirical_formula": "CaCl2",
-    "cas_number": "10043-52-4"
+    "cas_number": "10043-52-4",
+    "mol_weight": 110.984
   },
   {
-    "raw_formula": "CaF2",
+    "original_formula": "CaF2",
+    "nist_formula": "CaF2",
     "name": "calcium fluoride",
-    "empirical_formula": "CaF2",
-    "cas_number": "7789-75-5"
+    "cas_number": "7789-75-5",
+    "mol_weight": 78.075
   },
   {
-    "raw_formula": "Ca(OH)2",
+    "original_formula": "Ca(OH)2",
+    "nist_formula": "CaH2O2",
     "name": "calcium dihydroxide",
-    "empirical_formula": "CaH2O2",
-    "cas_number": "1305-62-0"
+    "cas_number": "1305-62-0",
+    "mol_weight": 74.093
   },
   {
-    "raw_formula": "CaI2",
+    "original_formula": "CaI2",
+    "nist_formula": "CaI2",
     "name": "calcium iodide",
-    "empirical_formula": "CaI2",
-    "cas_number": "10102-68-8"
+    "cas_number": "10102-68-8",
+    "mol_weight": 293.887
   },
   {
-    "raw_formula": "Ca(NO3)2",
+    "original_formula": "Ca(NO3)2",
+    "nist_formula": "CaN2O6",
     "name": "calcium nitrate",
-    "empirical_formula": "CaN2O6",
     "cas_number": "10124-37-5",
     "inchi_number": "InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1",
     "inchi_key": "ZCCIPPOKBCJFDN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10124375&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10124375&Type=Color",
+    "mol_weight": 164.088
   },
   {
-    "raw_formula": "CaO",
+    "original_formula": "CaO",
+    "nist_formula": "CaO",
     "name": "calcium oxide",
-    "empirical_formula": "CaO",
     "cas_number": "1305-78-8",
     "inchi_number": "InChI=1S/Ca.O",
     "inchi_key": "ODINCKMPIJJUCX-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1305788&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1305788&Type=Color",
+    "mol_weight": 56.077
   },
   {
-    "raw_formula": "Ca3(PO4)2",
+    "original_formula": "Ca3(PO4)2",
+    "nist_formula": "Ca3O8P2",
     "name": "calcium phosphate",
-    "empirical_formula": "Ca3O8P2",
-    "cas_number": "10103-46-5"
+    "cas_number": "10103-46-5",
+    "mol_weight": 310.177
   },
   {
-    "raw_formula": "CaSO4",
+    "original_formula": "CaSO4",
+    "nist_formula": "CaO4S",
     "name": "Sulfuric acid, calcium salt, hydrate (1:1:2)",
-    "empirical_formula": "CaO4S",
     "cas_number": "10101-41-4",
     "inchi_number": "InChI=1S/Ca.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "OSGAYBCDTDRGGQ-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10101414&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10101414&Type=Color",
+    "mol_weight": 136.141
   },
   {
-    "raw_formula": "HCl",
+    "original_formula": "HCl",
+    "nist_formula": "ClH",
     "name": "Hydrogen chloride",
-    "empirical_formula": "ClH",
     "cas_number": "7647-01-0",
     "inchi_number": "InChI=1S/ClH/h1H",
     "inchi_key": "VEXZGXHMUGYJMC-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647010&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7647010&Type=Color",
+    "mol_weight": 36.461
   },
   {
-    "raw_formula": "CrCl2",
+    "original_formula": "CrCl2",
+    "nist_formula": "Cl2Cr",
     "name": "chromium dichloride",
-    "empirical_formula": "Cl2Cr",
-    "cas_number": "10049-05-5"
+    "cas_number": "10049-05-5",
+    "mol_weight": 122.902
   },
   {
-    "raw_formula": "Cr2O3",
+    "original_formula": "Cr2O3",
+    "nist_formula": "Cr2O3",
     "name": "Chromium oxide",
-    "empirical_formula": "Cr2O3",
     "cas_number": "1308-38-9",
     "inchi_number": "InChI=1S/2Cr.3O",
     "inchi_key": "QDOXWKRWXJOMAK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1308389&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1308389&Type=Color",
+    "mol_weight": 151.9904
   },
   {
-    "raw_formula": "CoCl2",
+    "original_formula": "CoCl2",
+    "nist_formula": "Cl2Co",
     "name": "cobalt dichloride",
-    "empirical_formula": "Cl2Co",
-    "cas_number": "7646-79-9"
+    "cas_number": "7646-79-9",
+    "mol_weight": 129.839
   },
   {
-    "raw_formula": "HCN",
+    "original_formula": "HCN",
+    "nist_formula": "CHN",
     "name": "Hydrogen cyanide",
-    "empirical_formula": "CHN",
     "cas_number": "74-90-8",
     "inchi_number": "InChI=1S/CHN/c1-2/h1H",
     "inchi_key": "LELOWRISYMNNSU-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74908&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74908&Type=Color",
+    "mol_weight": 27.0253
   },
   {
-    "raw_formula": "FeCl3",
+    "original_formula": "FeCl3",
+    "nist_formula": "Cl3Fe",
     "name": "iron trichloride",
-    "empirical_formula": "Cl3Fe",
-    "cas_number": "7705-08-0"
+    "cas_number": "7705-08-0",
+    "mol_weight": 162.204
   },
   {
-    "raw_formula": "FeS2",
+    "original_formula": "FeS2",
+    "nist_formula": "FeS2",
     "name": "Pyrite (FeS2)",
-    "empirical_formula": "FeS2",
-    "cas_number": "1309-36-0"
+    "cas_number": "1309-36-0",
+    "mol_weight": 119.975
   },
   {
-    "raw_formula": "Fe(OH)3",
+    "original_formula": "Fe(OH)3",
+    "nist_formula": "FeH3O3",
     "name": "diiron trioxide hydrate",
-    "empirical_formula": "FeH3O3",
-    "cas_number": "1309-33-7"
+    "cas_number": "1309-33-7",
+    "mol_weight": 106.867
   },
   {
-    "raw_formula": "FeO",
+    "original_formula": "FeO",
+    "nist_formula": "FeO",
     "name": "iron oxide",
-    "empirical_formula": "FeO",
     "cas_number": "1345-25-1",
     "inchi_number": "InChI=1S/Fe.O",
     "inchi_key": "UQSXHKLRYXJYBZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1345251&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1345251&Type=Color",
+    "mol_weight": 71.844
   },
   {
-    "raw_formula": "Fe3O4",
+    "original_formula": "Fe3O4",
+    "nist_formula": "Fe3O4",
     "name": "magnetite",
-    "empirical_formula": "Fe3O4",
-    "cas_number": "1309-38-2"
+    "cas_number": "1309-38-2",
+    "mol_weight": 231.533
   },
   {
-    "raw_formula": "Fe2O3",
+    "original_formula": "Fe2O3",
+    "nist_formula": "Fe2O3",
     "name": "Hematite (Fe2O3)",
-    "empirical_formula": "Fe2O3",
-    "cas_number": "1317-60-8"
+    "cas_number": "1317-60-8",
+    "mol_weight": 159.688
   },
   {
-    "raw_formula": "FeSO4",
+    "original_formula": "FeSO4",
+    "nist_formula": "FeO4S",
     "name": "iron sulphate",
-    "empirical_formula": "FeO4S",
     "cas_number": "7720-78-7",
     "inchi_number": "InChI=1S/Fe.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "BAUYGSIQEAFULO-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7720787&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7720787&Type=Color",
+    "mol_weight": 151.908
   },
   {
-    "raw_formula": "FeS",
+    "original_formula": "FeS",
+    "nist_formula": "FeS",
     "name": "Iron sulfide",
-    "empirical_formula": "FeS",
     "cas_number": "1317-96-0",
     "inchi_number": "InChI=1S/Fe.S",
     "inchi_key": "MBMLMWLHJBBADN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317960&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1317960&Type=Color",
+    "mol_weight": 87.91
   },
   {
-    "raw_formula": "HF",
+    "original_formula": "HF",
+    "nist_formula": "FH",
     "name": "hydrogen fluoride",
-    "empirical_formula": "FH",
     "cas_number": "7664-39-3",
     "inchi_number": "InChI=1S/FH/h1H",
     "inchi_key": "KRHYYFGTRYWZRS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664393&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7664393&Type=Color",
+    "mol_weight": 20.00634
   },
   {
-    "raw_formula": "HI",
+    "original_formula": "HI",
+    "nist_formula": "HI",
     "name": "Hydrogen iodide",
-    "empirical_formula": "HI",
     "cas_number": "10034-85-2",
     "inchi_number": "InChI=1S/HI/h1H",
     "inchi_key": "XMBWDFGMSWQBCA-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10034852&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10034852&Type=Color",
+    "mol_weight": 127.91241
   },
   {
-    "raw_formula": "KBr",
+    "original_formula": "KBr",
+    "nist_formula": "BrK",
     "name": "potassium bromide",
-    "empirical_formula": "BrK",
     "cas_number": "7758-02-3",
     "inchi_number": "InChI=1S/BrH.K/h1H;/q;+1/p-1",
     "inchi_key": "IOLCXVTUBQKXJR-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758023&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7758023&Type=Color",
+    "mol_weight": 119.002
   },
   {
-    "raw_formula": "K2CO3",
+    "original_formula": "K2CO3",
+    "nist_formula": "CK2O3",
     "name": "potassium carbonate",
-    "empirical_formula": "CK2O3",
-    "cas_number": "584-08-7"
+    "cas_number": "584-08-7",
+    "mol_weight": 138.2055
   },
   {
-    "raw_formula": "KClO3",
+    "original_formula": "KClO3",
+    "nist_formula": "ClKO3",
     "name": "Potassium chlorate",
-    "empirical_formula": "ClKO3",
-    "cas_number": "3811-04-9"
+    "cas_number": "3811-04-9",
+    "mol_weight": 122.549
   },
   {
-    "raw_formula": "KCl",
+    "original_formula": "KCl",
+    "nist_formula": "ClK",
     "name": "potassium chloride",
-    "empirical_formula": "ClK",
     "cas_number": "7447-40-7",
     "inchi_number": "InChI=1S/ClH.K/h1H;/q;+1/p-1",
     "inchi_key": "WCUXLLCKKVVCTQ-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7447407&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7447407&Type=Color",
+    "mol_weight": 74.551
   },
   {
-    "raw_formula": "K2CrO4",
+    "original_formula": "K2CrO4",
+    "nist_formula": "CrK2O4",
     "name": "potassium chromate",
-    "empirical_formula": "CrK2O4",
-    "cas_number": "7789-00-6"
+    "cas_number": "7789-00-6",
+    "mol_weight": 194.1903
   },
   {
-    "raw_formula": "KCN",
+    "original_formula": "KCN",
+    "nist_formula": "CKN",
     "name": "potassium cyanide",
-    "empirical_formula": "CKN",
-    "cas_number": "151-50-8"
+    "cas_number": "151-50-8",
+    "mol_weight": 65.1157
   },
   {
-    "raw_formula": "K2Cr2O7",
+    "original_formula": "K2Cr2O7",
+    "nist_formula": "Cr2K2O7",
     "name": "potassium dichromate",
-    "empirical_formula": "Cr2K2O7",
-    "cas_number": "7778-50-9"
+    "cas_number": "7778-50-9",
+    "mol_weight": 294.1846
   },
   {
-    "raw_formula": "KF",
+    "original_formula": "KF",
+    "nist_formula": "FK",
     "name": "Potassium fluoride",
-    "empirical_formula": "FK",
     "cas_number": "7789-23-3",
     "inchi_number": "InChI=1S/FH.K/h1H;/q;+1/p-1",
     "inchi_key": "NROKBHXJSPEDAR-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7789233&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7789233&Type=Color",
+    "mol_weight": 58.0967
   },
   {
-    "raw_formula": "KOH",
+    "original_formula": "KOH",
+    "nist_formula": "HKO",
     "name": "Potassium hydroxide",
-    "empirical_formula": "HKO",
     "cas_number": "1310-58-3",
     "inchi_number": "InChI=1S/K.H2O/h;1H2/q+1;/p-1",
     "inchi_key": "KWYUFKZDYYNOTN-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1310583&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1310583&Type=Color",
+    "mol_weight": 56.1056
   },
   {
-    "raw_formula": "KIO3",
+    "original_formula": "KIO3",
+    "nist_formula": "IKO3",
     "name": "Potassium iodate",
-    "empirical_formula": "IKO3",
     "inchi_number": "InChI=1S/HIO3.K/c2-1(3)4;/h(H,2,3,4);/q;+1/p-1",
     "inchi_key": "JLKDVMWYMMLWTI-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B6005102&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=B6005102&Type=Color",
+    "mol_weight": 214.001
   },
   {
-    "raw_formula": "KI",
+    "original_formula": "KI",
+    "nist_formula": "IK",
     "name": "potassium iodide",
-    "empirical_formula": "IK",
     "cas_number": "7681-11-0",
     "inchi_number": "InChI=1S/HI.K/h1H;/q;+1/p-1",
     "inchi_key": "NLKNQRATVPKPDG-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7681110&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7681110&Type=Color",
+    "mol_weight": 166.0028
   },
   {
-    "raw_formula": "KNO3",
+    "original_formula": "KNO3",
+    "nist_formula": "KNO3",
     "name": "potassium nitrate",
-    "empirical_formula": "KNO3",
     "cas_number": "7757-79-1",
     "inchi_number": "InChI=1S/K.NO3/c;2-1(3)4/q+1;-1",
     "inchi_key": "FGIUAXJPYTZDNR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7757791&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7757791&Type=Color",
+    "mol_weight": 101.1032
   },
   {
-    "raw_formula": "KMnO4",
+    "original_formula": "KMnO4",
+    "nist_formula": "KMnO4",
     "name": "potassium permanganate",
-    "empirical_formula": "KMnO4",
     "cas_number": "7722-64-7",
     "inchi_number": "InChI=1S/K.Mn.4O/q+1;;;;;-1",
     "inchi_key": "VZJVWSHVAAUDKD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7722647&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7722647&Type=Color",
+    "mol_weight": 158.0339
   },
   {
-    "raw_formula": "K3PO4",
+    "original_formula": "K3PO4",
+    "nist_formula": "K3O4P",
     "name": "tripotassium orthophosphate",
-    "empirical_formula": "K3O4P",
-    "cas_number": "7778-53-2"
+    "cas_number": "7778-53-2",
+    "mol_weight": 212.2663
   },
   {
-    "raw_formula": "K2SO4",
+    "original_formula": "K2SO4",
+    "nist_formula": "K2O4S",
     "name": "potassium sulfate",
-    "empirical_formula": "K2O4S",
-    "cas_number": "7778-80-5"
+    "cas_number": "7778-80-5",
+    "mol_weight": 174.259
   },
   {
-    "raw_formula": "K2O",
+    "original_formula": "K2O",
+    "nist_formula": "K2O",
     "name": "dipotassium oxide",
-    "empirical_formula": "K2O",
-    "cas_number": "12136-45-7"
+    "cas_number": "12136-45-7",
+    "mol_weight": 94.196
   },
   {
-    "raw_formula": "CO2",
+    "original_formula": "CO2",
+    "nist_formula": "CO2",
     "name": "Carbon dioxide",
-    "empirical_formula": "CO2",
     "cas_number": "124-38-9",
     "inchi_number": "InChI=1S/CO2/c2-1-3",
     "inchi_key": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C124389&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C124389&Type=Color",
+    "mol_weight": 44.0095
   },
   {
-    "raw_formula": "CS2",
+    "original_formula": "CS2",
+    "nist_formula": "CS2",
     "name": "Carbon disulfide",
-    "empirical_formula": "CS2",
     "cas_number": "75-15-0",
     "inchi_number": "InChI=1S/CS2/c2-1-3",
     "inchi_key": "QGJOPFRUJISHPQ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75150&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75150&Type=Color",
+    "mol_weight": 76.141
   },
   {
-    "raw_formula": "CO",
+    "original_formula": "CO",
+    "nist_formula": "CO",
     "name": "Carbon monoxide",
-    "empirical_formula": "CO",
     "cas_number": "630-08-0",
     "inchi_number": "InChI=1S/CO/c1-2",
     "inchi_key": "UGFAIRIUMAVXCW-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C630080&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C630080&Type=Color",
+    "mol_weight": 28.0101
   },
   {
-    "raw_formula": "CuCl",
+    "original_formula": "CuCl",
+    "nist_formula": "ClCu",
     "name": "copper chloride",
-    "empirical_formula": "ClCu",
     "cas_number": "7758-89-6",
     "inchi_number": "InChI=1S/ClH.Cu/h1H;/q;+1/p-1",
     "inchi_key": "OXBLHERUFWYNTN-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758896&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7758896&Type=Color",
+    "mol_weight": 98.999
   },
   {
-    "raw_formula": "CuCl2",
+    "original_formula": "CuCl2",
+    "nist_formula": "Cl2Cu",
     "name": "CuCl2",
-    "empirical_formula": "Cl2Cu",
     "inchi_number": "InChI=1S/2ClH.Cu/h2*1H;/q;;+2/p-2",
     "inchi_key": "ORTQZVOHEJQUHG-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B1001128&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=B1001128&Type=Color",
+    "mol_weight": 134.452
   },
   {
-    "raw_formula": "Cu(NO3)2",
+    "original_formula": "Cu(NO3)2",
+    "nist_formula": "CuN2O6",
     "name": "Nitric acid, copper(2+) salt, hydrate (2:1:3)",
-    "empirical_formula": "CuN2O6",
-    "cas_number": "10031-43-3"
+    "cas_number": "10031-43-3",
+    "mol_weight": 187.556
   },
   {
-    "raw_formula": "Cu2O",
+    "original_formula": "Cu2O",
+    "nist_formula": "Cu2O",
     "name": "dicopper oxide",
-    "empirical_formula": "Cu2O",
-    "cas_number": "1317-39-1"
+    "cas_number": "1317-39-1",
+    "mol_weight": 143.091
   },
   {
-    "raw_formula": "CuO",
+    "original_formula": "CuO",
+    "nist_formula": "CuO",
     "name": "copper oxide",
-    "empirical_formula": "CuO",
     "cas_number": "1317-38-0",
     "inchi_number": "InChI=1S/Cu.O",
     "inchi_key": "QPLDLSVMHZLSFG-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317380&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1317380&Type=Color",
+    "mol_weight": 79.545
   },
   {
-    "raw_formula": "CuSO4",
+    "original_formula": "CuSO4",
+    "nist_formula": "CuO4S",
     "name": "copper sulphate",
-    "empirical_formula": "CuO4S",
     "cas_number": "7758-98-7",
     "inchi_number": "InChI=1S/Cu.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "ARUVKPQLZAKDPS-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758987&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7758987&Type=Color",
+    "mol_weight": 159.609
   },
   {
-    "raw_formula": "LiCl",
+    "original_formula": "LiCl",
+    "nist_formula": "ClLi",
     "name": "lithium chloride",
-    "empirical_formula": "ClLi",
     "cas_number": "7447-41-8",
     "inchi_number": "InChI=1S/ClH.Li/h1H;/q;+1/p-1",
     "inchi_key": "KWGKDLIKAYFUFQ-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7447418&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7447418&Type=Color",
+    "mol_weight": 42.394
   },
   {
-    "raw_formula": "MgBr2",
+    "original_formula": "MgBr2",
+    "nist_formula": "Br2Mg",
     "name": "magnesium bromide",
-    "empirical_formula": "Br2Mg",
-    "cas_number": "7789-48-2"
+    "cas_number": "7789-48-2",
+    "mol_weight": 184.113
   },
   {
-    "raw_formula": "MgCO3",
+    "original_formula": "MgCO3",
+    "nist_formula": "CMgO3",
     "name": "magnesium carbonate",
-    "empirical_formula": "CMgO3",
     "cas_number": "546-93-0",
     "inchi_number": "InChI=1S/CH2O3.Mg/c2-1(3)4;/h(H2,2,3,4);/q;+2/p-2",
     "inchi_key": "ZLNQQNXFFQJAID-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C546930&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C546930&Type=Color",
+    "mol_weight": 84.3139
   },
   {
-    "raw_formula": "MgCl2",
+    "original_formula": "MgCl2",
+    "nist_formula": "Cl2Mg",
     "name": "magnesium chloride",
-    "empirical_formula": "Cl2Mg",
-    "cas_number": "7786-30-3"
+    "cas_number": "7786-30-3",
+    "mol_weight": 95.211
   },
   {
-    "raw_formula": "Mg(OH)2",
+    "original_formula": "Mg(OH)2",
+    "nist_formula": "H2MgO2",
     "name": "magnesium hydroxide",
-    "empirical_formula": "H2MgO2",
-    "cas_number": "1309-42-8"
+    "cas_number": "1309-42-8",
+    "mol_weight": 58.3197
   },
   {
-    "raw_formula": "MgO",
+    "original_formula": "MgO",
+    "nist_formula": "MgO",
     "name": "magnesium oxide",
-    "empirical_formula": "MgO",
     "cas_number": "1309-48-4",
     "inchi_number": "InChI=1S/Mg.O",
     "inchi_key": "CPLXHLVBOLITMK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1309484&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1309484&Type=Color",
+    "mol_weight": 40.3044
   },
   {
-    "raw_formula": "MgSO4",
+    "original_formula": "MgSO4",
+    "nist_formula": "MgO4S",
     "name": "magnesium sulphate",
-    "empirical_formula": "MgO4S",
     "cas_number": "7487-88-9",
     "inchi_number": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "CSNNHWWHGAXBCP-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7487889&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7487889&Type=Color",
+    "mol_weight": 120.368
   },
   {
-    "raw_formula": "MnCl2",
+    "original_formula": "MnCl2",
+    "nist_formula": "Cl2Mn",
     "name": "manganese dichloride",
-    "empirical_formula": "Cl2Mn",
-    "cas_number": "7773-01-5"
+    "cas_number": "7773-01-5",
+    "mol_weight": 125.844
   },
   {
-    "raw_formula": "MnO2",
+    "original_formula": "MnO2",
+    "nist_formula": "MnO2",
     "name": "manganese dioxide",
-    "empirical_formula": "MnO2",
     "cas_number": "1313-13-9",
     "inchi_number": "InChI=1S/Mn.2O",
     "inchi_key": "NUJOXMJBOLGQSY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1313139&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1313139&Type=Color",
+    "mol_weight": 86.9368
   },
   {
-    "raw_formula": "MnO2",
+    "original_formula": "MnO2",
+    "nist_formula": "MnO2",
     "name": "manganese dioxide",
-    "empirical_formula": "MnO2",
     "cas_number": "1313-13-9",
     "inchi_number": "InChI=1S/Mn.2O",
     "inchi_key": "NUJOXMJBOLGQSY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1313139&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1313139&Type=Color",
+    "mol_weight": 86.9368
   },
   {
-    "raw_formula": "MnSO4",
+    "original_formula": "MnSO4",
+    "nist_formula": "MnO4S",
     "name": "manganese sulphate",
-    "empirical_formula": "MnO4S",
     "cas_number": "7785-87-7",
     "inchi_number": "InChI=1S/Mn.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
     "inchi_key": "SQQMAOCOWKFBNP-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7785877&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7785877&Type=Color",
+    "mol_weight": 151.001
   },
   {
-    "raw_formula": "NaBr",
+    "original_formula": "NaBr",
+    "nist_formula": "BrNa",
     "name": "sodium bromide",
-    "empirical_formula": "BrNa",
     "cas_number": "7647-15-6",
     "inchi_number": "InChI=1S/BrH.Na/h1H;/q;+1/p-1",
     "inchi_key": "JHJLBTNAGRQEKS-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647156&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7647156&Type=Color",
+    "mol_weight": 102.894
   },
   {
-    "raw_formula": "Na2CO3",
+    "original_formula": "Na2CO3",
+    "nist_formula": "CNa2O3",
     "name": "sodium carbonate",
-    "empirical_formula": "CNa2O3",
-    "cas_number": "497-19-8"
+    "cas_number": "497-19-8",
+    "mol_weight": 105.9884
   },
   {
-    "raw_formula": "NaCl",
+    "original_formula": "NaCl",
+    "nist_formula": "ClNa",
     "name": "sodium chloride",
-    "empirical_formula": "ClNa",
     "cas_number": "7647-14-5",
     "inchi_number": "InChI=1S/ClH.Na/h1H;/q;+1/p-1",
     "inchi_key": "FAPWRFPIFSIZLT-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647145&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7647145&Type=Color",
+    "mol_weight": 58.443
   },
   {
-    "raw_formula": "NaHCO3",
+    "original_formula": "NaHCO3",
+    "nist_formula": "CHNaO3",
     "name": "Sodium hydrogen carbonate",
-    "empirical_formula": "CHNaO3",
     "inchi_number": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1",
     "inchi_key": "UIIMBOGNXHQVGW-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B8000431&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=B8000431&Type=Color",
+    "mol_weight": 84.0066
   },
   {
-    "raw_formula": "NaOH",
+    "original_formula": "NaOH",
+    "nist_formula": "HNaO",
     "name": "Sodium hydroxide",
-    "empirical_formula": "HNaO",
     "cas_number": "1310-73-2",
     "inchi_number": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1",
     "inchi_key": "HEMHJVSKTPXQMS-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1310732&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1310732&Type=Color",
+    "mol_weight": 39.9971
   },
   {
-    "raw_formula": "NaNO3",
+    "original_formula": "NaNO3",
+    "nist_formula": "NNaO3",
     "name": "sodium nitrate",
-    "empirical_formula": "NNaO3",
     "cas_number": "7631-99-4",
     "inchi_number": "InChI=1S/NO3.Na/c2-1(3)4;/q-1;+1",
     "inchi_key": "VWDWKYIASSYTQR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7631994&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7631994&Type=Color",
+    "mol_weight": 84.9947
   },
   {
-    "raw_formula": "NaNO2",
+    "original_formula": "NaNO2",
+    "nist_formula": "NNaO2",
     "name": "sodium nitrite",
-    "empirical_formula": "NNaO2",
     "cas_number": "7632-00-0",
     "inchi_number": "InChI=1S/HNO2.Na/c2-1-3;/h(H,2,3);/q;+1/p-1",
     "inchi_key": "LPXPTNMVRIOKMN-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7632000&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7632000&Type=Color",
+    "mol_weight": 68.9953
   },
   {
-    "raw_formula": "Na3PO4",
+    "original_formula": "Na3PO4",
+    "nist_formula": "Na3O4P",
     "name": "trisodium orthophosphate",
-    "empirical_formula": "Na3O4P",
-    "cas_number": "7601-54-9"
+    "cas_number": "7601-54-9",
+    "mol_weight": 163.9407
   },
   {
-    "raw_formula": "Na2SO4",
+    "original_formula": "Na2SO4",
+    "nist_formula": "Na2O4S",
     "name": "sodium sulphate",
-    "empirical_formula": "Na2O4S",
     "cas_number": "7757-82-6",
     "inchi_number": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2",
     "inchi_key": "PMZURENOXWZQFD-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7757826&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7757826&Type=Color",
+    "mol_weight": 142.042
   },
   {
-    "raw_formula": "Na2S2O3",
+    "original_formula": "Na2S2O3",
+    "nist_formula": "Na2O3S2",
     "name": "sodium thiosulphate",
-    "empirical_formula": "Na2O3S2",
-    "cas_number": "7772-98-7"
+    "cas_number": "7772-98-7",
+    "mol_weight": 158.108
   },
   {
-    "raw_formula": "O3",
+    "original_formula": "O3",
+    "nist_formula": "O3",
     "name": "Ozone",
-    "empirical_formula": "O3",
     "cas_number": "10028-15-6",
     "inchi_number": "InChI=1S/O3/c1-3-2",
     "inchi_key": "CBENFWSGALASAD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10028156&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10028156&Type=Color",
+    "mol_weight": 47.9982
   },
   {
-    "raw_formula": "H3PO3",
+    "original_formula": "H3PO3",
+    "nist_formula": "H3O3P",
     "name": "phosphorous acid",
-    "empirical_formula": "H3O3P",
     "cas_number": "10294-56-1",
     "inchi_number": "InChI=1S/H3O3P/c1-4(2)3/h1-3H",
     "inchi_key": "OJMIONKXNSYLSR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10294561&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10294561&Type=Color",
+    "mol_weight": 81.9958
   },
   {
-    "raw_formula": "P4O10",
+    "original_formula": "P4O10",
+    "nist_formula": "O10P4",
     "name": "Tetraphosphorus decaoxide",
-    "empirical_formula": "O10P4",
-    "cas_number": "16752-60-6"
+    "cas_number": "16752-60-6",
+    "mol_weight": 283.889
   },
   {
-    "raw_formula": "PCl5",
+    "original_formula": "PCl5",
+    "nist_formula": "Cl5P",
     "name": "phosphorus pentachloride",
-    "empirical_formula": "Cl5P",
     "cas_number": "10026-13-8",
     "inchi_number": "InChI=1S/Cl5P/c1-6(2,3,4)5",
     "inchi_key": "UHZYTMXLRWXGPK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10026138&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10026138&Type=Color",
+    "mol_weight": 208.239
   },
   {
-    "raw_formula": "H3PO4",
+    "original_formula": "H3PO4",
+    "nist_formula": "H3O4P",
     "name": "Phosphoric Acid",
-    "empirical_formula": "H3O4P",
     "cas_number": "7664-38-2",
     "inchi_number": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)",
     "inchi_key": "NBIIXXVUZAFLBC-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664382&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7664382&Type=Color",
+    "mol_weight": 97.9952
   },
   {
-    "raw_formula": "HgCl2",
+    "original_formula": "HgCl2",
+    "nist_formula": "Cl2Hg",
     "name": "Mercury(II) chloride",
-    "empirical_formula": "Cl2Hg",
-    "cas_number": "7487-94-7"
+    "cas_number": "7487-94-7",
+    "mol_weight": 271.5
   },
   {
-    "raw_formula": "HgCl2",
+    "original_formula": "HgCl2",
+    "nist_formula": "Cl2Hg",
     "name": "Mercury(II) chloride",
-    "empirical_formula": "Cl2Hg",
-    "cas_number": "7487-94-7"
+    "cas_number": "7487-94-7",
+    "mol_weight": 271.5
   },
   {
-    "raw_formula": "HgO",
+    "original_formula": "HgO",
+    "nist_formula": "HgO",
     "name": "mercury monoxide",
-    "empirical_formula": "HgO",
     "cas_number": "21908-53-2",
     "inchi_number": "InChI=1S/Hg.O",
     "inchi_key": "UKWHYYKOEPRTIC-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C21908532&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C21908532&Type=Color",
+    "mol_weight": 216.59
   },
   {
-    "raw_formula": "HNO3",
+    "original_formula": "HNO3",
+    "nist_formula": "HNO3",
     "name": "Nitric acid",
-    "empirical_formula": "HNO3",
     "cas_number": "7697-37-2",
     "inchi_number": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)",
     "inchi_key": "GRYLNZFGIOXLOG-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7697372&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7697372&Type=Color",
+    "mol_weight": 63.0128
   },
   {
-    "raw_formula": "O2",
+    "original_formula": "O2",
+    "nist_formula": "O2",
     "name": "Oxygen",
-    "empirical_formula": "O2",
     "cas_number": "7782-44-7",
     "inchi_number": "InChI=1S/O2/c1-2",
     "inchi_key": "MYMOFIZGZYHOMD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7782447&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7782447&Type=Color",
+    "mol_weight": 31.9988
   },
   {
-    "raw_formula": "SO2",
+    "original_formula": "SO2",
+    "nist_formula": "O2S",
     "name": "Sulfur dioxide",
-    "empirical_formula": "O2S",
     "cas_number": "7446-09-5",
     "inchi_number": "InChI=1S/O2S/c1-3-2",
     "inchi_key": "RAHZWNYVWXNFOC-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446095&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7446095&Type=Color",
+    "mol_weight": 64.064
   },
   {
-    "raw_formula": "H2SO4",
+    "original_formula": "H2SO4",
+    "nist_formula": "H2O4S",
     "name": "Sulfuric Acid",
-    "empirical_formula": "H2O4S",
     "cas_number": "7664-93-9",
     "inchi_number": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)",
     "inchi_key": "QAOWNCQODCNURD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664939&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7664939&Type=Color",
+    "mol_weight": 98.078
   },
   {
-    "raw_formula": "SO3",
+    "original_formula": "SO3",
+    "nist_formula": "O3S",
     "name": "sulphur trioxide",
-    "empirical_formula": "O3S",
     "cas_number": "7446-11-9",
     "inchi_number": "InChI=1S/O3S/c1-4(2)3",
     "inchi_key": "AKEJUJNQAAGONA-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446119&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7446119&Type=Color",
+    "mol_weight": 80.063
   },
   {
-    "raw_formula": "H2S",
+    "original_formula": "H2S",
+    "nist_formula": "H2S",
     "name": "Hydrogen sulfide",
-    "empirical_formula": "H2S",
     "cas_number": "7783-06-4",
     "inchi_number": "InChI=1S/H2S/h1H2",
     "inchi_key": "RWSOTUBLDIXVET-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783064&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7783064&Type=Color",
+    "mol_weight": 34.081
   },
   {
-    "raw_formula": "AgBr",
+    "original_formula": "AgBr",
+    "nist_formula": "AgBr",
     "name": "silver bromide",
-    "empirical_formula": "AgBr",
-    "cas_number": "7785-23-1"
+    "cas_number": "7785-23-1",
+    "mol_weight": 187.772
   },
   {
-    "raw_formula": "AgCl",
+    "original_formula": "AgCl",
+    "nist_formula": "AgCl",
     "name": "Silver chloride",
-    "empirical_formula": "AgCl",
     "cas_number": "7783-90-6",
     "inchi_number": "InChI=1S/Ag.ClH/h;1H/q+1;/p-1",
     "inchi_key": "HKZLPVFGJNLROG-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783906&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7783906&Type=Color",
+    "mol_weight": 143.321
   },
   {
-    "raw_formula": "AgI",
+    "original_formula": "AgI",
+    "nist_formula": "AgI",
     "name": "silver iodide",
-    "empirical_formula": "AgI",
     "cas_number": "7783-96-2",
     "inchi_number": "InChI=1S/Ag.HI/h;1H/q+1;/p-1",
     "inchi_key": "MSFPLIAKTHOCQP-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783962&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7783962&Type=Color",
+    "mol_weight": 234.7727
   },
   {
-    "raw_formula": "AgNO3",
+    "original_formula": "AgNO3",
+    "nist_formula": "AgNO3",
     "name": "Silver Nitrate",
-    "empirical_formula": "AgNO3",
     "cas_number": "7761-88-8",
     "inchi_number": "InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1",
     "inchi_key": "SQGYOTSLMSWVJD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7761888&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7761888&Type=Color",
+    "mol_weight": 169.8731
   },
   {
-    "raw_formula": "SiO2",
+    "original_formula": "SiO2",
+    "nist_formula": "O2Si",
     "name": "Dioxosilane",
-    "empirical_formula": "O2Si",
     "cas_number": "7631-86-9",
     "inchi_number": "InChI=1S/O2Si/c1-3-2",
     "inchi_key": "VYPSYNLAJGMNEJ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7631869&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7631869&Type=Color",
+    "mol_weight": 60.0843
   },
   {
-    "raw_formula": "N2O5",
+    "original_formula": "N2O5",
+    "nist_formula": "N2O5",
     "name": "Dinitrogen pentoxide",
-    "empirical_formula": "N2O5",
     "cas_number": "10102-03-1",
     "inchi_number": "InChI=1S/N2O5/c3-1(4)7-2(5)6",
     "inchi_key": "ZWWCURLKEXEFQT-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102031&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10102031&Type=Color",
+    "mol_weight": 108.0104
   },
   {
-    "raw_formula": "N2O3",
+    "original_formula": "N2O3",
+    "nist_formula": "N2O3",
     "name": "Dinitrogen trioxide",
-    "empirical_formula": "N2O3",
     "cas_number": "10544-73-7",
     "inchi_number": "InChI=1S/N2O3/c3-1-2(4)5",
     "inchi_key": "LZDSILRDTDCIQT-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10544737&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10544737&Type=Color",
+    "mol_weight": 76.0116
   },
   {
-    "raw_formula": "NO2",
+    "original_formula": "NO2",
+    "nist_formula": "NO2",
     "name": "Nitrogen dioxide",
-    "empirical_formula": "NO2",
     "cas_number": "10102-44-0",
     "inchi_number": "InChI=1S/NO2/c2-1-3",
     "inchi_key": "JCXJVPUVTGWSNB-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102440&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10102440&Type=Color",
+    "mol_weight": 46.0055
   },
   {
-    "raw_formula": "NO",
+    "original_formula": "NO",
+    "nist_formula": "NO",
     "name": "Nitric oxide",
-    "empirical_formula": "NO",
     "cas_number": "10102-43-9",
     "inchi_number": "InChI=1S/NO/c1-2",
     "inchi_key": "MWUXSHHQAYIFBG-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102439&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C10102439&Type=Color",
+    "mol_weight": 30.0061
   },
   {
-    "raw_formula": "H2O",
+    "original_formula": "H2O",
+    "nist_formula": "H2O",
     "name": "Water",
-    "empirical_formula": "H2O",
     "cas_number": "7732-18-5",
     "inchi_number": "InChI=1S/H2O/h1H2",
     "inchi_key": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7732185&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7732185&Type=Color",
+    "mol_weight": 18.0153
   },
   {
-    "raw_formula": "H2",
+    "original_formula": "H2",
+    "nist_formula": "H2",
     "name": "Hydrogen",
-    "empirical_formula": "H2",
     "cas_number": "1333-74-0",
     "inchi_number": "InChI=1S/H2/h1H",
     "inchi_key": "UFHFLCQGNIYNRP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1333740&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1333740&Type=Color",
+    "mol_weight": 2.01588
   },
   {
-    "raw_formula": "H2O2",
+    "original_formula": "H2O2",
+    "nist_formula": "H2O2",
     "name": "Hydrogen peroxide",
-    "empirical_formula": "H2O2",
     "cas_number": "7722-84-1",
     "inchi_number": "InChI=1S/H2O2/c1-2/h1-2H",
     "inchi_key": "MHAJPDPJQMAIIY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7722841&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7722841&Type=Color",
+    "mol_weight": 34.0147
   },
   {
-    "raw_formula": "ZnCl2",
+    "original_formula": "ZnCl2",
+    "nist_formula": "Cl2Zn",
     "name": "Zinc Chloride",
-    "empirical_formula": "Cl2Zn",
     "cas_number": "7646-85-7",
     "inchi_number": "InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2",
     "inchi_key": "JIAARYAFYJHUJI-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7646857&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C7646857&Type=Color",
+    "mol_weight": 136.29
   },
   {
-    "raw_formula": "ZnO",
+    "original_formula": "ZnO",
+    "nist_formula": "OZn",
     "name": "zinc oxide",
-    "empirical_formula": "OZn",
     "cas_number": "1314-13-2",
     "inchi_number": "InChI=1S/O.Zn",
     "inchi_key": "XLOMVQKBTHCTTD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314132&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C1314132&Type=Color",
+    "mol_weight": 81.38
   },
   {
-    "raw_formula": "C2H3CN",
+    "original_formula": "C2H3CN",
+    "nist_formula": "C3H3N",
     "name": "2-Propenenitrile",
-    "empirical_formula": "C3H3N",
     "cas_number": "107-13-1",
     "inchi_number": "InChI=1S/C3H3N/c1-2-3-4/h2H,1H2",
     "inchi_key": "NLHHRLWOUZZQLW-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107131&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C107131&Type=Color",
+    "mol_weight": 53.0626
   },
   {
-    "raw_formula": "NH2CH2COOH",
+    "original_formula": "NH2CH2COOH",
+    "nist_formula": "C2H5NO2",
     "name": "Ethane, nitro-",
-    "empirical_formula": "C2H5NO2",
     "cas_number": "79-24-3",
     "inchi_number": "InChI=1S/C2H5NO2/c1-2-3(4)5/h2H2,1H3",
     "inchi_key": "MCSAJNNLRCFZED-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79243&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C79243&Type=Color",
+    "mol_weight": 75.0666
   },
   {
-    "raw_formula": "C14H10",
+    "original_formula": "C14H10",
+    "nist_formula": "C14H10",
     "name": "Anthracene",
-    "empirical_formula": "C14H10",
     "cas_number": "120-12-7",
     "inchi_number": "InChI=1S/C14H10/c1-2-6-12-10-14-8-4-3-7-13(14)9-11(12)5-1/h1-10H",
     "inchi_key": "MWPLVEDNUUSJAV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C120127&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C120127&Type=Color",
+    "mol_weight": 178.2292
   },
   {
-    "raw_formula": "C6H5CHO",
+    "original_formula": "C6H5CHO",
+    "nist_formula": "C7H6O",
     "name": "Benzaldehyde",
-    "empirical_formula": "C7H6O",
     "cas_number": "100-52-7",
     "inchi_number": "InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H",
     "inchi_key": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100527&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C100527&Type=Color",
+    "mol_weight": 106.1219
   },
   {
-    "raw_formula": "C6H5COOH",
+    "original_formula": "C6H5COOH",
+    "nist_formula": "C7H6O2",
     "name": "Benzoic acid",
-    "empirical_formula": "C7H6O2",
     "cas_number": "65-85-0",
     "inchi_number": "InChI=1S/C7H6O2/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H,8,9)",
     "inchi_key": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C65850&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C65850&Type=Color",
+    "mol_weight": 122.1213
   },
   {
-    "raw_formula": "C6H6",
+    "original_formula": "C6H6",
+    "nist_formula": "C6H6",
     "name": "Benzene",
-    "empirical_formula": "C6H6",
     "cas_number": "71-43-2",
     "inchi_number": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H",
     "inchi_key": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71432&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C71432&Type=Color",
+    "mol_weight": 78.1118
   },
   {
-    "raw_formula": "(CH3COO)2Pb",
+    "original_formula": "(CH3COO)2Pb",
+    "nist_formula": "C4H6O4Pb",
     "name": "Acetic acid, lead(2+) salt",
-    "empirical_formula": "C4H6O4Pb",
     "cas_number": "301-04-2",
     "inchi_number": "InChI=1S/2C2H4O2.Pb/c2*1-2(3)4;/h2*1H3,(H,3,4);/q;;+2/p-2",
     "inchi_key": "GUWSLQUAAYEZAF-UHFFFAOYSA-L",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C301042&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C301042&Type=Color",
+    "mol_weight": 325.3
   },
   {
-    "raw_formula": "C2H5Br",
+    "original_formula": "C2H5Br",
+    "nist_formula": "C2H5Br",
     "name": "Ethyl bromide",
-    "empirical_formula": "C2H5Br",
     "cas_number": "74-96-4",
     "inchi_number": "InChI=1S/C2H5Br/c1-2-3/h2H2,1H3",
     "inchi_key": "RDHPKYGYEGBMSE-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74964&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74964&Type=Color",
+    "mol_weight": 108.965
   },
   {
-    "raw_formula": "CH3Br",
+    "original_formula": "CH3Br",
+    "nist_formula": "CH3Br",
     "name": "Methane, bromo-",
-    "empirical_formula": "CH3Br",
     "cas_number": "74-83-9",
     "inchi_number": "InChI=1S/CH3Br/c1-2/h1H3",
     "inchi_key": "GZUXJHMPEANEGY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74839&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74839&Type=Color",
+    "mol_weight": 94.939
   },
   {
-    "raw_formula": "C3H7Br",
+    "original_formula": "C3H7Br",
+    "nist_formula": "C3H7Br",
     "name": "Propane, 1-bromo-",
-    "empirical_formula": "C3H7Br",
     "cas_number": "106-94-5",
     "inchi_number": "InChI=1S/C3H7Br/c1-2-3-4/h2-3H2,1H3",
     "inchi_key": "CYNYIHKIEHGYOZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106945&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106945&Type=Color",
+    "mol_weight": 122.992
   },
   {
-    "raw_formula": "C4H6",
+    "original_formula": "C4H6",
+    "nist_formula": "C4H6",
     "name": "1,3-Butadiene",
-    "empirical_formula": "C4H6",
     "cas_number": "106-99-0",
     "inchi_number": "InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2",
     "inchi_key": "KAKZBPTYRLMSJV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106990&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106990&Type=Color",
+    "mol_weight": 54.0904
   },
   {
-    "raw_formula": "C4H10",
+    "original_formula": "C4H10",
+    "nist_formula": "C4H10",
     "name": "Isobutane",
-    "empirical_formula": "C4H10",
     "cas_number": "75-28-5",
     "inchi_number": "InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3",
     "inchi_key": "NNPPMTNAJDCUHE-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75285&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75285&Type=Color",
+    "mol_weight": 58.1222
   },
   {
-    "raw_formula": "C2H4(COOH)2",
+    "original_formula": "C2H4(COOH)2",
+    "nist_formula": "C4H6O4",
     "name": "Butanedioic acid",
-    "empirical_formula": "C4H6O4",
     "cas_number": "110-15-6",
     "inchi_number": "InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)",
     "inchi_key": "KDYFGRWQOYBRFD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110156&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110156&Type=Color",
+    "mol_weight": 118.088
   },
   {
-    "raw_formula": "C4H9OH",
+    "original_formula": "C4H9OH",
+    "nist_formula": "C4H10O",
     "name": "1-Butanol",
-    "empirical_formula": "C4H10O",
     "cas_number": "71-36-3",
     "inchi_number": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3",
     "inchi_key": "LRHPLDYGYMQRHN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71363&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C71363&Type=Color",
+    "mol_weight": 74.1216
   },
   {
-    "raw_formula": "C3H7COOH",
+    "original_formula": "C3H7COOH",
+    "nist_formula": "C4H8O2",
     "name": "Ethyl Acetate",
-    "empirical_formula": "C4H8O2",
     "cas_number": "141-78-6",
     "inchi_number": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3",
     "inchi_key": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C141786&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C141786&Type=Color",
+    "mol_weight": 88.1051
   },
   {
-    "raw_formula": "C3H7COOC2H5",
+    "original_formula": "C3H7COOC2H5",
+    "nist_formula": "C6H12O2",
     "name": "Hexanoic acid",
-    "empirical_formula": "C6H12O2",
     "cas_number": "142-62-1",
     "inchi_number": "InChI=1S/C6H12O2/c1-2-3-4-5-6(7)8/h2-5H2,1H3,(H,7,8)",
     "inchi_key": "FUZZWVXGSFPDMH-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142621&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C142621&Type=Color",
+    "mol_weight": 116.1583
   },
   {
-    "raw_formula": "C4H8",
+    "original_formula": "C4H8",
+    "nist_formula": "C4H8",
     "name": "1-Butene",
-    "empirical_formula": "C4H8",
     "cas_number": "106-98-9",
     "inchi_number": "InChI=1S/C4H8/c1-3-4-2/h3H,1,4H2,2H3",
     "inchi_key": "VXNZUUAINFGPBY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106989&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106989&Type=Color",
+    "mol_weight": 56.1063
   },
   {
-    "raw_formula": "C4H6",
+    "original_formula": "C4H6",
+    "nist_formula": "C4H6",
     "name": "1,3-Butadiene",
-    "empirical_formula": "C4H6",
     "cas_number": "106-99-0",
     "inchi_number": "InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2",
     "inchi_key": "KAKZBPTYRLMSJV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106990&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106990&Type=Color",
+    "mol_weight": 54.0904
   },
   {
-    "raw_formula": "C6H5Cl",
+    "original_formula": "C6H5Cl",
+    "nist_formula": "C6H5Cl",
     "name": "Benzene, chloro-",
-    "empirical_formula": "C6H5Cl",
     "cas_number": "108-90-7",
     "inchi_number": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H",
     "inchi_key": "MVPPADPHJFYWMZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108907&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C108907&Type=Color",
+    "mol_weight": 112.557
   },
   {
-    "raw_formula": "C4H9Cl",
+    "original_formula": "C4H9Cl",
+    "nist_formula": "C4H9Cl",
     "name": "Butane, 1-chloro-",
-    "empirical_formula": "C4H9Cl",
     "cas_number": "109-69-3",
     "inchi_number": "InChI=1S/C4H9Cl/c1-2-3-4-5/h2-4H2,1H3",
     "inchi_key": "VFWCMGCRMGJXDK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C109693&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C109693&Type=Color",
+    "mol_weight": 92.567
   },
   {
-    "raw_formula": "C2H5Cl",
+    "original_formula": "C2H5Cl",
+    "nist_formula": "C2H5Cl",
     "name": "Ethyl Chloride",
-    "empirical_formula": "C2H5Cl",
     "cas_number": "75-00-3",
     "inchi_number": "InChI=1S/C2H5Cl/c1-2-3/h2H2,1H3",
     "inchi_key": "HRYZWHHZPQKTII-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75003&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75003&Type=Color",
+    "mol_weight": 64.514
   },
   {
-    "raw_formula": "C2H3Cl",
+    "original_formula": "C2H3Cl",
+    "nist_formula": "C2H3Cl",
     "name": "Ethene, chloro-",
-    "empirical_formula": "C2H3Cl",
     "cas_number": "75-01-4",
     "inchi_number": "InChI=1S/C2H3Cl/c1-2-3/h2H,1H2",
     "inchi_key": "BZHJMEDXRYGGRV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75014&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75014&Type=Color",
+    "mol_weight": 62.498
   },
   {
-    "raw_formula": "CH3Cl",
+    "original_formula": "CH3Cl",
+    "nist_formula": "CH3Cl",
     "name": "Chloromethane",
-    "empirical_formula": "CH3Cl",
     "cas_number": "74-87-3",
     "inchi_number": "InChI=1S/CH3Cl/c1-2/h1H3",
     "inchi_key": "NEHMKBQYUWJMIP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74873&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74873&Type=Color",
+    "mol_weight": 50.488
   },
   {
-    "raw_formula": "C5H11Cl",
+    "original_formula": "C5H11Cl",
+    "nist_formula": "C5H11Cl",
     "name": "Pentane, 1-chloro-",
-    "empirical_formula": "C5H11Cl",
     "cas_number": "543-59-9",
     "inchi_number": "InChI=1S/C5H11Cl/c1-2-3-4-5-6/h2-5H2,1H3",
     "inchi_key": "SQCZQTSHSZLZIQ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C543599&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C543599&Type=Color",
+    "mol_weight": 106.594
   },
   {
-    "raw_formula": "C3H7Cl",
+    "original_formula": "C3H7Cl",
+    "nist_formula": "C3H7Cl",
     "name": "n-Propyl chloride",
-    "empirical_formula": "C3H7Cl",
     "cas_number": "540-54-5",
     "inchi_number": "InChI=1S/C3H7Cl/c1-2-3-4/h2-3H2,1H3",
     "inchi_key": "SNMVRZFUUCLYTO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C540545&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C540545&Type=Color",
+    "mol_weight": 78.541
   },
   {
-    "raw_formula": "C6H8O7",
+    "original_formula": "C6H8O7",
+    "nist_formula": "C6H8O7",
     "name": "Citric acid",
-    "empirical_formula": "C6H8O7",
     "cas_number": "77-92-9",
     "inchi_number": "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)",
     "inchi_key": "KRKNYBCHXYNGOX-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C77929&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C77929&Type=Color",
+    "mol_weight": 192.1235
   },
   {
-    "raw_formula": "C4H8",
+    "original_formula": "C4H8",
+    "nist_formula": "C4H8",
     "name": "1-Butene",
-    "empirical_formula": "C4H8",
     "cas_number": "106-98-9",
     "inchi_number": "InChI=1S/C4H8/c1-3-4-2/h3H,1,4H2,2H3",
     "inchi_key": "VXNZUUAINFGPBY-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106989&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106989&Type=Color",
+    "mol_weight": 56.1063
   },
   {
-    "raw_formula": "C6H12",
+    "original_formula": "C6H12",
+    "nist_formula": "C6H12",
     "name": "Cyclohexane",
-    "empirical_formula": "C6H12",
     "cas_number": "110-82-7",
     "inchi_number": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2",
     "inchi_key": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110827&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110827&Type=Color",
+    "mol_weight": 84.1595
   },
   {
-    "raw_formula": "C6H11OH",
+    "original_formula": "C6H11OH",
+    "nist_formula": "C6H12O",
     "name": "Hexanal",
-    "empirical_formula": "C6H12O",
     "cas_number": "66-25-1",
     "inchi_number": "InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",
     "inchi_key": "JARKCYVAAOWBJS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C66251&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C66251&Type=Color",
+    "mol_weight": 100.1589
   },
   {
-    "raw_formula": "C6H10",
+    "original_formula": "C6H10",
+    "nist_formula": "C6H10",
     "name": "Cyclohexene",
-    "empirical_formula": "C6H10",
     "cas_number": "110-83-8",
     "inchi_number": "InChI=1S/C6H10/c1-2-4-6-5-3-1/h1-2H,3-6H2",
     "inchi_key": "HGCIXCUEYOPUTN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110838&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110838&Type=Color",
+    "mol_weight": 82.1436
   },
   {
-    "raw_formula": "C5H10",
+    "original_formula": "C5H10",
+    "nist_formula": "C5H10",
     "name": "Cyclopentane",
-    "empirical_formula": "C5H10",
     "cas_number": "287-92-3",
     "inchi_number": "InChI=1S/C5H10/c1-2-4-5-3-1/h1-5H2",
     "inchi_key": "RGSFGYAAUTVSQA-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C287923&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C287923&Type=Color",
+    "mol_weight": 70.1329
   },
   {
-    "raw_formula": "C10H22",
+    "original_formula": "C10H22",
+    "nist_formula": "C10H22",
     "name": "Decane",
-    "empirical_formula": "C10H22",
     "cas_number": "124-18-5",
     "inchi_number": "InChI=1S/C10H22/c1-3-5-7-9-10-8-6-4-2/h3-10H2,1-2H3",
     "inchi_key": "DIOQZVSQGTUSAI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C124185&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C124185&Type=Color",
+    "mol_weight": 142.2817
   },
   {
-    "raw_formula": "C2H4Br2",
+    "original_formula": "C2H4Br2",
+    "nist_formula": "C2H4Br2",
     "name": "Ethane, 1,2-dibromo-",
-    "empirical_formula": "C2H4Br2",
     "cas_number": "106-93-4",
     "inchi_number": "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2",
     "inchi_key": "PAAZPARNPHGIKF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106934&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106934&Type=Color",
+    "mol_weight": 187.861
   },
   {
-    "raw_formula": "CH2Br2",
+    "original_formula": "CH2Br2",
+    "nist_formula": "CH2Br2",
     "name": "Methane, dibromo-",
-    "empirical_formula": "CH2Br2",
     "cas_number": "74-95-3",
     "inchi_number": "InChI=1S/CH2Br2/c2-1-3/h1H2",
     "inchi_key": "FJBFPHVGVWTDIP-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74953&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74953&Type=Color",
+    "mol_weight": 173.835
   },
   {
-    "raw_formula": "C6H4Cl2",
+    "original_formula": "C6H4Cl2",
+    "nist_formula": "C6H4Cl2",
     "name": "Benzene, 1,4-dichloro-",
-    "empirical_formula": "C6H4Cl2",
     "cas_number": "106-46-7",
     "inchi_number": "InChI=1S/C6H4Cl2/c7-5-1-2-6(8)4-3-5/h1-4H",
     "inchi_key": "OCJBOOLMMGQPQU-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106467&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C106467&Type=Color",
+    "mol_weight": 147.002
   },
   {
-    "raw_formula": "C2H4Cl2",
+    "original_formula": "C2H4Cl2",
+    "nist_formula": "C2H4Cl2",
     "name": "Ethane, 1,2-dichloro-",
-    "empirical_formula": "C2H4Cl2",
     "cas_number": "107-06-2",
     "inchi_number": "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2",
     "inchi_key": "WSLDOOZREJYCGB-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107062&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C107062&Type=Color",
+    "mol_weight": 98.959
   },
   {
-    "raw_formula": "Cl2CHCOOH",
+    "original_formula": "Cl2CHCOOH",
+    "nist_formula": "C2H2Cl2O2",
     "name": "Acetic acid, dichloro-",
-    "empirical_formula": "C2H2Cl2O2",
     "cas_number": "79-43-6",
     "inchi_number": "InChI=1S/C2H2Cl2O2/c3-1(4)2(5)6/h1H,(H,5,6)",
     "inchi_key": "JXTHNDFMNIQAHM-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79436&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C79436&Type=Color",
+    "mol_weight": 128.942
   },
   {
-    "raw_formula": "CH2Cl2",
+    "original_formula": "CH2Cl2",
+    "nist_formula": "CH2Cl2",
     "name": "Methylene chloride",
-    "empirical_formula": "CH2Cl2",
     "cas_number": "75-09-2",
     "inchi_number": "InChI=1S/CH2Cl2/c2-1-3/h1H2",
     "inchi_key": "YMWUJEATGCHHMB-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75092&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75092&Type=Color",
+    "mol_weight": 84.933
   },
   {
-    "raw_formula": "C2H5OC2H5",
+    "original_formula": "C2H5OC2H5",
+    "nist_formula": "C4H10O",
     "name": "1-Butanol",
-    "empirical_formula": "C4H10O",
     "cas_number": "71-36-3",
     "inchi_number": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3",
     "inchi_key": "LRHPLDYGYMQRHN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71363&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C71363&Type=Color",
+    "mol_weight": 74.1216
   },
   {
-    "raw_formula": "C6H4(OH)2",
+    "original_formula": "C6H4(OH)2",
+    "nist_formula": "C6H6O2",
     "name": "2-Furancarboxaldehyde, 5-methyl-",
-    "empirical_formula": "C6H6O2",
     "cas_number": "620-02-0",
     "inchi_number": "InChI=1S/C6H6O2/c1-5-2-3-6(4-7)8-5/h2-4H,1H3",
     "inchi_key": "OUDFNZMQXZILJD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C620020&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C620020&Type=Color",
+    "mol_weight": 110.1106
   },
   {
-    "raw_formula": "C6H4(OH)2",
+    "original_formula": "C6H4(OH)2",
+    "nist_formula": "C6H6O2",
     "name": "2-Furancarboxaldehyde, 5-methyl-",
-    "empirical_formula": "C6H6O2",
     "cas_number": "620-02-0",
     "inchi_number": "InChI=1S/C6H6O2/c1-5-2-3-6(4-7)8-5/h2-4H,1H3",
     "inchi_key": "OUDFNZMQXZILJD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C620020&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C620020&Type=Color",
+    "mol_weight": 110.1106
   },
   {
-    "raw_formula": "C6H4(CH3)2",
+    "original_formula": "C6H4(CH3)2",
+    "nist_formula": "C8H10",
     "name": "Ethylbenzene",
-    "empirical_formula": "C8H10",
     "cas_number": "100-41-4",
     "inchi_number": "InChI=1S/C8H10/c1-2-8-6-4-3-5-7-8/h3-7H,2H2,1H3",
     "inchi_key": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100414&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C100414&Type=Color",
+    "mol_weight": 106.165
   },
   {
-    "raw_formula": "CH3OCH3",
+    "original_formula": "CH3OCH3",
+    "nist_formula": "C2H6O",
     "name": "Ethanol",
-    "empirical_formula": "C2H6O",
     "cas_number": "64-17-5",
     "inchi_number": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
     "inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64175&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C64175&Type=Color",
+    "mol_weight": 46.0684
   },
   {
-    "raw_formula": "C12H26",
+    "original_formula": "C12H26",
+    "nist_formula": "C12H26",
     "name": "Dodecane",
-    "empirical_formula": "C12H26",
     "cas_number": "112-40-3",
     "inchi_number": "InChI=1S/C12H26/c1-3-5-7-9-11-12-10-8-6-4-2/h3-12H2,1-2H3",
     "inchi_key": "SNRUBQQJIBEYMU-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C112403&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C112403&Type=Color",
+    "mol_weight": 170.3348
   },
   {
-    "raw_formula": "C2H6",
+    "original_formula": "C2H6",
+    "nist_formula": "C2H6",
     "name": "Ethane",
-    "empirical_formula": "C2H6",
     "cas_number": "74-84-0",
     "inchi_number": "InChI=1S/C2H6/c1-2/h1-2H3",
     "inchi_key": "OTMSDBZUPAUEDD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74840&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74840&Type=Color",
+    "mol_weight": 30.069
   },
   {
-    "raw_formula": "CH3CHO",
+    "original_formula": "CH3CHO",
+    "nist_formula": "C2H4O",
     "name": "Acetaldehyde",
-    "empirical_formula": "C2H4O",
     "cas_number": "75-07-0",
     "inchi_number": "InChI=1S/C2H4O/c1-2-3/h2H,1H3",
     "inchi_key": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75070&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75070&Type=Color",
+    "mol_weight": 44.0526
   },
   {
-    "raw_formula": "C2H4(OH)2",
+    "original_formula": "C2H4(OH)2",
+    "nist_formula": "C2H6O2",
     "name": "1,2-Ethanediol",
-    "empirical_formula": "C2H6O2",
     "cas_number": "107-21-1",
     "inchi_number": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2",
     "inchi_key": "LYCAIKOWRPUZTN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107211&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C107211&Type=Color",
+    "mol_weight": 62.0678
   },
   {
-    "raw_formula": "(COOH)2",
+    "original_formula": "(COOH)2",
+    "nist_formula": "C2H2O4",
     "name": "Oxalic acid",
-    "empirical_formula": "C2H2O4",
     "cas_number": "144-62-7",
     "inchi_number": "InChI=1S/C2H2O4/c3-1(4)2(5)6/h(H,3,4)(H,5,6)",
     "inchi_key": "MUBZPKHOEPUJKR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C144627&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C144627&Type=Color",
+    "mol_weight": 90.0349
   },
   {
-    "raw_formula": "C2H5OH",
+    "original_formula": "C2H5OH",
+    "nist_formula": "C2H6O",
     "name": "Ethanol",
-    "empirical_formula": "C2H6O",
     "cas_number": "64-17-5",
     "inchi_number": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
     "inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64175&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C64175&Type=Color",
+    "mol_weight": 46.0684
   },
   {
-    "raw_formula": "CH3COOH",
+    "original_formula": "CH3COOH",
+    "nist_formula": "C2H4O2",
     "name": "Acetic acid",
-    "empirical_formula": "C2H4O2",
     "cas_number": "64-19-7",
     "inchi_number": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)",
     "inchi_key": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64197&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C64197&Type=Color",
+    "mol_weight": 60.052
   },
   {
-    "raw_formula": "CH3COOC2H5",
+    "original_formula": "CH3COOC2H5",
+    "nist_formula": "C4H8O2",
     "name": "Ethyl Acetate",
-    "empirical_formula": "C4H8O2",
     "cas_number": "141-78-6",
     "inchi_number": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3",
     "inchi_key": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C141786&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C141786&Type=Color",
+    "mol_weight": 88.1051
   },
   {
-    "raw_formula": "CH3COOCH3",
+    "original_formula": "CH3COOCH3",
+    "nist_formula": "C3H6O2",
     "name": "Propanoic acid",
-    "empirical_formula": "C3H6O2",
     "cas_number": "79-09-4",
     "inchi_number": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)",
     "inchi_key": "XBDQKXXYIPTUBI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79094&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C79094&Type=Color",
+    "mol_weight": 74.0785
   },
   {
-    "raw_formula": "C2H4",
+    "original_formula": "C2H4",
+    "nist_formula": "C2H4",
     "name": "Ethylene",
-    "empirical_formula": "C2H4",
     "cas_number": "74-85-1",
     "inchi_number": "InChI=1S/C2H4/c1-2/h1-2H2",
     "inchi_key": "VGGSQFUCUMXWEO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74851&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74851&Type=Color",
+    "mol_weight": 28.0532
   },
   {
-    "raw_formula": "C2H2",
+    "original_formula": "C2H2",
+    "nist_formula": "C2H2",
     "name": "Acetylene",
-    "empirical_formula": "C2H2",
     "cas_number": "74-86-2",
     "inchi_number": "InChI=1S/C2H2/c1-2/h1-2H",
     "inchi_key": "HSFWRNGVRCDJHI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74862&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74862&Type=Color",
+    "mol_weight": 26.0373
   },
   {
-    "raw_formula": "C6H5C2H5",
+    "original_formula": "C6H5C2H5",
+    "nist_formula": "C8H10",
     "name": "Ethylbenzene",
-    "empirical_formula": "C8H10",
     "cas_number": "100-41-4",
     "inchi_number": "InChI=1S/C8H10/c1-2-8-6-4-3-5-7-8/h3-7H,2H2,1H3",
     "inchi_key": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100414&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C100414&Type=Color",
+    "mol_weight": 106.165
   },
   {
-    "raw_formula": "C6H12O6",
+    "original_formula": "C6H12O6",
+    "nist_formula": "C6H12O6",
     "name": "α-D-Glucose",
-    "empirical_formula": "C6H12O6",
     "cas_number": "492-62-6",
     "inchi_number": "InChI=1S/C6H12O6/c7-1-2-3(8)4(9)5(10)6(11)12-2/h2-11H,1H2/t2-,3-,4+,5-,6+/m0/s1",
     "inchi_key": "WQZGKKKJIJFFOK-MDMQIMBFSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C492626&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C492626&Type=Color",
+    "mol_weight": 180.1559
   },
   {
-    "raw_formula": "CO(NH2)2",
+    "original_formula": "CO(NH2)2",
+    "nist_formula": "CH4N2O",
     "name": "Urea",
-    "empirical_formula": "CH4N2O",
     "cas_number": "57-13-6",
     "inchi_number": "InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)",
     "inchi_key": "XSQUKJJJFZCRTK-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57136&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C57136&Type=Color",
+    "mol_weight": 60.0553
   },
   {
-    "raw_formula": "C7H16",
+    "original_formula": "C7H16",
+    "nist_formula": "C7H16",
     "name": "Heptane",
-    "empirical_formula": "C7H16",
     "cas_number": "142-82-5",
     "inchi_number": "InChI=1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3",
     "inchi_key": "IMNFDUFMRHMDMM-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142825&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C142825&Type=Color",
+    "mol_weight": 100.2019
   },
   {
-    "raw_formula": "C7H15OH",
+    "original_formula": "C7H15OH",
+    "nist_formula": "C7H16O",
     "name": "1-Heptanol",
-    "empirical_formula": "C7H16O",
     "cas_number": "111-70-6",
     "inchi_number": "InChI=1S/C7H16O/c1-2-3-4-5-6-7-8/h8H,2-7H2,1H3",
     "inchi_key": "BBMCTIGTTCKYKF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C111706&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C111706&Type=Color",
+    "mol_weight": 116.2013
   },
   {
-    "raw_formula": "C7H14",
+    "original_formula": "C7H14",
+    "nist_formula": "C7H14",
     "name": "Cyclohexane, methyl-",
-    "empirical_formula": "C7H14",
     "cas_number": "108-87-2",
     "inchi_number": "InChI=1S/C7H14/c1-7-5-3-2-4-6-7/h7H,2-6H2,1H3",
     "inchi_key": "UAEPNZWRGJTJPN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108872&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C108872&Type=Color",
+    "mol_weight": 98.1861
   },
   {
-    "raw_formula": " C16H34",
+    "original_formula": " C16H34",
+    "nist_formula": "C16H34",
     "name": "Hexadecane",
-    "empirical_formula": "C16H34",
     "cas_number": "544-76-3",
     "inchi_number": "InChI=1S/C16H34/c1-3-5-7-9-11-13-15-16-14-12-10-8-6-4-2/h3-16H2,1-2H3",
     "inchi_key": "DCAYPVUWAIABOU-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C544763&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C544763&Type=Color",
+    "mol_weight": 226.4412
   },
   {
-    "raw_formula": "C15H31COOH",
+    "original_formula": "C15H31COOH",
+    "nist_formula": "C16H32O2",
     "name": "n-Hexadecanoic acid",
-    "empirical_formula": "C16H32O2",
     "cas_number": "57-10-3",
     "inchi_number": "InChI=1S/C16H32O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16(17)18/h2-15H2,1H3,(H,17,18)",
     "inchi_key": "IPCSVZSSVZVIGE-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57103&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C57103&Type=Color",
+    "mol_weight": 256.4241
   },
   {
-    "raw_formula": "C6H14",
+    "original_formula": "C6H14",
+    "nist_formula": "C6H14",
     "name": "Butane, 2,3-dimethyl-",
-    "empirical_formula": "C6H14",
     "cas_number": "79-29-8",
     "inchi_number": "InChI=1S/C6H14/c1-5(2)6(3)4/h5-6H,1-4H3",
     "inchi_key": "ZFFMLCVRJBZUDZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79298&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C79298&Type=Color",
+    "mol_weight": 86.1754
   },
   {
-    "raw_formula": "C6H13OH",
+    "original_formula": "C6H13OH",
+    "nist_formula": "C6H14O",
     "name": "1-Hexanol",
-    "empirical_formula": "C6H14O",
     "cas_number": "111-27-3",
     "inchi_number": "InChI=1S/C6H14O/c1-2-3-4-5-6-7/h7H,2-6H2,1H3",
     "inchi_key": "ZSIAUFGUXNUGDI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C111273&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C111273&Type=Color",
+    "mol_weight": 102.1748
   },
   {
-    "raw_formula": "C5H11COOH",
+    "original_formula": "C5H11COOH",
+    "nist_formula": "C6H12O2",
     "name": "Hexanoic acid",
-    "empirical_formula": "C6H12O2",
     "cas_number": "142-62-1",
     "inchi_number": "InChI=1S/C6H12O2/c1-2-3-4-5-6(7)8/h2-5H2,1H3,(H,7,8)",
     "inchi_key": "FUZZWVXGSFPDMH-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142621&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C142621&Type=Color",
+    "mol_weight": 116.1583
   },
   {
-    "raw_formula": "C6H12",
+    "original_formula": "C6H12",
+    "nist_formula": "C6H12",
     "name": "Cyclohexane",
-    "empirical_formula": "C6H12",
     "cas_number": "110-82-7",
     "inchi_number": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2",
     "inchi_key": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110827&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110827&Type=Color",
+    "mol_weight": 84.1595
   },
   {
-    "raw_formula": "C6H10",
+    "original_formula": "C6H10",
+    "nist_formula": "C6H10",
     "name": "Cyclohexene",
-    "empirical_formula": "C6H10",
     "cas_number": "110-83-8",
     "inchi_number": "InChI=1S/C6H10/c1-2-4-6-5-3-1/h1-2H,3-6H2",
     "inchi_key": "HGCIXCUEYOPUTN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110838&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110838&Type=Color",
+    "mol_weight": 82.1436
   },
   {
-    "raw_formula": "N2H4",
+    "original_formula": "N2H4",
+    "nist_formula": "H4N2",
     "name": "Hydrazine",
-    "empirical_formula": "H4N2",
     "cas_number": "302-01-2",
     "inchi_number": "InChI=1S/H4N2/c1-2/h1-2H2",
     "inchi_key": "OAKJQQAXSVQMHS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C302012&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C302012&Type=Color",
+    "mol_weight": 32.0452
   },
   {
-    "raw_formula": "C6H4OHCOOH",
+    "original_formula": "C6H4OHCOOH",
+    "nist_formula": "C7H6O3",
     "name": "Salicylic acid",
-    "empirical_formula": "C7H6O3",
     "cas_number": "69-72-7",
     "inchi_number": "InChI=1S/C7H6O3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H,(H,9,10)",
     "inchi_key": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C69727&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C69727&Type=Color",
+    "mol_weight": 138.1207
   },
   {
-    "raw_formula": "C2H4OHCOOH",
+    "original_formula": "C2H4OHCOOH",
+    "nist_formula": "C3H6O3",
     "name": "1,3,5-Trioxane",
-    "empirical_formula": "C3H6O3",
     "cas_number": "110-88-3",
     "inchi_number": "InChI=1S/C3H6O3/c1-4-2-6-3-5-1/h1-3H2",
     "inchi_key": "BGJSXRVXTHVRSN-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110883&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C110883&Type=Color",
+    "mol_weight": 90.0779
   },
   {
-    "raw_formula": "CH4",
+    "original_formula": "CH4",
+    "nist_formula": "CH4",
     "name": "Methane",
-    "empirical_formula": "CH4",
     "cas_number": "74-82-8",
     "inchi_number": "InChI=1S/CH4/h1H4",
     "inchi_key": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74828&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74828&Type=Color",
+    "mol_weight": 16.0425
   },
   {
-    "raw_formula": "HCHO",
+    "original_formula": "HCHO",
+    "nist_formula": "CH2O",
     "name": "Formaldehyde",
-    "empirical_formula": "CH2O",
     "cas_number": "50-00-0",
     "inchi_number": "InChI=1S/CH2O/c1-2/h1H2",
     "inchi_key": "WSFSSNUMVMOOMR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C50000&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C50000&Type=Color",
+    "mol_weight": 30.026
   },
   {
-    "raw_formula": "CH3OH",
+    "original_formula": "CH3OH",
+    "nist_formula": "CH4O",
     "name": "Methyl Alcohol",
-    "empirical_formula": "CH4O",
     "cas_number": "67-56-1",
     "inchi_number": "InChI=1S/CH4O/c1-2/h2H,1H3",
     "inchi_key": "OKKJLVBELUTLKV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67561&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C67561&Type=Color",
+    "mol_weight": 32.0419
   },
   {
-    "raw_formula": "HCOOH",
+    "original_formula": "HCOOH",
+    "nist_formula": "CH2O2",
     "name": "Formic acid",
-    "empirical_formula": "CH2O2",
     "cas_number": "64-18-6",
     "inchi_number": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)",
     "inchi_key": "BDAGIHXWWSANSR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64186&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C64186&Type=Color",
+    "mol_weight": 46.0254
   },
   {
-    "raw_formula": "HCOOCH3",
+    "original_formula": "HCOOCH3",
+    "nist_formula": "C2H4O2",
     "name": "Acetic acid",
-    "empirical_formula": "C2H4O2",
     "cas_number": "64-19-7",
     "inchi_number": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)",
     "inchi_key": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64197&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C64197&Type=Color",
+    "mol_weight": 60.052
   },
   {
-    "raw_formula": "C6H5CH3",
+    "original_formula": "C6H5CH3",
+    "nist_formula": "C7H8",
     "name": "Toluene",
-    "empirical_formula": "C7H8",
     "cas_number": "108-88-3",
     "inchi_number": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3",
     "inchi_key": "YXFVVABEGXRONW-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108883&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C108883&Type=Color",
+    "mol_weight": 92.1384
   },
   {
-    "raw_formula": "C5H12",
+    "original_formula": "C5H12",
+    "nist_formula": "C5H12",
     "name": "Butane, 2-methyl-",
-    "empirical_formula": "C5H12",
     "cas_number": "78-78-4",
     "inchi_number": "InChI=1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3",
     "inchi_key": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C78784&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C78784&Type=Color",
+    "mol_weight": 72.1488
   },
   {
-    "raw_formula": "C4H10",
+    "original_formula": "C4H10",
+    "nist_formula": "C4H10",
     "name": "Isobutane",
-    "empirical_formula": "C4H10",
     "cas_number": "75-28-5",
     "inchi_number": "InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3",
     "inchi_key": "NNPPMTNAJDCUHE-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75285&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75285&Type=Color",
+    "mol_weight": 58.1222
   },
   {
-    "raw_formula": "C10H8",
+    "original_formula": "C10H8",
+    "nist_formula": "C10H8",
     "name": "Naphthalene",
-    "empirical_formula": "C10H8",
     "cas_number": "91-20-3",
     "inchi_number": "InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H",
     "inchi_key": "UFWIBTONFRDIAS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C91203&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C91203&Type=Color",
+    "mol_weight": 128.1705
   },
   {
-    "raw_formula": "CH3COONa",
+    "original_formula": "CH3COONa",
+    "nist_formula": "C2H3NaO2",
     "name": "Acetic acid, sodium salt",
-    "empirical_formula": "C2H3NaO2",
     "cas_number": "127-09-3",
     "inchi_number": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1",
     "inchi_key": "VMHLLURERBWHNL-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C127093&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C127093&Type=Color",
+    "mol_weight": 82.0338
   },
   {
-    "raw_formula": "C6H5NO2",
+    "original_formula": "C6H5NO2",
+    "nist_formula": "C6H5NO2",
     "name": "Benzene, nitro-",
-    "empirical_formula": "C6H5NO2",
     "cas_number": "98-95-3",
     "inchi_number": "InChI=1S/C6H5NO2/c8-7(9)6-4-2-1-3-5-6/h1-5H",
     "inchi_key": "LQNUZADURLCDLV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C98953&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C98953&Type=Color",
+    "mol_weight": 123.1094
   },
   {
-    "raw_formula": "C9H20",
+    "original_formula": "C9H20",
+    "nist_formula": "C9H20",
     "name": "Octane, 2-methyl-",
-    "empirical_formula": "C9H20",
     "cas_number": "3221-61-2",
     "inchi_number": "InChI=1S/C9H20/c1-4-5-6-7-8-9(2)3/h9H,4-8H2,1-3H3",
     "inchi_key": "ZUBZATZOEPUUQF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C3221612&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C3221612&Type=Color",
+    "mol_weight": 128.2551
   },
   {
-    "raw_formula": "C17H35COOH",
+    "original_formula": "C17H35COOH",
+    "nist_formula": "C18H36O2",
     "name": "Hexadecanoic acid, ethyl ester",
-    "empirical_formula": "C18H36O2",
     "cas_number": "628-97-7",
     "inchi_number": "InChI=1S/C18H36O2/c1-3-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20-4-2/h3-17H2,1-2H3",
     "inchi_key": "XIRNKXNNONJFQO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C628977&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C628977&Type=Color",
+    "mol_weight": 284.4772
   },
   {
-    "raw_formula": "C8H18",
+    "original_formula": "C8H18",
+    "nist_formula": "C8H18",
     "name": "Pentane, 2,2,4-trimethyl-",
-    "empirical_formula": "C8H18",
     "cas_number": "540-84-1",
     "inchi_number": "InChI=1S/C8H18/c1-7(2)6-8(3,4)5/h7H,6H2,1-5H3",
     "inchi_key": "NHTMVDHEPJAVLT-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C540841&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C540841&Type=Color",
+    "mol_weight": 114.2285
   },
   {
-    "raw_formula": "C5H12",
+    "original_formula": "C5H12",
+    "nist_formula": "C5H12",
     "name": "Butane, 2-methyl-",
-    "empirical_formula": "C5H12",
     "cas_number": "78-78-4",
     "inchi_number": "InChI=1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3",
     "inchi_key": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C78784&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C78784&Type=Color",
+    "mol_weight": 72.1488
   },
   {
-    "raw_formula": "C5H11OH",
+    "original_formula": "C5H11OH",
+    "nist_formula": "C5H12O",
     "name": "1-Butanol, 3-methyl-",
-    "empirical_formula": "C5H12O",
     "cas_number": "123-51-3",
     "inchi_number": "InChI=1S/C5H12O/c1-5(2)3-4-6/h5-6H,3-4H2,1-2H3",
     "inchi_key": "PHTQWCKDNZKARW-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C123513&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C123513&Type=Color",
+    "mol_weight": 88.1482
   },
   {
-    "raw_formula": "C4H9COOH",
+    "original_formula": "C4H9COOH",
+    "nist_formula": "C5H10O2",
     "name": "Butanoic acid, 3-methyl-",
-    "empirical_formula": "C5H10O2",
     "cas_number": "503-74-2",
     "inchi_number": "InChI=1S/C5H10O2/c1-4(2)3-5(6)7/h4H,3H2,1-2H3,(H,6,7)",
     "inchi_key": "GWYFCOCPABKNJV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C503742&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C503742&Type=Color",
+    "mol_weight": 102.1317
   },
   {
-    "raw_formula": "C5H8",
+    "original_formula": "C5H8",
+    "nist_formula": "C5H8",
     "name": "Cyclopentene",
-    "empirical_formula": "C5H8",
     "cas_number": "142-29-0",
     "inchi_number": "InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2",
     "inchi_key": "LPIQUOYDBNQMRZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142290&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C142290&Type=Color",
+    "mol_weight": 68.117
   },
   {
-    "raw_formula": "C6H5OH",
+    "original_formula": "C6H5OH",
+    "nist_formula": "C6H6O",
     "name": "Phenol",
-    "empirical_formula": "C6H6O",
     "cas_number": "108-95-2",
     "inchi_number": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
     "inchi_key": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108952&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C108952&Type=Color",
+    "mol_weight": 94.1112
   },
   {
-    "raw_formula": "COCl2",
+    "original_formula": "COCl2",
+    "nist_formula": "CCl2O",
     "name": "Phosgene",
-    "empirical_formula": "CCl2O",
     "cas_number": "75-44-5",
     "inchi_number": "InChI=1S/CCl2O/c2-1(3)4",
     "inchi_key": "YGYAWVDWMABLBF-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75445&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75445&Type=Color",
+    "mol_weight": 98.916
   },
   {
-    "raw_formula": "C6H4(COOH)2",
+    "original_formula": "C6H4(COOH)2",
+    "nist_formula": "C8H6O4",
     "name": "Isophthalic acid",
-    "empirical_formula": "C8H6O4",
     "cas_number": "121-91-5",
     "inchi_number": "InChI=1S/C8H6O4/c9-7(10)5-2-1-3-6(4-5)8(11)12/h1-4H,(H,9,10)(H,11,12)",
     "inchi_key": "QQVIHTHCMHWDBS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C121915&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C121915&Type=Color",
+    "mol_weight": 166.1308
   },
   {
-    "raw_formula": "C3H8",
+    "original_formula": "C3H8",
+    "nist_formula": "C3H8",
     "name": "Propane",
-    "empirical_formula": "C3H8",
     "cas_number": "74-98-6",
     "inchi_number": "InChI=1S/C3H8/c1-3-2/h3H2,1-2H3",
     "inchi_key": "ATUOYWHBWRKTHZ-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74986&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74986&Type=Color",
+    "mol_weight": 44.0956
   },
   {
-    "raw_formula": "C3H7OH",
+    "original_formula": "C3H7OH",
+    "nist_formula": "C3H8O",
     "name": "1-Propanol",
-    "empirical_formula": "C3H8O",
     "cas_number": "71-23-8",
     "inchi_number": "InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3",
     "inchi_key": "BDERNNFJNOPAEC-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71238&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C71238&Type=Color",
+    "mol_weight": 60.095
   },
   {
-    "raw_formula": "CH3COCH3",
+    "original_formula": "CH3COCH3",
+    "nist_formula": "C3H6O",
     "name": "Acetone",
-    "empirical_formula": "C3H6O",
     "cas_number": "67-64-1",
     "inchi_number": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3",
     "inchi_key": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67641&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C67641&Type=Color",
+    "mol_weight": 58.0791
   },
   {
-    "raw_formula": "C2H5COOH",
+    "original_formula": "C2H5COOH",
+    "nist_formula": "C3H6O2",
     "name": "Propanoic acid",
-    "empirical_formula": "C3H6O2",
     "cas_number": "79-09-4",
     "inchi_number": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)",
     "inchi_key": "XBDQKXXYIPTUBI-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79094&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C79094&Type=Color",
+    "mol_weight": 74.0785
   },
   {
-    "raw_formula": "C3H5(OH)3",
+    "original_formula": "C3H5(OH)3",
+    "nist_formula": "C3H8O3",
     "name": "Glycerin",
-    "empirical_formula": "C3H8O3",
     "cas_number": "56-81-5",
     "inchi_number": "InChI=1S/C3H8O3/c4-1-3(6)2-5/h3-6H,1-2H2",
     "inchi_key": "PEDCQBHIVMGVHV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C56815&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C56815&Type=Color",
+    "mol_weight": 92.0938
   },
   {
-    "raw_formula": "C3H6",
+    "original_formula": "C3H6",
+    "nist_formula": "C3H6",
     "name": "Propene",
-    "empirical_formula": "C3H6",
     "cas_number": "115-07-1",
     "inchi_number": "InChI=1S/C3H6/c1-3-2/h3H,1H2,2H3",
     "inchi_key": "QQONPFPTGQHPMA-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C115071&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C115071&Type=Color",
+    "mol_weight": 42.0797
   },
   {
-    "raw_formula": "C3H4",
+    "original_formula": "C3H4",
+    "nist_formula": "C3H4",
     "name": "Propyne",
-    "empirical_formula": "C3H4",
     "cas_number": "74-99-7",
     "inchi_number": "InChI=1S/C3H4/c1-3-2/h1H,2H3",
     "inchi_key": "MWWATHDPGQKSAR-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74997&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C74997&Type=Color",
+    "mol_weight": 40.0639
   },
   {
-    "raw_formula": "C12H22O11",
+    "original_formula": "C12H22O11",
+    "nist_formula": "C12H22O11",
     "name": "Sucrose",
-    "empirical_formula": "C12H22O11",
     "cas_number": "57-50-1",
     "inchi_number": "InChI=1S/C12H22O11/c13-1-4-6(16)8(18)9(19)11(21-4)23-12(3-15)10(20)7(17)5(2-14)22-12/h4-11,13-20H,1-3H2/t4-,5?,6-,7?,8+,9-,10?,11-,12?/m0/s1",
     "inchi_key": "CZMRCDWAGMRECN-SFOFJGFUSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57501&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C57501&Type=Color",
+    "mol_weight": 342.2965
   },
   {
-    "raw_formula": "CH3COOAg",
+    "original_formula": "CH3COOAg",
+    "nist_formula": "C2H3AgO2",
     "name": "Silver acetate",
-    "empirical_formula": "C2H3AgO2",
     "cas_number": "563-63-3",
     "inchi_number": "InChI=1S/C2H4O2.Ag/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1",
     "inchi_key": "CQLFBEKRDQMJLZ-UHFFFAOYSA-M",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C563633&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C563633&Type=Color",
+    "mol_weight": 166.9122
   },
   {
-    "raw_formula": "CCl4",
+    "original_formula": "CCl4",
+    "nist_formula": "CCl4",
     "name": "Carbon Tetrachloride",
-    "empirical_formula": "CCl4",
     "cas_number": "56-23-5",
     "inchi_number": "InChI=1S/CCl4/c2-1(3,4)5",
     "inchi_key": "VZGDMQKNWNREIO-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C56235&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C56235&Type=Color",
+    "mol_weight": 153.823
   },
   {
-    "raw_formula": "CHBr3",
+    "original_formula": "CHBr3",
+    "nist_formula": "CHBr3",
     "name": "Methane, tribromo-",
-    "empirical_formula": "CHBr3",
     "cas_number": "75-25-2",
     "inchi_number": "InChI=1S/CHBr3/c2-1(3)4/h1H",
     "inchi_key": "DIKBFYAXUHHXCS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75252&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75252&Type=Color",
+    "mol_weight": 252.731
   },
   {
-    "raw_formula": "CHCl3",
+    "original_formula": "CHCl3",
+    "nist_formula": "CHCl3",
     "name": "Trichloromethane",
-    "empirical_formula": "CHCl3",
     "cas_number": "67-66-3",
     "inchi_number": "InChI=1S/CHCl3/c2-1(3)4/h1H",
     "inchi_key": "HEDRZPFGACZZDS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67663&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C67663&Type=Color",
+    "mol_weight": 119.378
   },
   {
-    "raw_formula": "Cl3CCOOH",
+    "original_formula": "Cl3CCOOH",
+    "nist_formula": "C2HCl3O2",
     "name": "Trichloroacetic Acid",
-    "empirical_formula": "C2HCl3O2",
     "cas_number": "76-03-9",
     "inchi_number": "InChI=1S/C2HCl3O2/c3-2(4,5)1(6)7/h(H,6,7)",
     "inchi_key": "YNJBWRMUSHSURL-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C76039&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C76039&Type=Color",
+    "mol_weight": 163.387
   },
   {
-    "raw_formula": "CHI3",
+    "original_formula": "CHI3",
+    "nist_formula": "CHI3",
     "name": "Methane, triiodo-",
-    "empirical_formula": "CHI3",
     "cas_number": "75-47-8",
     "inchi_number": "InChI=1S/CHI3/c2-1(3)4/h1H",
     "inchi_key": "OKJPEAGHQZHRQV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75478&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C75478&Type=Color",
+    "mol_weight": 393.7321
   },
   {
-    "raw_formula": "(C2H5)3N",
+    "original_formula": "(C2H5)3N",
+    "nist_formula": "C6H15N",
     "name": "Triethylamine",
-    "empirical_formula": "C6H15N",
     "cas_number": "121-44-8",
     "inchi_number": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3",
     "inchi_key": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C121448&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C121448&Type=Color",
+    "mol_weight": 101.19
   },
   {
-    "raw_formula": "C11H24",
+    "original_formula": "C11H24",
+    "nist_formula": "C11H24",
     "name": "Decane, 2-methyl-",
-    "empirical_formula": "C11H24",
     "cas_number": "6975-98-0",
     "inchi_number": "InChI=1S/C11H24/c1-4-5-6-7-8-9-10-11(2)3/h11H,4-10H2,1-3H3",
     "inchi_key": "CNPVJWYWYZMPDS-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C6975980&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C6975980&Type=Color",
+    "mol_weight": 156.3083
   },
   {
-    "raw_formula": "C6H5C2H3",
+    "original_formula": "C6H5C2H3",
+    "nist_formula": "C8H8",
     "name": "Styrene",
-    "empirical_formula": "C8H8",
     "cas_number": "100-42-5",
     "inchi_number": "InChI=1S/C8H8/c1-2-8-6-4-3-5-7-8/h2-7H,1H2",
     "inchi_key": "PPBRXRYQALVLMV-UHFFFAOYSA-N",
-    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100425&Type=Color"
+    "chemical_structure_url": "https://webbook.nist.gov//cgi/cbook.cgi?Struct=C100425&Type=Color",
+    "mol_weight": 104.1491
   }
 ]
