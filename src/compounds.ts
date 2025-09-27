@@ -20,9 +20,12 @@ const MANUAL_DATA = {
 
 export type Compound = {
     raw_formula: string,
+    empirical_formula: string,
     name: string,
-    formula: Formula
-    // cas: string
+    cas_number: string | undefined,
+    inchi_number: string | undefined,
+    inchi_key: string | undefined
+    chemical_structure_url: string | undefined
 }
 
 const compounds:Compound[] = []
@@ -42,6 +45,7 @@ function convert_formula_with_chem_parse(formula: string): Formula{
 }
 
 
+
 for (const raw_formula of compounds_list){
 
     const formula = convert_formula_with_chem_parse(raw_formula)
@@ -56,8 +60,7 @@ for (const raw_formula of compounds_list){
     const document = dom.window.document
     let name = document.title
     if (name == "Search Results"){
-         // @ts-expect-error
-        const searches = [...document.querySelectorAll('main>ol>li>a')].map(x => x.href) as string[]
+        const searches = [...document.querySelectorAll<HTMLAnchorElement>('main>ol>li>a')].map(x => x.href) as string[]
         if (searches.length < 1){
             throw `searche didn't give any result for: ${raw_formula}`
         }
@@ -75,21 +78,45 @@ for (const raw_formula of compounds_list){
         }
         continue
     }
-    const embeded_formula_parent = document.querySelector('li [title="IUPAC definition of empirical formula"]')?.parentElement
-    if (embeded_formula_parent) {
-        const embeded_formula_parent_parent = embeded_formula_parent.parentElement
-        if (!embeded_formula_parent_parent) throw `you should kill yourself, ⚡NOW⚡`
-        embeded_formula_parent.remove()
-        const embeded_formula = embeded_formula_parent_parent.textContent.trim()
-        if (JSON.stringify(convert_formula_with_chem_parse(embeded_formula)) != JSON.stringify(formula)){
-            console.log(`formulas: ${embeded_formula} and ${raw_formula} aren't the same?`)
+    const get_data_1 = (selector: string): undefined | string => {
+        const title_target = document.querySelector(selector)?.parentElement
+        if (!title_target){
+            return undefined
         }
+        const parent = title_target.parentElement
+        if (!parent) throw `you should kill yourself, ⚡NOW⚡`
+        title_target.remove()
+        return parent.textContent.trim()
+    }
+    const get_data_2 = (text_in: string): undefined | string => {
+        const text_targeted = [...document.querySelectorAll('li > strong')].find(x => x.textContent == text_in)
+        if (!text_targeted) return undefined
+        const parent = text_targeted.parentElement
+        if (!parent) throw `you should kill yourself, ⚡NOW⚡`
+        text_targeted.remove()
+        return parent.textContent.trim()
     }
     
+    const empirical_formula = get_data_1('li [title="IUPAC definition of empirical formula"]')
+    if (empirical_formula && JSON.stringify(convert_formula_with_chem_parse(empirical_formula)) != JSON.stringify(formula)){
+        console.warn(`formulas: ${empirical_formula} and ${raw_formula} aren't the same?`)
+    }
+    const molecular_weight = get_data_1('li [title="IUPAC definition of relative molecular mass (molecular weight)"]')
+    const InChI_number = document.querySelector('.inchi-text')?.textContent.trim()
+    const InChI_key = document.querySelectorAll('.inchi-text')?.[1]?.textContent.trim()
+    const CAS_number = get_data_2('CAS Registry Number:')
+    const chemical_structure_URL = document.querySelector<HTMLImageElement>('.struct')?.src
+
+    if (!empirical_formula) throw `no empirical formula found for :${raw_formula}`
+
     compounds.push({
         raw_formula,
         name,
-        formula
+        empirical_formula,
+        cas_number: CAS_number,
+        inchi_number: InChI_number,
+        inchi_key: InChI_key,
+        chemical_structure_url: chemical_structure_URL
     })
 }
 

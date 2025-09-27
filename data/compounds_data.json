@@ -2,2002 +2,1971 @@
   {
     "raw_formula": "AlBr3",
     "name": "aluminium bromide",
-    "formula": {
-      "al": 1,
-      "br": 3
-    }
+    "empirical_formula": "AlBr3",
+    "cas_number": "7727-15-3"
   },
   {
     "raw_formula": "Al4C3",
     "name": "tetraaluminium tricarbide",
-    "formula": {
-      "c": 3,
-      "al": 4
-    }
+    "empirical_formula": "C3Al4",
+    "cas_number": "1299-86-1"
   },
   {
     "raw_formula": "AlCl3",
     "name": "aluminium chloride",
-    "formula": {
-      "al": 1,
-      "cl": 3
-    }
+    "empirical_formula": "AlCl3",
+    "cas_number": "7446-70-0"
   },
   {
     "raw_formula": "Al(OH)3",
     "name": "aluminium hydroxide",
-    "formula": {
-      "h": 3,
-      "o": 3,
-      "al": 1
-    }
+    "empirical_formula": "AlH3O3",
+    "cas_number": "21645-51-2"
   },
   {
     "raw_formula": "Al2O3",
     "name": "aluminium oxide",
-    "formula": {
-      "o": 3,
-      "al": 2
-    }
+    "empirical_formula": "Al2O3",
+    "cas_number": "1344-28-1"
   },
   {
     "raw_formula": "Al2(SO4)3",
     "name": "aluminium sulphate",
-    "formula": {
-      "o": 12,
-      "al": 2,
-      "s": 3
-    }
+    "empirical_formula": "Al2O12S3",
+    "cas_number": "10043-01-3"
   },
   {
     "raw_formula": "NH3",
     "name": "Ammonia",
-    "formula": {
-      "h": 3,
-      "n": 1
-    }
+    "empirical_formula": "H3N",
+    "cas_number": "7664-41-7",
+    "inchi_number": "InChI=1S/H3N/h1H3",
+    "inchi_key": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664417&Type=Color"
   },
   {
     "raw_formula": "(NH4)2CO3",
     "name": "Ammonium carbonate",
-    "formula": {
-      "h": 8,
-      "c": 1,
-      "n": 2,
-      "o": 3
-    }
+    "empirical_formula": "CH8N2O3",
+    "inchi_number": "InChI=1S/CH2O3.2H3N/c2-1(3)4;;/h(H2,2,3,4);2*1H3",
+    "inchi_key": "PRKQVKDSMLBJBJ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B6002848&Type=Color"
   },
   {
     "raw_formula": "NH4Cl",
     "name": "Ammonium Chloride",
-    "formula": {
-      "h": 4,
-      "n": 1,
-      "cl": 1
-    }
+    "empirical_formula": "ClH4N",
+    "cas_number": "12125-02-9",
+    "inchi_number": "InChI=1S/ClH.H3N/h1H;1H3",
+    "inchi_key": "NLXLAEXVIDQMFP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C12125029&Type=Color"
   },
   {
     "raw_formula": "NH4HCO3",
     "name": "Ammonium bicarbonate",
-    "formula": {
-      "h": 5,
-      "c": 1,
-      "n": 1,
-      "o": 3
-    }
+    "empirical_formula": "CH5NO3",
+    "cas_number": "1066-33-7",
+    "inchi_number": "InChI=1S/CH2O3.H3N/c2-1(3)4;/h(H2,2,3,4);1H3",
+    "inchi_key": "ATRRKUHOCOJYRX-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1066337&Type=Color"
   },
   {
     "raw_formula": "NH4NO3",
     "name": "Ammonium nitrate",
-    "formula": {
-      "h": 4,
-      "n": 2,
-      "o": 3
-    }
+    "empirical_formula": "H4N2O3",
+    "cas_number": "6484-52-2",
+    "inchi_number": "InChI=1S/H4N2O3/c1-5-2(3)4/h1H4",
+    "inchi_key": "ASFXIDPWCNUKTK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C6484522&Type=Color"
   },
   {
     "raw_formula": "(NH4)2SO4",
     "name": "Ammonium sulfate",
-    "formula": {
-      "h": 8,
-      "n": 2,
-      "o": 4,
-      "s": 1
-    }
+    "empirical_formula": "H8N2O4S",
+    "cas_number": "7783-20-2",
+    "inchi_number": "InChI=1S/H8N2O4S/c1-5-7(3,4)6-2/h1-2H4",
+    "inchi_key": "KTMPTTWZBSFVPI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783202&Type=Color"
   },
   {
     "raw_formula": "As2O3",
     "name": "diarsenic trioxide",
-    "formula": {
-      "o": 3,
-      "as": 2
-    }
+    "empirical_formula": "As2O3",
+    "cas_number": "1327-53-3"
   },
   {
     "raw_formula": "BaCO3",
     "name": "barium carbonate",
-    "formula": {
-      "c": 1,
-      "o": 3,
-      "ba": 1
-    }
+    "empirical_formula": "CBaO3",
+    "cas_number": "513-77-9"
   },
   {
     "raw_formula": "BaCl2",
     "name": "Barium dichloride",
-    "formula": {
-      "cl": 2,
-      "ba": 1
-    }
+    "empirical_formula": "BaCl2",
+    "cas_number": "10361-37-2",
+    "inchi_number": "InChI=1S/Ba.2ClH/h;2*1H/q+2;;/p-2",
+    "inchi_key": "WDIHJSXYQDMJHN-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10361372&Type=Color"
   },
   {
     "raw_formula": "Ba(OH)2",
     "name": "barium hydroxide",
-    "formula": {
-      "h": 2,
-      "o": 2,
-      "ba": 1
-    }
+    "empirical_formula": "BaH2O2",
+    "cas_number": "17194-00-2",
+    "inchi_number": "InChI=1S/Ba.2H2O/h;2*1H2/q+2;;/p-2",
+    "inchi_key": "RQPZNWPYLFFXCP-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C17194002&Type=Color"
   },
   {
     "raw_formula": "BaO",
     "name": "barium oxide, obtained by calcining witherite",
-    "formula": {
-      "o": 1,
-      "ba": 1
-    }
+    "empirical_formula": "BaO",
+    "cas_number": "1304-28-5",
+    "inchi_number": "InChI=1S/Ba.O",
+    "inchi_key": "QVQLCTNNEUAWMS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1304285&Type=Color"
   },
   {
     "raw_formula": "BaSO4",
     "name": "barium sulfate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "ba": 1
-    }
+    "empirical_formula": "BaO4S",
+    "cas_number": "7727-43-7",
+    "inchi_number": "InChI=1S/Ba.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "TZCXTZWJZNENPQ-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7727437&Type=Color"
   },
   {
     "raw_formula": "PbCl2",
     "name": "Lead dichloride",
-    "formula": {
-      "cl": 2,
-      "pb": 1
-    }
+    "empirical_formula": "Cl2Pb",
+    "cas_number": "7758-95-4",
+    "inchi_number": "InChI=1S/2ClH.Pb/h2*1H;/q;;+2/p-2",
+    "inchi_key": "HWSZZLVAJGOAAY-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758954&Type=Color"
   },
   {
     "raw_formula": "Pb(NO3)2",
     "name": "lead dinitrate",
-    "formula": {
-      "n": 2,
-      "o": 6,
-      "pb": 1
-    }
+    "empirical_formula": "N2O6Pb",
+    "cas_number": "10099-74-8"
   },
   {
     "raw_formula": "PbO",
     "name": "Lead oxide",
-    "formula": {
-      "o": 1,
-      "pb": 1
-    }
+    "empirical_formula": "OPb",
+    "cas_number": "1317-36-8",
+    "inchi_number": "InChI=1S/O.Pb",
+    "inchi_key": "YEXPOXQUZXUXJW-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317368&Type=Color"
   },
   {
     "raw_formula": "Pb3O4",
     "name": "orange lead",
-    "formula": {
-      "o": 4,
-      "pb": 3
-    }
+    "empirical_formula": "O4Pb3",
+    "cas_number": "1314-41-6",
+    "inchi_number": "InChI=1S/4O.3Pb",
+    "inchi_key": "XMFOQHDPRMAJNU-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314416&Type=Color"
   },
   {
     "raw_formula": "PbO2",
     "name": "lead dioxide",
-    "formula": {
-      "o": 2,
-      "pb": 1
-    }
+    "empirical_formula": "O2Pb",
+    "cas_number": "1309-60-0"
   },
   {
     "raw_formula": "PbSO4",
     "name": "lead sulphate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "pb": 1
-    }
+    "empirical_formula": "O4PbS",
+    "cas_number": "7446-14-2",
+    "inchi_number": "InChI=1S/H2O4S.Pb/c1-5(2,3)4;/h(H2,1,2,3,4);/q;+2/p-2",
+    "inchi_key": "KEQXNNJHMWSZHK-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446142&Type=Color"
   },
   {
     "raw_formula": "PbS",
     "name": "lead sulphide",
-    "formula": {
-      "s": 1,
-      "pb": 1
-    }
+    "empirical_formula": "PbS",
+    "cas_number": "1314-87-0",
+    "inchi_number": "InChI=1S/Pb.S",
+    "inchi_key": "XCAUINMIESBTBL-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314870&Type=Color"
   },
   {
     "raw_formula": "H3BO3",
     "name": "Boric acid",
-    "formula": {
-      "h": 3,
-      "b": 1,
-      "o": 3
-    }
+    "empirical_formula": "BH3O3",
+    "cas_number": "10043-35-3",
+    "inchi_number": "InChI=1S/BH3O3/c2-1(3)4/h2-4H",
+    "inchi_key": "KGBXLFKZBHKPEV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10043353&Type=Color"
   },
   {
     "raw_formula": "HBr",
     "name": "Hydrogen bromide",
-    "formula": {
-      "h": 1,
-      "br": 1
-    }
+    "empirical_formula": "BrH",
+    "cas_number": "10035-10-6",
+    "inchi_number": "InChI=1S/BrH/h1H",
+    "inchi_key": "CPELXLSAUQHCOX-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10035106&Type=Color"
   },
   {
     "raw_formula": "CaBr2",
     "name": "calcium bromide",
-    "formula": {
-      "ca": 1,
-      "br": 2
-    }
+    "empirical_formula": "Br2Ca",
+    "cas_number": "7789-41-5"
   },
   {
     "raw_formula": "CaCO3",
     "name": "Calcium carbonate (precipitated)",
-    "formula": {
-      "c": 1,
-      "o": 3,
-      "ca": 1
-    }
+    "empirical_formula": "CCaO3",
+    "cas_number": "471-34-1",
+    "inchi_number": "InChI=1S/CH2O3.Ca/c2-1(3)4;/h(H2,2,3,4);/q;+2/p-2",
+    "inchi_key": "VTYYLEPIZMXCLO-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C471341&Type=Color"
   },
   {
     "raw_formula": "CaCl2",
     "name": "calcium chloride",
-    "formula": {
-      "cl": 2,
-      "ca": 1
-    }
+    "empirical_formula": "CaCl2",
+    "cas_number": "10043-52-4"
   },
   {
     "raw_formula": "CaF2",
     "name": "calcium fluoride",
-    "formula": {
-      "f": 2,
-      "ca": 1
-    }
+    "empirical_formula": "CaF2",
+    "cas_number": "7789-75-5"
   },
   {
     "raw_formula": "Ca(OH)2",
     "name": "calcium dihydroxide",
-    "formula": {
-      "h": 2,
-      "o": 2,
-      "ca": 1
-    }
+    "empirical_formula": "CaH2O2",
+    "cas_number": "1305-62-0"
   },
   {
     "raw_formula": "CaI2",
     "name": "calcium iodide",
-    "formula": {
-      "ca": 1,
-      "i": 2
-    }
+    "empirical_formula": "CaI2",
+    "cas_number": "10102-68-8"
   },
   {
     "raw_formula": "Ca(NO3)2",
     "name": "calcium nitrate",
-    "formula": {
-      "n": 2,
-      "o": 6,
-      "ca": 1
-    }
+    "empirical_formula": "CaN2O6",
+    "cas_number": "10124-37-5",
+    "inchi_number": "InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1",
+    "inchi_key": "ZCCIPPOKBCJFDN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10124375&Type=Color"
   },
   {
     "raw_formula": "CaO",
     "name": "calcium oxide",
-    "formula": {
-      "o": 1,
-      "ca": 1
-    }
+    "empirical_formula": "CaO",
+    "cas_number": "1305-78-8",
+    "inchi_number": "InChI=1S/Ca.O",
+    "inchi_key": "ODINCKMPIJJUCX-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1305788&Type=Color"
   },
   {
     "raw_formula": "Ca3(PO4)2",
     "name": "calcium phosphate",
-    "formula": {
-      "o": 8,
-      "p": 2,
-      "ca": 3
-    }
+    "empirical_formula": "Ca3O8P2",
+    "cas_number": "10103-46-5"
   },
   {
     "raw_formula": "CaSO4",
     "name": "Sulfuric acid, calcium salt, hydrate (1:1:2)",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "ca": 1
-    }
+    "empirical_formula": "CaO4S",
+    "cas_number": "10101-41-4",
+    "inchi_number": "InChI=1S/Ca.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "OSGAYBCDTDRGGQ-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10101414&Type=Color"
   },
   {
     "raw_formula": "HCl",
     "name": "Hydrogen chloride",
-    "formula": {
-      "h": 1,
-      "cl": 1
-    }
+    "empirical_formula": "ClH",
+    "cas_number": "7647-01-0",
+    "inchi_number": "InChI=1S/ClH/h1H",
+    "inchi_key": "VEXZGXHMUGYJMC-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647010&Type=Color"
   },
   {
     "raw_formula": "CrCl2",
     "name": "chromium dichloride",
-    "formula": {
-      "cl": 2,
-      "cr": 1
-    }
+    "empirical_formula": "Cl2Cr",
+    "cas_number": "10049-05-5"
   },
   {
     "raw_formula": "Cr2O3",
     "name": "Chromium oxide",
-    "formula": {
-      "o": 3,
-      "cr": 2
-    }
+    "empirical_formula": "Cr2O3",
+    "cas_number": "1308-38-9",
+    "inchi_number": "InChI=1S/2Cr.3O",
+    "inchi_key": "QDOXWKRWXJOMAK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1308389&Type=Color"
   },
   {
     "raw_formula": "CoCl2",
     "name": "cobalt dichloride",
-    "formula": {
-      "cl": 2,
-      "co": 1
-    }
+    "empirical_formula": "Cl2Co",
+    "cas_number": "7646-79-9"
   },
   {
     "raw_formula": "HCN",
     "name": "Hydrogen cyanide",
-    "formula": {
-      "h": 1,
-      "c": 1,
-      "n": 1
-    }
+    "empirical_formula": "CHN",
+    "cas_number": "74-90-8",
+    "inchi_number": "InChI=1S/CHN/c1-2/h1H",
+    "inchi_key": "LELOWRISYMNNSU-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74908&Type=Color"
   },
   {
     "raw_formula": "FeCl3",
     "name": "iron trichloride",
-    "formula": {
-      "cl": 3,
-      "fe": 1
-    }
+    "empirical_formula": "Cl3Fe",
+    "cas_number": "7705-08-0"
   },
   {
     "raw_formula": "FeS2",
     "name": "Pyrite (FeS2)",
-    "formula": {
-      "s": 2,
-      "fe": 1
-    }
+    "empirical_formula": "FeS2",
+    "cas_number": "1309-36-0"
   },
   {
     "raw_formula": "Fe(OH)3",
     "name": "diiron trioxide hydrate",
-    "formula": {
-      "h": 3,
-      "o": 3,
-      "fe": 1
-    }
+    "empirical_formula": "FeH3O3",
+    "cas_number": "1309-33-7"
   },
   {
     "raw_formula": "FeO",
     "name": "iron oxide",
-    "formula": {
-      "o": 1,
-      "fe": 1
-    }
+    "empirical_formula": "FeO",
+    "cas_number": "1345-25-1",
+    "inchi_number": "InChI=1S/Fe.O",
+    "inchi_key": "UQSXHKLRYXJYBZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1345251&Type=Color"
   },
   {
     "raw_formula": "Fe3O4",
     "name": "magnetite",
-    "formula": {
-      "o": 4,
-      "fe": 3
-    }
+    "empirical_formula": "Fe3O4",
+    "cas_number": "1309-38-2"
   },
   {
     "raw_formula": "Fe2O3",
     "name": "Hematite (Fe2O3)",
-    "formula": {
-      "o": 3,
-      "fe": 2
-    }
+    "empirical_formula": "Fe2O3",
+    "cas_number": "1317-60-8"
   },
   {
     "raw_formula": "FeSO4",
     "name": "iron sulphate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "fe": 1
-    }
+    "empirical_formula": "FeO4S",
+    "cas_number": "7720-78-7",
+    "inchi_number": "InChI=1S/Fe.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "BAUYGSIQEAFULO-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7720787&Type=Color"
   },
   {
     "raw_formula": "FeS",
     "name": "Iron sulfide",
-    "formula": {
-      "s": 1,
-      "fe": 1
-    }
+    "empirical_formula": "FeS",
+    "cas_number": "1317-96-0",
+    "inchi_number": "InChI=1S/Fe.S",
+    "inchi_key": "MBMLMWLHJBBADN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317960&Type=Color"
   },
   {
     "raw_formula": "HF",
     "name": "hydrogen fluoride",
-    "formula": {
-      "h": 1,
-      "f": 1
-    }
+    "empirical_formula": "FH",
+    "cas_number": "7664-39-3",
+    "inchi_number": "InChI=1S/FH/h1H",
+    "inchi_key": "KRHYYFGTRYWZRS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664393&Type=Color"
   },
   {
     "raw_formula": "HI",
     "name": "Hydrogen iodide",
-    "formula": {
-      "h": 1,
-      "i": 1
-    }
+    "empirical_formula": "HI",
+    "cas_number": "10034-85-2",
+    "inchi_number": "InChI=1S/HI/h1H",
+    "inchi_key": "XMBWDFGMSWQBCA-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10034852&Type=Color"
   },
   {
     "raw_formula": "KBr",
     "name": "potassium bromide",
-    "formula": {
-      "k": 1,
-      "br": 1
-    }
+    "empirical_formula": "BrK",
+    "cas_number": "7758-02-3",
+    "inchi_number": "InChI=1S/BrH.K/h1H;/q;+1/p-1",
+    "inchi_key": "IOLCXVTUBQKXJR-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758023&Type=Color"
   },
   {
     "raw_formula": "K2CO3",
     "name": "potassium carbonate",
-    "formula": {
-      "c": 1,
-      "o": 3,
-      "k": 2
-    }
+    "empirical_formula": "CK2O3",
+    "cas_number": "584-08-7"
   },
   {
     "raw_formula": "KClO3",
     "name": "Potassium chlorate",
-    "formula": {
-      "o": 3,
-      "cl": 1,
-      "k": 1
-    }
+    "empirical_formula": "ClKO3",
+    "cas_number": "3811-04-9"
   },
   {
     "raw_formula": "KCl",
     "name": "potassium chloride",
-    "formula": {
-      "cl": 1,
-      "k": 1
-    }
+    "empirical_formula": "ClK",
+    "cas_number": "7447-40-7",
+    "inchi_number": "InChI=1S/ClH.K/h1H;/q;+1/p-1",
+    "inchi_key": "WCUXLLCKKVVCTQ-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7447407&Type=Color"
   },
   {
     "raw_formula": "K2CrO4",
     "name": "potassium chromate",
-    "formula": {
-      "o": 4,
-      "k": 2,
-      "cr": 1
-    }
+    "empirical_formula": "CrK2O4",
+    "cas_number": "7789-00-6"
   },
   {
     "raw_formula": "KCN",
     "name": "potassium cyanide",
-    "formula": {
-      "c": 1,
-      "n": 1,
-      "k": 1
-    }
+    "empirical_formula": "CKN",
+    "cas_number": "151-50-8"
   },
   {
     "raw_formula": "K2Cr2O7",
     "name": "potassium dichromate",
-    "formula": {
-      "o": 7,
-      "k": 2,
-      "cr": 2
-    }
+    "empirical_formula": "Cr2K2O7",
+    "cas_number": "7778-50-9"
   },
   {
     "raw_formula": "KF",
     "name": "Potassium fluoride",
-    "formula": {
-      "f": 1,
-      "k": 1
-    }
+    "empirical_formula": "FK",
+    "cas_number": "7789-23-3",
+    "inchi_number": "InChI=1S/FH.K/h1H;/q;+1/p-1",
+    "inchi_key": "NROKBHXJSPEDAR-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7789233&Type=Color"
   },
   {
     "raw_formula": "KOH",
     "name": "Potassium hydroxide",
-    "formula": {
-      "h": 1,
-      "o": 1,
-      "k": 1
-    }
+    "empirical_formula": "HKO",
+    "cas_number": "1310-58-3",
+    "inchi_number": "InChI=1S/K.H2O/h;1H2/q+1;/p-1",
+    "inchi_key": "KWYUFKZDYYNOTN-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1310583&Type=Color"
   },
   {
     "raw_formula": "KIO3",
     "name": "Potassium iodate",
-    "formula": {
-      "o": 3,
-      "k": 1,
-      "i": 1
-    }
+    "empirical_formula": "IKO3",
+    "inchi_number": "InChI=1S/HIO3.K/c2-1(3)4;/h(H,2,3,4);/q;+1/p-1",
+    "inchi_key": "JLKDVMWYMMLWTI-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B6005102&Type=Color"
   },
   {
     "raw_formula": "KI",
     "name": "potassium iodide",
-    "formula": {
-      "k": 1,
-      "i": 1
-    }
+    "empirical_formula": "IK",
+    "cas_number": "7681-11-0",
+    "inchi_number": "InChI=1S/HI.K/h1H;/q;+1/p-1",
+    "inchi_key": "NLKNQRATVPKPDG-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7681110&Type=Color"
   },
   {
     "raw_formula": "KNO3",
     "name": "potassium nitrate",
-    "formula": {
-      "n": 1,
-      "o": 3,
-      "k": 1
-    }
+    "empirical_formula": "KNO3",
+    "cas_number": "7757-79-1",
+    "inchi_number": "InChI=1S/K.NO3/c;2-1(3)4/q+1;-1",
+    "inchi_key": "FGIUAXJPYTZDNR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7757791&Type=Color"
   },
   {
     "raw_formula": "KMnO4",
     "name": "potassium permanganate",
-    "formula": {
-      "o": 4,
-      "k": 1,
-      "mn": 1
-    }
+    "empirical_formula": "KMnO4",
+    "cas_number": "7722-64-7",
+    "inchi_number": "InChI=1S/K.Mn.4O/q+1;;;;;-1",
+    "inchi_key": "VZJVWSHVAAUDKD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7722647&Type=Color"
   },
   {
     "raw_formula": "K3PO4",
     "name": "tripotassium orthophosphate",
-    "formula": {
-      "o": 4,
-      "p": 1,
-      "k": 3
-    }
+    "empirical_formula": "K3O4P",
+    "cas_number": "7778-53-2"
   },
   {
     "raw_formula": "K2SO4",
     "name": "potassium sulfate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "k": 2
-    }
+    "empirical_formula": "K2O4S",
+    "cas_number": "7778-80-5"
   },
   {
     "raw_formula": "K2O",
     "name": "dipotassium oxide",
-    "formula": {
-      "o": 1,
-      "k": 2
-    }
+    "empirical_formula": "K2O",
+    "cas_number": "12136-45-7"
   },
   {
     "raw_formula": "CO2",
     "name": "Carbon dioxide",
-    "formula": {
-      "c": 1,
-      "o": 2
-    }
+    "empirical_formula": "CO2",
+    "cas_number": "124-38-9",
+    "inchi_number": "InChI=1S/CO2/c2-1-3",
+    "inchi_key": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C124389&Type=Color"
   },
   {
     "raw_formula": "CS2",
     "name": "Carbon disulfide",
-    "formula": {
-      "c": 1,
-      "s": 2
-    }
+    "empirical_formula": "CS2",
+    "cas_number": "75-15-0",
+    "inchi_number": "InChI=1S/CS2/c2-1-3",
+    "inchi_key": "QGJOPFRUJISHPQ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75150&Type=Color"
   },
   {
     "raw_formula": "CO",
     "name": "Carbon monoxide",
-    "formula": {
-      "c": 1,
-      "o": 1
-    }
+    "empirical_formula": "CO",
+    "cas_number": "630-08-0",
+    "inchi_number": "InChI=1S/CO/c1-2",
+    "inchi_key": "UGFAIRIUMAVXCW-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C630080&Type=Color"
   },
   {
     "raw_formula": "CuCl",
     "name": "copper chloride",
-    "formula": {
-      "cl": 1,
-      "cu": 1
-    }
+    "empirical_formula": "ClCu",
+    "cas_number": "7758-89-6",
+    "inchi_number": "InChI=1S/ClH.Cu/h1H;/q;+1/p-1",
+    "inchi_key": "OXBLHERUFWYNTN-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758896&Type=Color"
   },
   {
     "raw_formula": "CuCl2",
     "name": "CuCl2",
-    "formula": {
-      "cl": 2,
-      "cu": 1
-    }
+    "empirical_formula": "Cl2Cu",
+    "inchi_number": "InChI=1S/2ClH.Cu/h2*1H;/q;;+2/p-2",
+    "inchi_key": "ORTQZVOHEJQUHG-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B1001128&Type=Color"
   },
   {
     "raw_formula": "Cu(NO3)2",
     "name": "Nitric acid, copper(2+) salt, hydrate (2:1:3)",
-    "formula": {
-      "n": 2,
-      "o": 6,
-      "cu": 1
-    }
+    "empirical_formula": "CuN2O6",
+    "cas_number": "10031-43-3"
   },
   {
     "raw_formula": "Cu2O",
     "name": "dicopper oxide",
-    "formula": {
-      "o": 1,
-      "cu": 2
-    }
+    "empirical_formula": "Cu2O",
+    "cas_number": "1317-39-1"
   },
   {
     "raw_formula": "CuO",
     "name": "copper oxide",
-    "formula": {
-      "o": 1,
-      "cu": 1
-    }
+    "empirical_formula": "CuO",
+    "cas_number": "1317-38-0",
+    "inchi_number": "InChI=1S/Cu.O",
+    "inchi_key": "QPLDLSVMHZLSFG-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1317380&Type=Color"
   },
   {
     "raw_formula": "CuSO4",
     "name": "copper sulphate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "cu": 1
-    }
+    "empirical_formula": "CuO4S",
+    "cas_number": "7758-98-7",
+    "inchi_number": "InChI=1S/Cu.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "ARUVKPQLZAKDPS-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7758987&Type=Color"
   },
   {
     "raw_formula": "LiCl",
     "name": "lithium chloride",
-    "formula": {
-      "li": 1,
-      "cl": 1
-    }
+    "empirical_formula": "ClLi",
+    "cas_number": "7447-41-8",
+    "inchi_number": "InChI=1S/ClH.Li/h1H;/q;+1/p-1",
+    "inchi_key": "KWGKDLIKAYFUFQ-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7447418&Type=Color"
   },
   {
     "raw_formula": "MgBr2",
     "name": "magnesium bromide",
-    "formula": {
-      "mg": 1,
-      "br": 2
-    }
+    "empirical_formula": "Br2Mg",
+    "cas_number": "7789-48-2"
   },
   {
     "raw_formula": "MgCO3",
     "name": "magnesium carbonate",
-    "formula": {
-      "c": 1,
-      "o": 3,
-      "mg": 1
-    }
+    "empirical_formula": "CMgO3",
+    "cas_number": "546-93-0",
+    "inchi_number": "InChI=1S/CH2O3.Mg/c2-1(3)4;/h(H2,2,3,4);/q;+2/p-2",
+    "inchi_key": "ZLNQQNXFFQJAID-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C546930&Type=Color"
   },
   {
     "raw_formula": "MgCl2",
     "name": "magnesium chloride",
-    "formula": {
-      "mg": 1,
-      "cl": 2
-    }
+    "empirical_formula": "Cl2Mg",
+    "cas_number": "7786-30-3"
   },
   {
     "raw_formula": "Mg(OH)2",
     "name": "magnesium hydroxide",
-    "formula": {
-      "h": 2,
-      "o": 2,
-      "mg": 1
-    }
+    "empirical_formula": "H2MgO2",
+    "cas_number": "1309-42-8"
   },
   {
     "raw_formula": "MgO",
     "name": "magnesium oxide",
-    "formula": {
-      "o": 1,
-      "mg": 1
-    }
+    "empirical_formula": "MgO",
+    "cas_number": "1309-48-4",
+    "inchi_number": "InChI=1S/Mg.O",
+    "inchi_key": "CPLXHLVBOLITMK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1309484&Type=Color"
   },
   {
     "raw_formula": "MgSO4",
     "name": "magnesium sulphate",
-    "formula": {
-      "o": 4,
-      "mg": 1,
-      "s": 1
-    }
+    "empirical_formula": "MgO4S",
+    "cas_number": "7487-88-9",
+    "inchi_number": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "CSNNHWWHGAXBCP-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7487889&Type=Color"
   },
   {
     "raw_formula": "MnCl2",
     "name": "manganese dichloride",
-    "formula": {
-      "cl": 2,
-      "mn": 1
-    }
+    "empirical_formula": "Cl2Mn",
+    "cas_number": "7773-01-5"
   },
   {
     "raw_formula": "MnO2",
     "name": "manganese dioxide",
-    "formula": {
-      "o": 2,
-      "mn": 1
-    }
+    "empirical_formula": "MnO2",
+    "cas_number": "1313-13-9",
+    "inchi_number": "InChI=1S/Mn.2O",
+    "inchi_key": "NUJOXMJBOLGQSY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1313139&Type=Color"
   },
   {
     "raw_formula": "MnO2",
     "name": "manganese dioxide",
-    "formula": {
-      "o": 2,
-      "mn": 1
-    }
+    "empirical_formula": "MnO2",
+    "cas_number": "1313-13-9",
+    "inchi_number": "InChI=1S/Mn.2O",
+    "inchi_key": "NUJOXMJBOLGQSY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1313139&Type=Color"
   },
   {
     "raw_formula": "MnSO4",
     "name": "manganese sulphate",
-    "formula": {
-      "o": 4,
-      "s": 1,
-      "mn": 1
-    }
+    "empirical_formula": "MnO4S",
+    "cas_number": "7785-87-7",
+    "inchi_number": "InChI=1S/Mn.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2",
+    "inchi_key": "SQQMAOCOWKFBNP-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7785877&Type=Color"
   },
   {
     "raw_formula": "NaBr",
     "name": "sodium bromide",
-    "formula": {
-      "na": 1,
-      "br": 1
-    }
+    "empirical_formula": "BrNa",
+    "cas_number": "7647-15-6",
+    "inchi_number": "InChI=1S/BrH.Na/h1H;/q;+1/p-1",
+    "inchi_key": "JHJLBTNAGRQEKS-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647156&Type=Color"
   },
   {
     "raw_formula": "Na2CO3",
     "name": "sodium carbonate",
-    "formula": {
-      "c": 1,
-      "o": 3,
-      "na": 2
-    }
+    "empirical_formula": "CNa2O3",
+    "cas_number": "497-19-8"
   },
   {
     "raw_formula": "NaCl",
     "name": "sodium chloride",
-    "formula": {
-      "na": 1,
-      "cl": 1
-    }
+    "empirical_formula": "ClNa",
+    "cas_number": "7647-14-5",
+    "inchi_number": "InChI=1S/ClH.Na/h1H;/q;+1/p-1",
+    "inchi_key": "FAPWRFPIFSIZLT-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7647145&Type=Color"
   },
   {
     "raw_formula": "NaHCO3",
     "name": "Sodium hydrogen carbonate",
-    "formula": {
-      "h": 1,
-      "c": 1,
-      "o": 3,
-      "na": 1
-    }
+    "empirical_formula": "CHNaO3",
+    "inchi_number": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1",
+    "inchi_key": "UIIMBOGNXHQVGW-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=B8000431&Type=Color"
   },
   {
     "raw_formula": "NaOH",
     "name": "Sodium hydroxide",
-    "formula": {
-      "h": 1,
-      "o": 1,
-      "na": 1
-    }
+    "empirical_formula": "HNaO",
+    "cas_number": "1310-73-2",
+    "inchi_number": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1",
+    "inchi_key": "HEMHJVSKTPXQMS-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1310732&Type=Color"
   },
   {
     "raw_formula": "NaNO3",
     "name": "sodium nitrate",
-    "formula": {
-      "n": 1,
-      "o": 3,
-      "na": 1
-    }
+    "empirical_formula": "NNaO3",
+    "cas_number": "7631-99-4",
+    "inchi_number": "InChI=1S/NO3.Na/c2-1(3)4;/q-1;+1",
+    "inchi_key": "VWDWKYIASSYTQR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7631994&Type=Color"
   },
   {
     "raw_formula": "NaNO2",
     "name": "sodium nitrite",
-    "formula": {
-      "n": 1,
-      "o": 2,
-      "na": 1
-    }
+    "empirical_formula": "NNaO2",
+    "cas_number": "7632-00-0",
+    "inchi_number": "InChI=1S/HNO2.Na/c2-1-3;/h(H,2,3);/q;+1/p-1",
+    "inchi_key": "LPXPTNMVRIOKMN-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7632000&Type=Color"
   },
   {
     "raw_formula": "Na3PO4",
     "name": "trisodium orthophosphate",
-    "formula": {
-      "o": 4,
-      "na": 3,
-      "p": 1
-    }
+    "empirical_formula": "Na3O4P",
+    "cas_number": "7601-54-9"
   },
   {
     "raw_formula": "Na2SO4",
     "name": "sodium sulphate",
-    "formula": {
-      "o": 4,
-      "na": 2,
-      "s": 1
-    }
+    "empirical_formula": "Na2O4S",
+    "cas_number": "7757-82-6",
+    "inchi_number": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2",
+    "inchi_key": "PMZURENOXWZQFD-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7757826&Type=Color"
   },
   {
     "raw_formula": "Na2S2O3",
     "name": "sodium thiosulphate",
-    "formula": {
-      "o": 3,
-      "na": 2,
-      "s": 2
-    }
+    "empirical_formula": "Na2O3S2",
+    "cas_number": "7772-98-7"
   },
   {
     "raw_formula": "O3",
     "name": "Ozone",
-    "formula": {
-      "o": 3
-    }
+    "empirical_formula": "O3",
+    "cas_number": "10028-15-6",
+    "inchi_number": "InChI=1S/O3/c1-3-2",
+    "inchi_key": "CBENFWSGALASAD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10028156&Type=Color"
   },
   {
     "raw_formula": "H3PO3",
     "name": "phosphorous acid",
-    "formula": {
-      "h": 3,
-      "o": 3,
-      "p": 1
-    }
+    "empirical_formula": "H3O3P",
+    "cas_number": "10294-56-1",
+    "inchi_number": "InChI=1S/H3O3P/c1-4(2)3/h1-3H",
+    "inchi_key": "OJMIONKXNSYLSR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10294561&Type=Color"
   },
   {
     "raw_formula": "P4O10",
     "name": "Tetraphosphorus decaoxide",
-    "formula": {
-      "o": 10,
-      "p": 4
-    }
+    "empirical_formula": "O10P4",
+    "cas_number": "16752-60-6"
   },
   {
     "raw_formula": "PCl5",
     "name": "phosphorus pentachloride",
-    "formula": {
-      "p": 1,
-      "cl": 5
-    }
+    "empirical_formula": "Cl5P",
+    "cas_number": "10026-13-8",
+    "inchi_number": "InChI=1S/Cl5P/c1-6(2,3,4)5",
+    "inchi_key": "UHZYTMXLRWXGPK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10026138&Type=Color"
   },
   {
     "raw_formula": "H3PO4",
     "name": "Phosphoric Acid",
-    "formula": {
-      "h": 3,
-      "o": 4,
-      "p": 1
-    }
+    "empirical_formula": "H3O4P",
+    "cas_number": "7664-38-2",
+    "inchi_number": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)",
+    "inchi_key": "NBIIXXVUZAFLBC-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664382&Type=Color"
   },
   {
     "raw_formula": "HgCl2",
     "name": "Mercury(II) chloride",
-    "formula": {
-      "cl": 2,
-      "hg": 1
-    }
+    "empirical_formula": "Cl2Hg",
+    "cas_number": "7487-94-7"
   },
   {
     "raw_formula": "HgCl2",
     "name": "Mercury(II) chloride",
-    "formula": {
-      "cl": 2,
-      "hg": 1
-    }
+    "empirical_formula": "Cl2Hg",
+    "cas_number": "7487-94-7"
   },
   {
     "raw_formula": "HgO",
     "name": "mercury monoxide",
-    "formula": {
-      "o": 1,
-      "hg": 1
-    }
+    "empirical_formula": "HgO",
+    "cas_number": "21908-53-2",
+    "inchi_number": "InChI=1S/Hg.O",
+    "inchi_key": "UKWHYYKOEPRTIC-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C21908532&Type=Color"
   },
   {
     "raw_formula": "HNO3",
     "name": "Nitric acid",
-    "formula": {
-      "h": 1,
-      "n": 1,
-      "o": 3
-    }
+    "empirical_formula": "HNO3",
+    "cas_number": "7697-37-2",
+    "inchi_number": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)",
+    "inchi_key": "GRYLNZFGIOXLOG-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7697372&Type=Color"
   },
   {
     "raw_formula": "O2",
     "name": "Oxygen",
-    "formula": {
-      "o": 2
-    }
+    "empirical_formula": "O2",
+    "cas_number": "7782-44-7",
+    "inchi_number": "InChI=1S/O2/c1-2",
+    "inchi_key": "MYMOFIZGZYHOMD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7782447&Type=Color"
   },
   {
     "raw_formula": "SO2",
     "name": "Sulfur dioxide",
-    "formula": {
-      "o": 2,
-      "s": 1
-    }
+    "empirical_formula": "O2S",
+    "cas_number": "7446-09-5",
+    "inchi_number": "InChI=1S/O2S/c1-3-2",
+    "inchi_key": "RAHZWNYVWXNFOC-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446095&Type=Color"
   },
   {
     "raw_formula": "H2SO4",
     "name": "Sulfuric Acid",
-    "formula": {
-      "h": 2,
-      "o": 4,
-      "s": 1
-    }
+    "empirical_formula": "H2O4S",
+    "cas_number": "7664-93-9",
+    "inchi_number": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)",
+    "inchi_key": "QAOWNCQODCNURD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7664939&Type=Color"
   },
   {
     "raw_formula": "SO3",
     "name": "sulphur trioxide",
-    "formula": {
-      "o": 3,
-      "s": 1
-    }
+    "empirical_formula": "O3S",
+    "cas_number": "7446-11-9",
+    "inchi_number": "InChI=1S/O3S/c1-4(2)3",
+    "inchi_key": "AKEJUJNQAAGONA-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7446119&Type=Color"
   },
   {
     "raw_formula": "H2S",
     "name": "Hydrogen sulfide",
-    "formula": {
-      "h": 2,
-      "s": 1
-    }
+    "empirical_formula": "H2S",
+    "cas_number": "7783-06-4",
+    "inchi_number": "InChI=1S/H2S/h1H2",
+    "inchi_key": "RWSOTUBLDIXVET-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783064&Type=Color"
   },
   {
     "raw_formula": "AgBr",
     "name": "silver bromide",
-    "formula": {
-      "br": 1,
-      "ag": 1
-    }
+    "empirical_formula": "AgBr",
+    "cas_number": "7785-23-1"
   },
   {
     "raw_formula": "AgCl",
     "name": "Silver chloride",
-    "formula": {
-      "cl": 1,
-      "ag": 1
-    }
+    "empirical_formula": "AgCl",
+    "cas_number": "7783-90-6",
+    "inchi_number": "InChI=1S/Ag.ClH/h;1H/q+1;/p-1",
+    "inchi_key": "HKZLPVFGJNLROG-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783906&Type=Color"
   },
   {
     "raw_formula": "AgI",
     "name": "silver iodide",
-    "formula": {
-      "ag": 1,
-      "i": 1
-    }
+    "empirical_formula": "AgI",
+    "cas_number": "7783-96-2",
+    "inchi_number": "InChI=1S/Ag.HI/h;1H/q+1;/p-1",
+    "inchi_key": "MSFPLIAKTHOCQP-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7783962&Type=Color"
   },
   {
     "raw_formula": "AgNO3",
     "name": "Silver Nitrate",
-    "formula": {
-      "n": 1,
-      "o": 3,
-      "ag": 1
-    }
+    "empirical_formula": "AgNO3",
+    "cas_number": "7761-88-8",
+    "inchi_number": "InChI=1S/Ag.NO3/c;2-1(3)4/q+1;-1",
+    "inchi_key": "SQGYOTSLMSWVJD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7761888&Type=Color"
   },
   {
     "raw_formula": "SiO2",
     "name": "Dioxosilane",
-    "formula": {
-      "o": 2,
-      "si": 1
-    }
+    "empirical_formula": "O2Si",
+    "cas_number": "7631-86-9",
+    "inchi_number": "InChI=1S/O2Si/c1-3-2",
+    "inchi_key": "VYPSYNLAJGMNEJ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7631869&Type=Color"
   },
   {
     "raw_formula": "N2O5",
     "name": "Dinitrogen pentoxide",
-    "formula": {
-      "n": 2,
-      "o": 5
-    }
+    "empirical_formula": "N2O5",
+    "cas_number": "10102-03-1",
+    "inchi_number": "InChI=1S/N2O5/c3-1(4)7-2(5)6",
+    "inchi_key": "ZWWCURLKEXEFQT-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102031&Type=Color"
   },
   {
     "raw_formula": "N2O3",
     "name": "Dinitrogen trioxide",
-    "formula": {
-      "n": 2,
-      "o": 3
-    }
+    "empirical_formula": "N2O3",
+    "cas_number": "10544-73-7",
+    "inchi_number": "InChI=1S/N2O3/c3-1-2(4)5",
+    "inchi_key": "LZDSILRDTDCIQT-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10544737&Type=Color"
   },
   {
     "raw_formula": "NO2",
     "name": "Nitrogen dioxide",
-    "formula": {
-      "n": 1,
-      "o": 2
-    }
+    "empirical_formula": "NO2",
+    "cas_number": "10102-44-0",
+    "inchi_number": "InChI=1S/NO2/c2-1-3",
+    "inchi_key": "JCXJVPUVTGWSNB-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102440&Type=Color"
   },
   {
     "raw_formula": "NO",
     "name": "Nitric oxide",
-    "formula": {
-      "n": 1,
-      "o": 1
-    }
+    "empirical_formula": "NO",
+    "cas_number": "10102-43-9",
+    "inchi_number": "InChI=1S/NO/c1-2",
+    "inchi_key": "MWUXSHHQAYIFBG-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C10102439&Type=Color"
   },
   {
     "raw_formula": "H2O",
     "name": "Water",
-    "formula": {
-      "h": 2,
-      "o": 1
-    }
+    "empirical_formula": "H2O",
+    "cas_number": "7732-18-5",
+    "inchi_number": "InChI=1S/H2O/h1H2",
+    "inchi_key": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7732185&Type=Color"
   },
   {
     "raw_formula": "H2",
     "name": "Hydrogen",
-    "formula": {
-      "h": 2
-    }
+    "empirical_formula": "H2",
+    "cas_number": "1333-74-0",
+    "inchi_number": "InChI=1S/H2/h1H",
+    "inchi_key": "UFHFLCQGNIYNRP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1333740&Type=Color"
   },
   {
     "raw_formula": "H2O2",
     "name": "Hydrogen peroxide",
-    "formula": {
-      "h": 2,
-      "o": 2
-    }
+    "empirical_formula": "H2O2",
+    "cas_number": "7722-84-1",
+    "inchi_number": "InChI=1S/H2O2/c1-2/h1-2H",
+    "inchi_key": "MHAJPDPJQMAIIY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7722841&Type=Color"
   },
   {
     "raw_formula": "ZnCl2",
     "name": "Zinc Chloride",
-    "formula": {
-      "cl": 2,
-      "zn": 1
-    }
+    "empirical_formula": "Cl2Zn",
+    "cas_number": "7646-85-7",
+    "inchi_number": "InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2",
+    "inchi_key": "JIAARYAFYJHUJI-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C7646857&Type=Color"
   },
   {
     "raw_formula": "ZnO",
     "name": "zinc oxide",
-    "formula": {
-      "o": 1,
-      "zn": 1
-    }
+    "empirical_formula": "OZn",
+    "cas_number": "1314-13-2",
+    "inchi_number": "InChI=1S/O.Zn",
+    "inchi_key": "XLOMVQKBTHCTTD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C1314132&Type=Color"
   },
   {
     "raw_formula": "C2H3CN",
     "name": "2-Propenenitrile",
-    "formula": {
-      "h": 3,
-      "c": 3,
-      "n": 1
-    }
+    "empirical_formula": "C3H3N",
+    "cas_number": "107-13-1",
+    "inchi_number": "InChI=1S/C3H3N/c1-2-3-4/h2H,1H2",
+    "inchi_key": "NLHHRLWOUZZQLW-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107131&Type=Color"
   },
   {
     "raw_formula": "NH2CH2COOH",
     "name": "Ethane, nitro-",
-    "formula": {
-      "h": 5,
-      "c": 2,
-      "n": 1,
-      "o": 2
-    }
+    "empirical_formula": "C2H5NO2",
+    "cas_number": "79-24-3",
+    "inchi_number": "InChI=1S/C2H5NO2/c1-2-3(4)5/h2H2,1H3",
+    "inchi_key": "MCSAJNNLRCFZED-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79243&Type=Color"
   },
   {
     "raw_formula": "C14H10",
     "name": "Anthracene",
-    "formula": {
-      "h": 10,
-      "c": 14
-    }
+    "empirical_formula": "C14H10",
+    "cas_number": "120-12-7",
+    "inchi_number": "InChI=1S/C14H10/c1-2-6-12-10-14-8-4-3-7-13(14)9-11(12)5-1/h1-10H",
+    "inchi_key": "MWPLVEDNUUSJAV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C120127&Type=Color"
   },
   {
     "raw_formula": "C6H5CHO",
     "name": "Benzaldehyde",
-    "formula": {
-      "h": 6,
-      "c": 7,
-      "o": 1
-    }
+    "empirical_formula": "C7H6O",
+    "cas_number": "100-52-7",
+    "inchi_number": "InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H",
+    "inchi_key": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100527&Type=Color"
   },
   {
     "raw_formula": "C6H5COOH",
     "name": "Benzoic acid",
-    "formula": {
-      "h": 6,
-      "c": 7,
-      "o": 2
-    }
+    "empirical_formula": "C7H6O2",
+    "cas_number": "65-85-0",
+    "inchi_number": "InChI=1S/C7H6O2/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H,8,9)",
+    "inchi_key": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C65850&Type=Color"
   },
   {
     "raw_formula": "C6H6",
     "name": "Benzene",
-    "formula": {
-      "h": 6,
-      "c": 6
-    }
+    "empirical_formula": "C6H6",
+    "cas_number": "71-43-2",
+    "inchi_number": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H",
+    "inchi_key": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71432&Type=Color"
   },
   {
     "raw_formula": "(CH3COO)2Pb",
     "name": "Acetic acid, lead(2+) salt",
-    "formula": {
-      "h": 6,
-      "c": 4,
-      "o": 4,
-      "pb": 1
-    }
+    "empirical_formula": "C4H6O4Pb",
+    "cas_number": "301-04-2",
+    "inchi_number": "InChI=1S/2C2H4O2.Pb/c2*1-2(3)4;/h2*1H3,(H,3,4);/q;;+2/p-2",
+    "inchi_key": "GUWSLQUAAYEZAF-UHFFFAOYSA-L",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C301042&Type=Color"
   },
   {
     "raw_formula": "C2H5Br",
     "name": "Ethyl bromide",
-    "formula": {
-      "h": 5,
-      "c": 2,
-      "br": 1
-    }
+    "empirical_formula": "C2H5Br",
+    "cas_number": "74-96-4",
+    "inchi_number": "InChI=1S/C2H5Br/c1-2-3/h2H2,1H3",
+    "inchi_key": "RDHPKYGYEGBMSE-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74964&Type=Color"
   },
   {
     "raw_formula": "CH3Br",
     "name": "Methane, bromo-",
-    "formula": {
-      "h": 3,
-      "c": 1,
-      "br": 1
-    }
+    "empirical_formula": "CH3Br",
+    "cas_number": "74-83-9",
+    "inchi_number": "InChI=1S/CH3Br/c1-2/h1H3",
+    "inchi_key": "GZUXJHMPEANEGY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74839&Type=Color"
   },
   {
     "raw_formula": "C3H7Br",
     "name": "Propane, 1-bromo-",
-    "formula": {
-      "h": 7,
-      "c": 3,
-      "br": 1
-    }
+    "empirical_formula": "C3H7Br",
+    "cas_number": "106-94-5",
+    "inchi_number": "InChI=1S/C3H7Br/c1-2-3-4/h2-3H2,1H3",
+    "inchi_key": "CYNYIHKIEHGYOZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106945&Type=Color"
   },
   {
     "raw_formula": "C4H6",
     "name": "1,3-Butadiene",
-    "formula": {
-      "h": 6,
-      "c": 4
-    }
+    "empirical_formula": "C4H6",
+    "cas_number": "106-99-0",
+    "inchi_number": "InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2",
+    "inchi_key": "KAKZBPTYRLMSJV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106990&Type=Color"
   },
   {
     "raw_formula": "C4H10",
     "name": "Isobutane",
-    "formula": {
-      "h": 10,
-      "c": 4
-    }
+    "empirical_formula": "C4H10",
+    "cas_number": "75-28-5",
+    "inchi_number": "InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3",
+    "inchi_key": "NNPPMTNAJDCUHE-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75285&Type=Color"
   },
   {
     "raw_formula": "C2H4(COOH)2",
     "name": "Butanedioic acid",
-    "formula": {
-      "h": 6,
-      "c": 4,
-      "o": 4
-    }
+    "empirical_formula": "C4H6O4",
+    "cas_number": "110-15-6",
+    "inchi_number": "InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)",
+    "inchi_key": "KDYFGRWQOYBRFD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110156&Type=Color"
   },
   {
     "raw_formula": "C4H9OH",
     "name": "1-Butanol",
-    "formula": {
-      "h": 10,
-      "c": 4,
-      "o": 1
-    }
+    "empirical_formula": "C4H10O",
+    "cas_number": "71-36-3",
+    "inchi_number": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3",
+    "inchi_key": "LRHPLDYGYMQRHN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71363&Type=Color"
   },
   {
     "raw_formula": "C3H7COOH",
     "name": "Ethyl Acetate",
-    "formula": {
-      "h": 8,
-      "c": 4,
-      "o": 2
-    }
+    "empirical_formula": "C4H8O2",
+    "cas_number": "141-78-6",
+    "inchi_number": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3",
+    "inchi_key": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C141786&Type=Color"
   },
   {
     "raw_formula": "C3H7COOC2H5",
     "name": "Hexanoic acid",
-    "formula": {
-      "h": 12,
-      "c": 6,
-      "o": 2
-    }
+    "empirical_formula": "C6H12O2",
+    "cas_number": "142-62-1",
+    "inchi_number": "InChI=1S/C6H12O2/c1-2-3-4-5-6(7)8/h2-5H2,1H3,(H,7,8)",
+    "inchi_key": "FUZZWVXGSFPDMH-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142621&Type=Color"
   },
   {
     "raw_formula": "C4H8",
     "name": "1-Butene",
-    "formula": {
-      "h": 8,
-      "c": 4
-    }
+    "empirical_formula": "C4H8",
+    "cas_number": "106-98-9",
+    "inchi_number": "InChI=1S/C4H8/c1-3-4-2/h3H,1,4H2,2H3",
+    "inchi_key": "VXNZUUAINFGPBY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106989&Type=Color"
   },
   {
     "raw_formula": "C4H6",
     "name": "1,3-Butadiene",
-    "formula": {
-      "h": 6,
-      "c": 4
-    }
+    "empirical_formula": "C4H6",
+    "cas_number": "106-99-0",
+    "inchi_number": "InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2",
+    "inchi_key": "KAKZBPTYRLMSJV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106990&Type=Color"
   },
   {
     "raw_formula": "C6H5Cl",
     "name": "Benzene, chloro-",
-    "formula": {
-      "h": 5,
-      "c": 6,
-      "cl": 1
-    }
+    "empirical_formula": "C6H5Cl",
+    "cas_number": "108-90-7",
+    "inchi_number": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H",
+    "inchi_key": "MVPPADPHJFYWMZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108907&Type=Color"
   },
   {
     "raw_formula": "C4H9Cl",
     "name": "Butane, 1-chloro-",
-    "formula": {
-      "h": 9,
-      "c": 4,
-      "cl": 1
-    }
+    "empirical_formula": "C4H9Cl",
+    "cas_number": "109-69-3",
+    "inchi_number": "InChI=1S/C4H9Cl/c1-2-3-4-5/h2-4H2,1H3",
+    "inchi_key": "VFWCMGCRMGJXDK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C109693&Type=Color"
   },
   {
     "raw_formula": "C2H5Cl",
     "name": "Ethyl Chloride",
-    "formula": {
-      "h": 5,
-      "c": 2,
-      "cl": 1
-    }
+    "empirical_formula": "C2H5Cl",
+    "cas_number": "75-00-3",
+    "inchi_number": "InChI=1S/C2H5Cl/c1-2-3/h2H2,1H3",
+    "inchi_key": "HRYZWHHZPQKTII-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75003&Type=Color"
   },
   {
     "raw_formula": "C2H3Cl",
     "name": "Ethene, chloro-",
-    "formula": {
-      "h": 3,
-      "c": 2,
-      "cl": 1
-    }
+    "empirical_formula": "C2H3Cl",
+    "cas_number": "75-01-4",
+    "inchi_number": "InChI=1S/C2H3Cl/c1-2-3/h2H,1H2",
+    "inchi_key": "BZHJMEDXRYGGRV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75014&Type=Color"
   },
   {
     "raw_formula": "CH3Cl",
     "name": "Chloromethane",
-    "formula": {
-      "h": 3,
-      "c": 1,
-      "cl": 1
-    }
+    "empirical_formula": "CH3Cl",
+    "cas_number": "74-87-3",
+    "inchi_number": "InChI=1S/CH3Cl/c1-2/h1H3",
+    "inchi_key": "NEHMKBQYUWJMIP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74873&Type=Color"
   },
   {
     "raw_formula": "C5H11Cl",
     "name": "Pentane, 1-chloro-",
-    "formula": {
-      "h": 11,
-      "c": 5,
-      "cl": 1
-    }
+    "empirical_formula": "C5H11Cl",
+    "cas_number": "543-59-9",
+    "inchi_number": "InChI=1S/C5H11Cl/c1-2-3-4-5-6/h2-5H2,1H3",
+    "inchi_key": "SQCZQTSHSZLZIQ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C543599&Type=Color"
   },
   {
     "raw_formula": "C3H7Cl",
     "name": "n-Propyl chloride",
-    "formula": {
-      "h": 7,
-      "c": 3,
-      "cl": 1
-    }
+    "empirical_formula": "C3H7Cl",
+    "cas_number": "540-54-5",
+    "inchi_number": "InChI=1S/C3H7Cl/c1-2-3-4/h2-3H2,1H3",
+    "inchi_key": "SNMVRZFUUCLYTO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C540545&Type=Color"
   },
   {
     "raw_formula": "C6H8O7",
     "name": "Citric acid",
-    "formula": {
-      "h": 8,
-      "c": 6,
-      "o": 7
-    }
+    "empirical_formula": "C6H8O7",
+    "cas_number": "77-92-9",
+    "inchi_number": "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)",
+    "inchi_key": "KRKNYBCHXYNGOX-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C77929&Type=Color"
   },
   {
     "raw_formula": "C4H8",
     "name": "1-Butene",
-    "formula": {
-      "h": 8,
-      "c": 4
-    }
+    "empirical_formula": "C4H8",
+    "cas_number": "106-98-9",
+    "inchi_number": "InChI=1S/C4H8/c1-3-4-2/h3H,1,4H2,2H3",
+    "inchi_key": "VXNZUUAINFGPBY-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106989&Type=Color"
   },
   {
     "raw_formula": "C6H12",
     "name": "Cyclohexane",
-    "formula": {
-      "h": 12,
-      "c": 6
-    }
+    "empirical_formula": "C6H12",
+    "cas_number": "110-82-7",
+    "inchi_number": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2",
+    "inchi_key": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110827&Type=Color"
   },
   {
     "raw_formula": "C6H11OH",
     "name": "Hexanal",
-    "formula": {
-      "h": 12,
-      "c": 6,
-      "o": 1
-    }
+    "empirical_formula": "C6H12O",
+    "cas_number": "66-25-1",
+    "inchi_number": "InChI=1S/C6H12O/c1-2-3-4-5-6-7/h6H,2-5H2,1H3",
+    "inchi_key": "JARKCYVAAOWBJS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C66251&Type=Color"
   },
   {
     "raw_formula": "C6H10",
     "name": "Cyclohexene",
-    "formula": {
-      "h": 10,
-      "c": 6
-    }
+    "empirical_formula": "C6H10",
+    "cas_number": "110-83-8",
+    "inchi_number": "InChI=1S/C6H10/c1-2-4-6-5-3-1/h1-2H,3-6H2",
+    "inchi_key": "HGCIXCUEYOPUTN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110838&Type=Color"
   },
   {
     "raw_formula": "C5H10",
     "name": "Cyclopentane",
-    "formula": {
-      "h": 10,
-      "c": 5
-    }
+    "empirical_formula": "C5H10",
+    "cas_number": "287-92-3",
+    "inchi_number": "InChI=1S/C5H10/c1-2-4-5-3-1/h1-5H2",
+    "inchi_key": "RGSFGYAAUTVSQA-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C287923&Type=Color"
   },
   {
     "raw_formula": "C10H22",
     "name": "Decane",
-    "formula": {
-      "h": 22,
-      "c": 10
-    }
+    "empirical_formula": "C10H22",
+    "cas_number": "124-18-5",
+    "inchi_number": "InChI=1S/C10H22/c1-3-5-7-9-10-8-6-4-2/h3-10H2,1-2H3",
+    "inchi_key": "DIOQZVSQGTUSAI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C124185&Type=Color"
   },
   {
     "raw_formula": "C2H4Br2",
     "name": "Ethane, 1,2-dibromo-",
-    "formula": {
-      "h": 4,
-      "c": 2,
-      "br": 2
-    }
+    "empirical_formula": "C2H4Br2",
+    "cas_number": "106-93-4",
+    "inchi_number": "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2",
+    "inchi_key": "PAAZPARNPHGIKF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106934&Type=Color"
   },
   {
     "raw_formula": "CH2Br2",
     "name": "Methane, dibromo-",
-    "formula": {
-      "h": 2,
-      "c": 1,
-      "br": 2
-    }
+    "empirical_formula": "CH2Br2",
+    "cas_number": "74-95-3",
+    "inchi_number": "InChI=1S/CH2Br2/c2-1-3/h1H2",
+    "inchi_key": "FJBFPHVGVWTDIP-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74953&Type=Color"
   },
   {
     "raw_formula": "C6H4Cl2",
     "name": "Benzene, 1,4-dichloro-",
-    "formula": {
-      "h": 4,
-      "c": 6,
-      "cl": 2
-    }
+    "empirical_formula": "C6H4Cl2",
+    "cas_number": "106-46-7",
+    "inchi_number": "InChI=1S/C6H4Cl2/c7-5-1-2-6(8)4-3-5/h1-4H",
+    "inchi_key": "OCJBOOLMMGQPQU-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C106467&Type=Color"
   },
   {
     "raw_formula": "C2H4Cl2",
     "name": "Ethane, 1,2-dichloro-",
-    "formula": {
-      "h": 4,
-      "c": 2,
-      "cl": 2
-    }
+    "empirical_formula": "C2H4Cl2",
+    "cas_number": "107-06-2",
+    "inchi_number": "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2",
+    "inchi_key": "WSLDOOZREJYCGB-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107062&Type=Color"
   },
   {
     "raw_formula": "Cl2CHCOOH",
     "name": "Acetic acid, dichloro-",
-    "formula": {
-      "h": 2,
-      "c": 2,
-      "o": 2,
-      "cl": 2
-    }
+    "empirical_formula": "C2H2Cl2O2",
+    "cas_number": "79-43-6",
+    "inchi_number": "InChI=1S/C2H2Cl2O2/c3-1(4)2(5)6/h1H,(H,5,6)",
+    "inchi_key": "JXTHNDFMNIQAHM-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79436&Type=Color"
   },
   {
     "raw_formula": "CH2Cl2",
     "name": "Methylene chloride",
-    "formula": {
-      "h": 2,
-      "c": 1,
-      "cl": 2
-    }
+    "empirical_formula": "CH2Cl2",
+    "cas_number": "75-09-2",
+    "inchi_number": "InChI=1S/CH2Cl2/c2-1-3/h1H2",
+    "inchi_key": "YMWUJEATGCHHMB-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75092&Type=Color"
   },
   {
     "raw_formula": "C2H5OC2H5",
     "name": "1-Butanol",
-    "formula": {
-      "h": 10,
-      "c": 4,
-      "o": 1
-    }
+    "empirical_formula": "C4H10O",
+    "cas_number": "71-36-3",
+    "inchi_number": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3",
+    "inchi_key": "LRHPLDYGYMQRHN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71363&Type=Color"
   },
   {
     "raw_formula": "C6H4(OH)2",
     "name": "2-Furancarboxaldehyde, 5-methyl-",
-    "formula": {
-      "h": 6,
-      "c": 6,
-      "o": 2
-    }
+    "empirical_formula": "C6H6O2",
+    "cas_number": "620-02-0",
+    "inchi_number": "InChI=1S/C6H6O2/c1-5-2-3-6(4-7)8-5/h2-4H,1H3",
+    "inchi_key": "OUDFNZMQXZILJD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C620020&Type=Color"
   },
   {
     "raw_formula": "C6H4(OH)2",
     "name": "2-Furancarboxaldehyde, 5-methyl-",
-    "formula": {
-      "h": 6,
-      "c": 6,
-      "o": 2
-    }
+    "empirical_formula": "C6H6O2",
+    "cas_number": "620-02-0",
+    "inchi_number": "InChI=1S/C6H6O2/c1-5-2-3-6(4-7)8-5/h2-4H,1H3",
+    "inchi_key": "OUDFNZMQXZILJD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C620020&Type=Color"
   },
   {
     "raw_formula": "C6H4(CH3)2",
     "name": "Ethylbenzene",
-    "formula": {
-      "h": 10,
-      "c": 8
-    }
+    "empirical_formula": "C8H10",
+    "cas_number": "100-41-4",
+    "inchi_number": "InChI=1S/C8H10/c1-2-8-6-4-3-5-7-8/h3-7H,2H2,1H3",
+    "inchi_key": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100414&Type=Color"
   },
   {
     "raw_formula": "CH3OCH3",
     "name": "Ethanol",
-    "formula": {
-      "h": 6,
-      "c": 2,
-      "o": 1
-    }
+    "empirical_formula": "C2H6O",
+    "cas_number": "64-17-5",
+    "inchi_number": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+    "inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64175&Type=Color"
   },
   {
     "raw_formula": "C12H26",
     "name": "Dodecane",
-    "formula": {
-      "h": 26,
-      "c": 12
-    }
+    "empirical_formula": "C12H26",
+    "cas_number": "112-40-3",
+    "inchi_number": "InChI=1S/C12H26/c1-3-5-7-9-11-12-10-8-6-4-2/h3-12H2,1-2H3",
+    "inchi_key": "SNRUBQQJIBEYMU-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C112403&Type=Color"
   },
   {
     "raw_formula": "C2H6",
     "name": "Ethane",
-    "formula": {
-      "h": 6,
-      "c": 2
-    }
+    "empirical_formula": "C2H6",
+    "cas_number": "74-84-0",
+    "inchi_number": "InChI=1S/C2H6/c1-2/h1-2H3",
+    "inchi_key": "OTMSDBZUPAUEDD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74840&Type=Color"
   },
   {
     "raw_formula": "CH3CHO",
     "name": "Acetaldehyde",
-    "formula": {
-      "h": 4,
-      "c": 2,
-      "o": 1
-    }
+    "empirical_formula": "C2H4O",
+    "cas_number": "75-07-0",
+    "inchi_number": "InChI=1S/C2H4O/c1-2-3/h2H,1H3",
+    "inchi_key": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75070&Type=Color"
   },
   {
     "raw_formula": "C2H4(OH)2",
     "name": "1,2-Ethanediol",
-    "formula": {
-      "h": 6,
-      "c": 2,
-      "o": 2
-    }
+    "empirical_formula": "C2H6O2",
+    "cas_number": "107-21-1",
+    "inchi_number": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2",
+    "inchi_key": "LYCAIKOWRPUZTN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C107211&Type=Color"
   },
   {
     "raw_formula": "(COOH)2",
     "name": "Oxalic acid",
-    "formula": {
-      "h": 2,
-      "c": 2,
-      "o": 4
-    }
+    "empirical_formula": "C2H2O4",
+    "cas_number": "144-62-7",
+    "inchi_number": "InChI=1S/C2H2O4/c3-1(4)2(5)6/h(H,3,4)(H,5,6)",
+    "inchi_key": "MUBZPKHOEPUJKR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C144627&Type=Color"
   },
   {
     "raw_formula": "C2H5OH",
     "name": "Ethanol",
-    "formula": {
-      "h": 6,
-      "c": 2,
-      "o": 1
-    }
+    "empirical_formula": "C2H6O",
+    "cas_number": "64-17-5",
+    "inchi_number": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+    "inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64175&Type=Color"
   },
   {
     "raw_formula": "CH3COOH",
     "name": "Acetic acid",
-    "formula": {
-      "h": 4,
-      "c": 2,
-      "o": 2
-    }
+    "empirical_formula": "C2H4O2",
+    "cas_number": "64-19-7",
+    "inchi_number": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)",
+    "inchi_key": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64197&Type=Color"
   },
   {
     "raw_formula": "CH3COOC2H5",
     "name": "Ethyl Acetate",
-    "formula": {
-      "h": 8,
-      "c": 4,
-      "o": 2
-    }
+    "empirical_formula": "C4H8O2",
+    "cas_number": "141-78-6",
+    "inchi_number": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3",
+    "inchi_key": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C141786&Type=Color"
   },
   {
     "raw_formula": "CH3COOCH3",
     "name": "Propanoic acid",
-    "formula": {
-      "h": 6,
-      "c": 3,
-      "o": 2
-    }
+    "empirical_formula": "C3H6O2",
+    "cas_number": "79-09-4",
+    "inchi_number": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)",
+    "inchi_key": "XBDQKXXYIPTUBI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79094&Type=Color"
   },
   {
     "raw_formula": "C2H4",
     "name": "Ethylene",
-    "formula": {
-      "h": 4,
-      "c": 2
-    }
+    "empirical_formula": "C2H4",
+    "cas_number": "74-85-1",
+    "inchi_number": "InChI=1S/C2H4/c1-2/h1-2H2",
+    "inchi_key": "VGGSQFUCUMXWEO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74851&Type=Color"
   },
   {
     "raw_formula": "C2H2",
     "name": "Acetylene",
-    "formula": {
-      "h": 2,
-      "c": 2
-    }
+    "empirical_formula": "C2H2",
+    "cas_number": "74-86-2",
+    "inchi_number": "InChI=1S/C2H2/c1-2/h1-2H",
+    "inchi_key": "HSFWRNGVRCDJHI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74862&Type=Color"
   },
   {
     "raw_formula": "C6H5C2H5",
     "name": "Ethylbenzene",
-    "formula": {
-      "h": 10,
-      "c": 8
-    }
+    "empirical_formula": "C8H10",
+    "cas_number": "100-41-4",
+    "inchi_number": "InChI=1S/C8H10/c1-2-8-6-4-3-5-7-8/h3-7H,2H2,1H3",
+    "inchi_key": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100414&Type=Color"
   },
   {
     "raw_formula": "C6H12O6",
     "name": "α-D-Glucose",
-    "formula": {
-      "h": 12,
-      "c": 6,
-      "o": 6
-    }
+    "empirical_formula": "C6H12O6",
+    "cas_number": "492-62-6",
+    "inchi_number": "InChI=1S/C6H12O6/c7-1-2-3(8)4(9)5(10)6(11)12-2/h2-11H,1H2/t2-,3-,4+,5-,6+/m0/s1",
+    "inchi_key": "WQZGKKKJIJFFOK-MDMQIMBFSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C492626&Type=Color"
   },
   {
     "raw_formula": "CO(NH2)2",
     "name": "Urea",
-    "formula": {
-      "h": 4,
-      "c": 1,
-      "n": 2,
-      "o": 1
-    }
+    "empirical_formula": "CH4N2O",
+    "cas_number": "57-13-6",
+    "inchi_number": "InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)",
+    "inchi_key": "XSQUKJJJFZCRTK-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57136&Type=Color"
   },
   {
     "raw_formula": "C7H16",
     "name": "Heptane",
-    "formula": {
-      "h": 16,
-      "c": 7
-    }
+    "empirical_formula": "C7H16",
+    "cas_number": "142-82-5",
+    "inchi_number": "InChI=1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3",
+    "inchi_key": "IMNFDUFMRHMDMM-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142825&Type=Color"
   },
   {
     "raw_formula": "C7H15OH",
     "name": "1-Heptanol",
-    "formula": {
-      "h": 16,
-      "c": 7,
-      "o": 1
-    }
+    "empirical_formula": "C7H16O",
+    "cas_number": "111-70-6",
+    "inchi_number": "InChI=1S/C7H16O/c1-2-3-4-5-6-7-8/h8H,2-7H2,1H3",
+    "inchi_key": "BBMCTIGTTCKYKF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C111706&Type=Color"
   },
   {
     "raw_formula": "C7H14",
     "name": "Cyclohexane, methyl-",
-    "formula": {
-      "h": 14,
-      "c": 7
-    }
+    "empirical_formula": "C7H14",
+    "cas_number": "108-87-2",
+    "inchi_number": "InChI=1S/C7H14/c1-7-5-3-2-4-6-7/h7H,2-6H2,1H3",
+    "inchi_key": "UAEPNZWRGJTJPN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108872&Type=Color"
   },
   {
     "raw_formula": " C16H34",
     "name": "Hexadecane",
-    "formula": {
-      "h": 34,
-      "c": 16
-    }
+    "empirical_formula": "C16H34",
+    "cas_number": "544-76-3",
+    "inchi_number": "InChI=1S/C16H34/c1-3-5-7-9-11-13-15-16-14-12-10-8-6-4-2/h3-16H2,1-2H3",
+    "inchi_key": "DCAYPVUWAIABOU-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C544763&Type=Color"
   },
   {
     "raw_formula": "C15H31COOH",
     "name": "n-Hexadecanoic acid",
-    "formula": {
-      "h": 32,
-      "c": 16,
-      "o": 2
-    }
+    "empirical_formula": "C16H32O2",
+    "cas_number": "57-10-3",
+    "inchi_number": "InChI=1S/C16H32O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16(17)18/h2-15H2,1H3,(H,17,18)",
+    "inchi_key": "IPCSVZSSVZVIGE-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57103&Type=Color"
   },
   {
     "raw_formula": "C6H14",
     "name": "Butane, 2,3-dimethyl-",
-    "formula": {
-      "h": 14,
-      "c": 6
-    }
+    "empirical_formula": "C6H14",
+    "cas_number": "79-29-8",
+    "inchi_number": "InChI=1S/C6H14/c1-5(2)6(3)4/h5-6H,1-4H3",
+    "inchi_key": "ZFFMLCVRJBZUDZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79298&Type=Color"
   },
   {
     "raw_formula": "C6H13OH",
     "name": "1-Hexanol",
-    "formula": {
-      "h": 14,
-      "c": 6,
-      "o": 1
-    }
+    "empirical_formula": "C6H14O",
+    "cas_number": "111-27-3",
+    "inchi_number": "InChI=1S/C6H14O/c1-2-3-4-5-6-7/h7H,2-6H2,1H3",
+    "inchi_key": "ZSIAUFGUXNUGDI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C111273&Type=Color"
   },
   {
     "raw_formula": "C5H11COOH",
     "name": "Hexanoic acid",
-    "formula": {
-      "h": 12,
-      "c": 6,
-      "o": 2
-    }
+    "empirical_formula": "C6H12O2",
+    "cas_number": "142-62-1",
+    "inchi_number": "InChI=1S/C6H12O2/c1-2-3-4-5-6(7)8/h2-5H2,1H3,(H,7,8)",
+    "inchi_key": "FUZZWVXGSFPDMH-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142621&Type=Color"
   },
   {
     "raw_formula": "C6H12",
     "name": "Cyclohexane",
-    "formula": {
-      "h": 12,
-      "c": 6
-    }
+    "empirical_formula": "C6H12",
+    "cas_number": "110-82-7",
+    "inchi_number": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2",
+    "inchi_key": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110827&Type=Color"
   },
   {
     "raw_formula": "C6H10",
     "name": "Cyclohexene",
-    "formula": {
-      "h": 10,
-      "c": 6
-    }
+    "empirical_formula": "C6H10",
+    "cas_number": "110-83-8",
+    "inchi_number": "InChI=1S/C6H10/c1-2-4-6-5-3-1/h1-2H,3-6H2",
+    "inchi_key": "HGCIXCUEYOPUTN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110838&Type=Color"
   },
   {
     "raw_formula": "N2H4",
     "name": "Hydrazine",
-    "formula": {
-      "h": 4,
-      "n": 2
-    }
+    "empirical_formula": "H4N2",
+    "cas_number": "302-01-2",
+    "inchi_number": "InChI=1S/H4N2/c1-2/h1-2H2",
+    "inchi_key": "OAKJQQAXSVQMHS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C302012&Type=Color"
   },
   {
     "raw_formula": "C6H4OHCOOH",
     "name": "Salicylic acid",
-    "formula": {
-      "h": 6,
-      "c": 7,
-      "o": 3
-    }
+    "empirical_formula": "C7H6O3",
+    "cas_number": "69-72-7",
+    "inchi_number": "InChI=1S/C7H6O3/c8-6-4-2-1-3-5(6)7(9)10/h1-4,8H,(H,9,10)",
+    "inchi_key": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C69727&Type=Color"
   },
   {
     "raw_formula": "C2H4OHCOOH",
     "name": "1,3,5-Trioxane",
-    "formula": {
-      "h": 6,
-      "c": 3,
-      "o": 3
-    }
+    "empirical_formula": "C3H6O3",
+    "cas_number": "110-88-3",
+    "inchi_number": "InChI=1S/C3H6O3/c1-4-2-6-3-5-1/h1-3H2",
+    "inchi_key": "BGJSXRVXTHVRSN-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C110883&Type=Color"
   },
   {
     "raw_formula": "CH4",
     "name": "Methane",
-    "formula": {
-      "h": 4,
-      "c": 1
-    }
+    "empirical_formula": "CH4",
+    "cas_number": "74-82-8",
+    "inchi_number": "InChI=1S/CH4/h1H4",
+    "inchi_key": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74828&Type=Color"
   },
   {
     "raw_formula": "HCHO",
     "name": "Formaldehyde",
-    "formula": {
-      "h": 2,
-      "c": 1,
-      "o": 1
-    }
+    "empirical_formula": "CH2O",
+    "cas_number": "50-00-0",
+    "inchi_number": "InChI=1S/CH2O/c1-2/h1H2",
+    "inchi_key": "WSFSSNUMVMOOMR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C50000&Type=Color"
   },
   {
     "raw_formula": "CH3OH",
     "name": "Methyl Alcohol",
-    "formula": {
-      "h": 4,
-      "c": 1,
-      "o": 1
-    }
+    "empirical_formula": "CH4O",
+    "cas_number": "67-56-1",
+    "inchi_number": "InChI=1S/CH4O/c1-2/h2H,1H3",
+    "inchi_key": "OKKJLVBELUTLKV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67561&Type=Color"
   },
   {
     "raw_formula": "HCOOH",
     "name": "Formic acid",
-    "formula": {
-      "h": 2,
-      "c": 1,
-      "o": 2
-    }
+    "empirical_formula": "CH2O2",
+    "cas_number": "64-18-6",
+    "inchi_number": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)",
+    "inchi_key": "BDAGIHXWWSANSR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64186&Type=Color"
   },
   {
     "raw_formula": "HCOOCH3",
     "name": "Acetic acid",
-    "formula": {
-      "h": 4,
-      "c": 2,
-      "o": 2
-    }
+    "empirical_formula": "C2H4O2",
+    "cas_number": "64-19-7",
+    "inchi_number": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)",
+    "inchi_key": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C64197&Type=Color"
   },
   {
     "raw_formula": "C6H5CH3",
     "name": "Toluene",
-    "formula": {
-      "h": 8,
-      "c": 7
-    }
+    "empirical_formula": "C7H8",
+    "cas_number": "108-88-3",
+    "inchi_number": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3",
+    "inchi_key": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108883&Type=Color"
   },
   {
     "raw_formula": "C5H12",
     "name": "Butane, 2-methyl-",
-    "formula": {
-      "h": 12,
-      "c": 5
-    }
+    "empirical_formula": "C5H12",
+    "cas_number": "78-78-4",
+    "inchi_number": "InChI=1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3",
+    "inchi_key": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C78784&Type=Color"
   },
   {
     "raw_formula": "C4H10",
     "name": "Isobutane",
-    "formula": {
-      "h": 10,
-      "c": 4
-    }
+    "empirical_formula": "C4H10",
+    "cas_number": "75-28-5",
+    "inchi_number": "InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3",
+    "inchi_key": "NNPPMTNAJDCUHE-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75285&Type=Color"
   },
   {
     "raw_formula": "C10H8",
     "name": "Naphthalene",
-    "formula": {
-      "h": 8,
-      "c": 10
-    }
+    "empirical_formula": "C10H8",
+    "cas_number": "91-20-3",
+    "inchi_number": "InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H",
+    "inchi_key": "UFWIBTONFRDIAS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C91203&Type=Color"
   },
   {
     "raw_formula": "CH3COONa",
     "name": "Acetic acid, sodium salt",
-    "formula": {
-      "h": 3,
-      "c": 2,
-      "o": 2,
-      "na": 1
-    }
+    "empirical_formula": "C2H3NaO2",
+    "cas_number": "127-09-3",
+    "inchi_number": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1",
+    "inchi_key": "VMHLLURERBWHNL-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C127093&Type=Color"
   },
   {
     "raw_formula": "C6H5NO2",
     "name": "Benzene, nitro-",
-    "formula": {
-      "h": 5,
-      "c": 6,
-      "n": 1,
-      "o": 2
-    }
+    "empirical_formula": "C6H5NO2",
+    "cas_number": "98-95-3",
+    "inchi_number": "InChI=1S/C6H5NO2/c8-7(9)6-4-2-1-3-5-6/h1-5H",
+    "inchi_key": "LQNUZADURLCDLV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C98953&Type=Color"
   },
   {
     "raw_formula": "C9H20",
     "name": "Octane, 2-methyl-",
-    "formula": {
-      "h": 20,
-      "c": 9
-    }
+    "empirical_formula": "C9H20",
+    "cas_number": "3221-61-2",
+    "inchi_number": "InChI=1S/C9H20/c1-4-5-6-7-8-9(2)3/h9H,4-8H2,1-3H3",
+    "inchi_key": "ZUBZATZOEPUUQF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C3221612&Type=Color"
   },
   {
     "raw_formula": "C17H35COOH",
     "name": "Hexadecanoic acid, ethyl ester",
-    "formula": {
-      "h": 36,
-      "c": 18,
-      "o": 2
-    }
+    "empirical_formula": "C18H36O2",
+    "cas_number": "628-97-7",
+    "inchi_number": "InChI=1S/C18H36O2/c1-3-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20-4-2/h3-17H2,1-2H3",
+    "inchi_key": "XIRNKXNNONJFQO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C628977&Type=Color"
   },
   {
     "raw_formula": "C8H18",
     "name": "Pentane, 2,2,4-trimethyl-",
-    "formula": {
-      "h": 18,
-      "c": 8
-    }
+    "empirical_formula": "C8H18",
+    "cas_number": "540-84-1",
+    "inchi_number": "InChI=1S/C8H18/c1-7(2)6-8(3,4)5/h7H,6H2,1-5H3",
+    "inchi_key": "NHTMVDHEPJAVLT-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C540841&Type=Color"
   },
   {
     "raw_formula": "C5H12",
     "name": "Butane, 2-methyl-",
-    "formula": {
-      "h": 12,
-      "c": 5
-    }
+    "empirical_formula": "C5H12",
+    "cas_number": "78-78-4",
+    "inchi_number": "InChI=1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3",
+    "inchi_key": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C78784&Type=Color"
   },
   {
     "raw_formula": "C5H11OH",
     "name": "1-Butanol, 3-methyl-",
-    "formula": {
-      "h": 12,
-      "c": 5,
-      "o": 1
-    }
+    "empirical_formula": "C5H12O",
+    "cas_number": "123-51-3",
+    "inchi_number": "InChI=1S/C5H12O/c1-5(2)3-4-6/h5-6H,3-4H2,1-2H3",
+    "inchi_key": "PHTQWCKDNZKARW-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C123513&Type=Color"
   },
   {
     "raw_formula": "C4H9COOH",
     "name": "Butanoic acid, 3-methyl-",
-    "formula": {
-      "h": 10,
-      "c": 5,
-      "o": 2
-    }
+    "empirical_formula": "C5H10O2",
+    "cas_number": "503-74-2",
+    "inchi_number": "InChI=1S/C5H10O2/c1-4(2)3-5(6)7/h4H,3H2,1-2H3,(H,6,7)",
+    "inchi_key": "GWYFCOCPABKNJV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C503742&Type=Color"
   },
   {
     "raw_formula": "C5H8",
     "name": "Cyclopentene",
-    "formula": {
-      "h": 8,
-      "c": 5
-    }
+    "empirical_formula": "C5H8",
+    "cas_number": "142-29-0",
+    "inchi_number": "InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2",
+    "inchi_key": "LPIQUOYDBNQMRZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C142290&Type=Color"
   },
   {
     "raw_formula": "C6H5OH",
     "name": "Phenol",
-    "formula": {
-      "h": 6,
-      "c": 6,
-      "o": 1
-    }
+    "empirical_formula": "C6H6O",
+    "cas_number": "108-95-2",
+    "inchi_number": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
+    "inchi_key": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C108952&Type=Color"
   },
   {
     "raw_formula": "COCl2",
     "name": "Phosgene",
-    "formula": {
-      "c": 1,
-      "o": 1,
-      "cl": 2
-    }
+    "empirical_formula": "CCl2O",
+    "cas_number": "75-44-5",
+    "inchi_number": "InChI=1S/CCl2O/c2-1(3)4",
+    "inchi_key": "YGYAWVDWMABLBF-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75445&Type=Color"
   },
   {
     "raw_formula": "C6H4(COOH)2",
     "name": "Isophthalic acid",
-    "formula": {
-      "h": 6,
-      "c": 8,
-      "o": 4
-    }
+    "empirical_formula": "C8H6O4",
+    "cas_number": "121-91-5",
+    "inchi_number": "InChI=1S/C8H6O4/c9-7(10)5-2-1-3-6(4-5)8(11)12/h1-4H,(H,9,10)(H,11,12)",
+    "inchi_key": "QQVIHTHCMHWDBS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C121915&Type=Color"
   },
   {
     "raw_formula": "C3H8",
     "name": "Propane",
-    "formula": {
-      "h": 8,
-      "c": 3
-    }
+    "empirical_formula": "C3H8",
+    "cas_number": "74-98-6",
+    "inchi_number": "InChI=1S/C3H8/c1-3-2/h3H2,1-2H3",
+    "inchi_key": "ATUOYWHBWRKTHZ-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74986&Type=Color"
   },
   {
     "raw_formula": "C3H7OH",
     "name": "1-Propanol",
-    "formula": {
-      "h": 8,
-      "c": 3,
-      "o": 1
-    }
+    "empirical_formula": "C3H8O",
+    "cas_number": "71-23-8",
+    "inchi_number": "InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3",
+    "inchi_key": "BDERNNFJNOPAEC-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C71238&Type=Color"
   },
   {
     "raw_formula": "CH3COCH3",
     "name": "Acetone",
-    "formula": {
-      "h": 6,
-      "c": 3,
-      "o": 1
-    }
+    "empirical_formula": "C3H6O",
+    "cas_number": "67-64-1",
+    "inchi_number": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3",
+    "inchi_key": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67641&Type=Color"
   },
   {
     "raw_formula": "C2H5COOH",
     "name": "Propanoic acid",
-    "formula": {
-      "h": 6,
-      "c": 3,
-      "o": 2
-    }
+    "empirical_formula": "C3H6O2",
+    "cas_number": "79-09-4",
+    "inchi_number": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)",
+    "inchi_key": "XBDQKXXYIPTUBI-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C79094&Type=Color"
   },
   {
     "raw_formula": "C3H5(OH)3",
     "name": "Glycerin",
-    "formula": {
-      "h": 8,
-      "c": 3,
-      "o": 3
-    }
+    "empirical_formula": "C3H8O3",
+    "cas_number": "56-81-5",
+    "inchi_number": "InChI=1S/C3H8O3/c4-1-3(6)2-5/h3-6H,1-2H2",
+    "inchi_key": "PEDCQBHIVMGVHV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C56815&Type=Color"
   },
   {
     "raw_formula": "C3H6",
     "name": "Propene",
-    "formula": {
-      "h": 6,
-      "c": 3
-    }
+    "empirical_formula": "C3H6",
+    "cas_number": "115-07-1",
+    "inchi_number": "InChI=1S/C3H6/c1-3-2/h3H,1H2,2H3",
+    "inchi_key": "QQONPFPTGQHPMA-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C115071&Type=Color"
   },
   {
     "raw_formula": "C3H4",
     "name": "Propyne",
-    "formula": {
-      "h": 4,
-      "c": 3
-    }
+    "empirical_formula": "C3H4",
+    "cas_number": "74-99-7",
+    "inchi_number": "InChI=1S/C3H4/c1-3-2/h1H,2H3",
+    "inchi_key": "MWWATHDPGQKSAR-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C74997&Type=Color"
   },
   {
     "raw_formula": "C12H22O11",
     "name": "Sucrose",
-    "formula": {
-      "h": 22,
-      "c": 12,
-      "o": 11
-    }
+    "empirical_formula": "C12H22O11",
+    "cas_number": "57-50-1",
+    "inchi_number": "InChI=1S/C12H22O11/c13-1-4-6(16)8(18)9(19)11(21-4)23-12(3-15)10(20)7(17)5(2-14)22-12/h4-11,13-20H,1-3H2/t4-,5?,6-,7?,8+,9-,10?,11-,12?/m0/s1",
+    "inchi_key": "CZMRCDWAGMRECN-SFOFJGFUSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C57501&Type=Color"
   },
   {
     "raw_formula": "CH3COOAg",
     "name": "Silver acetate",
-    "formula": {
-      "h": 3,
-      "c": 2,
-      "o": 2,
-      "ag": 1
-    }
+    "empirical_formula": "C2H3AgO2",
+    "cas_number": "563-63-3",
+    "inchi_number": "InChI=1S/C2H4O2.Ag/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1",
+    "inchi_key": "CQLFBEKRDQMJLZ-UHFFFAOYSA-M",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C563633&Type=Color"
   },
   {
     "raw_formula": "CCl4",
     "name": "Carbon Tetrachloride",
-    "formula": {
-      "c": 1,
-      "cl": 4
-    }
+    "empirical_formula": "CCl4",
+    "cas_number": "56-23-5",
+    "inchi_number": "InChI=1S/CCl4/c2-1(3,4)5",
+    "inchi_key": "VZGDMQKNWNREIO-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C56235&Type=Color"
   },
   {
     "raw_formula": "CHBr3",
     "name": "Methane, tribromo-",
-    "formula": {
-      "h": 1,
-      "c": 1,
-      "br": 3
-    }
+    "empirical_formula": "CHBr3",
+    "cas_number": "75-25-2",
+    "inchi_number": "InChI=1S/CHBr3/c2-1(3)4/h1H",
+    "inchi_key": "DIKBFYAXUHHXCS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75252&Type=Color"
   },
   {
     "raw_formula": "CHCl3",
     "name": "Trichloromethane",
-    "formula": {
-      "h": 1,
-      "c": 1,
-      "cl": 3
-    }
+    "empirical_formula": "CHCl3",
+    "cas_number": "67-66-3",
+    "inchi_number": "InChI=1S/CHCl3/c2-1(3)4/h1H",
+    "inchi_key": "HEDRZPFGACZZDS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C67663&Type=Color"
   },
   {
     "raw_formula": "Cl3CCOOH",
     "name": "Trichloroacetic Acid",
-    "formula": {
-      "h": 1,
-      "c": 2,
-      "o": 2,
-      "cl": 3
-    }
+    "empirical_formula": "C2HCl3O2",
+    "cas_number": "76-03-9",
+    "inchi_number": "InChI=1S/C2HCl3O2/c3-2(4,5)1(6)7/h(H,6,7)",
+    "inchi_key": "YNJBWRMUSHSURL-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C76039&Type=Color"
   },
   {
     "raw_formula": "CHI3",
     "name": "Methane, triiodo-",
-    "formula": {
-      "h": 1,
-      "c": 1,
-      "i": 3
-    }
+    "empirical_formula": "CHI3",
+    "cas_number": "75-47-8",
+    "inchi_number": "InChI=1S/CHI3/c2-1(3)4/h1H",
+    "inchi_key": "OKJPEAGHQZHRQV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C75478&Type=Color"
   },
   {
     "raw_formula": "(C2H5)3N",
     "name": "Triethylamine",
-    "formula": {
-      "h": 15,
-      "c": 6,
-      "n": 1
-    }
+    "empirical_formula": "C6H15N",
+    "cas_number": "121-44-8",
+    "inchi_number": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3",
+    "inchi_key": "ZMANZCXQSJIPKH-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C121448&Type=Color"
   },
   {
     "raw_formula": "C11H24",
     "name": "Decane, 2-methyl-",
-    "formula": {
-      "h": 24,
-      "c": 11
-    }
+    "empirical_formula": "C11H24",
+    "cas_number": "6975-98-0",
+    "inchi_number": "InChI=1S/C11H24/c1-4-5-6-7-8-9-10-11(2)3/h11H,4-10H2,1-3H3",
+    "inchi_key": "CNPVJWYWYZMPDS-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C6975980&Type=Color"
   },
   {
     "raw_formula": "C6H5C2H3",
     "name": "Styrene",
-    "formula": {
-      "h": 8,
-      "c": 8
-    }
+    "empirical_formula": "C8H8",
+    "cas_number": "100-42-5",
+    "inchi_number": "InChI=1S/C8H8/c1-2-8-6-4-3-5-7-8/h2-7H,1H2",
+    "inchi_key": "PPBRXRYQALVLMV-UHFFFAOYSA-N",
+    "chemical_structure_url": "/cgi/cbook.cgi?Struct=C100425&Type=Color"
   }
 ]
