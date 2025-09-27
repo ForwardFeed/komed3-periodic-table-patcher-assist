@@ -1,4 +1,4 @@
-import { fetch_and_write_to_cache, get_compounds_list_json, get_from_cache, write_compounds_data } from "./filesystem_integration";
+import { fetch_and_write_to_cache, get_compounds_list_json, get_from_cache, write_nist_compounds_data } from "./filesystem_integration";
 import {JSDOM} from "jsdom"
 import { Symbols } from "./mainstream_structure";
 import ChemParse from 'chemparse';
@@ -131,7 +131,7 @@ for (const original_formula of compounds_list){
     })
 }
 
-await write_compounds_data(compounds)
+await write_nist_compounds_data(compounds)
 
 
 

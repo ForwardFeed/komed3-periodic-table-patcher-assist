@@ -10,7 +10,7 @@ const ISOTOPES_PATCH_JSON = "./data/_patch_isotopes.json"
 const PERIODICTABLEDOTCOM_JSON = "./data/periodictabledotcom.json"
 const PERIODICTABLEDOTCOM_PATCH = "./data/_patch_curie_neel_point.json"
 const COMPOUNDS_LIST_JSON = "./data/komed3_selected_compounds.json"
-const COMPOUNDS_DATA_JSON = "./data/compounds_data.json"
+const NIST_COMPOUNDS_DATA_JSON = "./data/nist_compounds_data.json"
 
 export async function get_mainstream_data(){
     return Bun.file(MAINSTREAM_JSON).json()
@@ -81,6 +81,6 @@ export async function fetch_and_write_to_cache(url: string, filename: string): P
 }
 
 
-export async function write_compounds_data(compounds: Compound[]){
-    Bun.write(COMPOUNDS_DATA_JSON, JSON.stringify(compounds, null, 2))
+export async function write_nist_compounds_data(compounds: Compound[]){
+    Bun.write(NIST_COMPOUNDS_DATA_JSON, JSON.stringify(compounds, null, 2))
 }
