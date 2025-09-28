@@ -43,6 +43,12 @@ export async function write_to_cache(filename:string, data: string){
     return Bun.write(filepath, data)
 }
 
+export async function write_to_cache_json(filename:string, data: any){
+    const filepath = `./cache/${filename}`
+    console.log(`writing to cache: ${filepath}; ${data.length} characters`)
+    return Bun.write(filepath, JSON.stringify(data, null, 2))
+}
+
 export async function get_from_cache(filename: string): Promise<string>{
     const filepath = `./cache/${filename}`
     return Bun.file(filepath).text()
@@ -97,7 +103,6 @@ export async function fetch_json_and_write_to_cache(url: string, filename: strin
         })
         .then((response)=>{
             if (!response.ok){
-                console.log(response)
                 reject(`response is not okay: ${response.status}`)
                 return
             }

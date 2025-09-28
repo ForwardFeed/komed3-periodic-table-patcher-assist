@@ -5,7 +5,7 @@
 // this is the API entrypoint for compound directly
 // const API_COMPOUNDS = "https://rboq1qukh0.execute-api.us-east-2.amazonaws.com/default/detail?cas_rn=${CAS_NUMBER}"
 
-import { does_cache_file_exist, fetch_json_and_write_to_cache, get_from_cache_json, get_nist_compounds_data } from "../filesystem_integration"
+import { does_cache_file_exist, fetch_json_and_write_to_cache, get_from_cache_json, get_nist_compounds_data, write_to_cache_json } from "../filesystem_integration"
 
 const API_KEY = "4vrOF3YIRf5vFkzLsed1i2OBH7BLUusf6NMu2UCD"
 const USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:142.0) Gecko/20100101 Firefox/142.0'
@@ -34,12 +34,24 @@ async function download_to_cache(){
             'User-Agent': USER_AGENT,
             'X-API-KEY':  API_KEY
         })
-        await fetch_json_and_write_to_cache(URL, filename, "GET", header)
-        const data = await get_from_cache_json(filename)
-        console.log(data.name)
-        await Bun.sleep(0.2)
-        break
+        try {
+            await fetch_json_and_write_to_cache(URL, filename, "GET", header)
+        } catch(err_msg: any){
+            if (err_msg == "response is not okay: 404"){
+                console.error(`failed to get: ${nist_entry.original_formula} with cas: ${nist_entry.cas_number}, 404'd`)
+                await write_to_cache_json(filename, {
+                    404: true,
+                    cas_number: nist_entry.cas_number
+                })
+            } else {
+                throw(`failed to get: ${nist_entry.original_formula} with cas: ${nist_entry.cas_number},\nError message: ${err_msg}`)
+            }
+            
+        }
+        // I'm scared to be timeouted 
+        await Bun.sleep(0.5)
     }
 }
 
 await download_to_cache()
+
