@@ -1,4 +1,4 @@
-import type { NIST_Compound } from "./compounds_nist"
+import type { NIST_Compound } from "./nist"
 
 const MANUAL_DATA = {
     "CaC2": "https://en.wikipedia.org/wiki/Calcium_carbide",

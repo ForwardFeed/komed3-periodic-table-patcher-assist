@@ -1,7 +1,7 @@
 import type { PTDCCurieNeelPatch } from "./patch_magnetism_curie_neel"
 import type { IsotopePatch } from "./patch_isotopes"
 import type { PTDCElementRefined } from "./periodictabledotcom"
-import type { NIST_Compound } from "./compounds/compounds_nist"
+import type { NIST_Compound } from "./compounds/nist"
 
 
 const MAINSTREAM_JSON = "./data/mainstream.json"

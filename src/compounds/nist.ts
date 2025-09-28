@@ -2,7 +2,7 @@ import { fetch_and_write_to_cache, get_compounds_list_json, get_from_cache, writ
 import {JSDOM} from "jsdom"
 import { Symbols } from "../mainstream_structure";
 import ChemParse from 'chemparse';
-import { manual_nist_patching } from "./compounds_nist_manual_patch";
+import { manual_nist_patching } from "./nist_manual_patch";
 
 const compounds_list = await get_compounds_list_json()
 
