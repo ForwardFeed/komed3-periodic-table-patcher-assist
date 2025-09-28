@@ -33,7 +33,6 @@ export async function write_periodictabledotcom_patch(data: PTDCCurieNeelPatch) 
     return Bun.write(PERIODICTABLEDOTCOM_PATCH, JSON.stringify(data,null,2))
 }
 
-
 export async function get_compounds_list_json(): Promise<string[]>{
     return Bun.file(COMPOUNDS_LIST_JSON).json() as unknown as string[]
 }
@@ -48,6 +47,12 @@ export async function get_from_cache(filename: string): Promise<string>{
     const filepath = `./cache/${filename}`
     return Bun.file(filepath).text()
 }
+
+export async function get_from_cache_json<T>(filename: string): Promise<T>{
+    const filepath = `./cache/${filename}`
+    return Bun.file(filepath).json()
+}
+
 
 export async function fetch_and_write_to_cache(url: string, filename: string): Promise<void>{
     console.log(`fetching URL: ${url}`)
@@ -79,18 +84,22 @@ export async function fetch_and_write_to_cache(url: string, filename: string): P
     })   
 }
 
-export async function fetch_json_and_write_to_cache(url: string, filename: string): Promise<void>{
+export async function fetch_json_and_write_to_cache(url: string, filename: string, method: string, headers?: any): Promise<void>{
     console.log(`fetching URL: ${url}`)
     return new Promise((resolve, reject)=>{
-        fetch(url)
+        fetch(url, {
+            method,
+            headers
+        })
         .then((response)=>{
             if (!response.ok){
+                console.log(response)
                 reject(`response is not okay: ${response.status}`)
                 return
             }
             response.json()
-            .then((text)=>{
-                write_to_cache(filename, text)
+            .then((json)=>{
+                write_to_cache(filename, JSON.stringify(json, null, 2))
                 .then(()=>{
                     resolve()
                 })
@@ -113,4 +122,8 @@ export async function fetch_json_and_write_to_cache(url: string, filename: strin
 
 export async function write_nist_compounds_data(compounds: NIST_Compound[]){
     Bun.write(NIST_COMPOUNDS_DATA_JSON, JSON.stringify(compounds, null, 2))
+}
+
+export async function get_nist_compounds_data(): Promise<NIST_Compound[]>{
+    return Bun.file(NIST_COMPOUNDS_DATA_JSON).json() as unknown as NIST_Compound[]
 }
