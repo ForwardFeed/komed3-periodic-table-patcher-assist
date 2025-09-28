@@ -64,7 +64,7 @@ type TypeOfProperty = "object" | "undefined" | "boolean" | "number" | "bigint" |
 type PropertyFound = {
     name: string,
     is_always_found: boolean,
-    type: (TypeOfProperty)[]
+    types: (TypeOfProperty)[]
 }
 
 function get_all_properties(obj: unknown): string[] | undefined{
@@ -72,6 +72,18 @@ function get_all_properties(obj: unknown): string[] | undefined{
         return undefined
     }
     return Object.keys(obj)
+}
+
+function property_list_to_ts(root_type_name: string, property_list: PropertyFound[], tab_n: string = "    "): string{
+    return `export type ${root_type_name} = {\n${property_list.map(x => {
+        return `${tab_n}${x.name}${x.is_always_found ? "" : "?"}: ${x.types.map(type => {
+            if (type == "object"){
+                return `{[key: string]: any}`
+            }
+            return `${type}`
+        }).join(' | ')}`
+    })
+    .join('\n')}\n}`
 }
 
 async function type_helper(){
@@ -85,13 +97,13 @@ async function type_helper(){
             property_list.push({
                 name: prop,
                 is_always_found: true,
-                type: [typeof data]
+                types: [typeof data]
             })
             return
         } else {
             const prop = property_list[index] as PropertyFound
-            if (!prop.type.includes(typeof data)){
-                prop.type.push(typeof data)
+            if (!prop.types.includes(typeof data)){
+                prop.types.push(typeof data)
             }
         }
     }
@@ -125,7 +137,7 @@ async function type_helper(){
         )
         check_if_always_found(props_found)
     }
-    console.log(property_list)
+    console.log(property_list_to_ts("CommonChemistryCompound",property_list))
 }
 
 await type_helper()
