@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "bun ./src/index.ts",
     "schema": "bunx ts-json-schema-generator -o schema.json --type ",
-    "compounds": "bun ./src/compounds/compounds_nist.ts"
+    "compounds-nist": "bun ./src/compounds/nist.ts",
+    "compounds-common": "bun ./src/compounds/common_chemistry.ts"
   },
   "dependencies": {
     "@types/ajv": "^1.0.4",
