@@ -76,6 +76,36 @@ export async function fetch_and_write_to_cache(url: string, filename: string): P
         .catch((err)=>{
             reject(`failed to fetch: ${err}`)
         })
+    })   
+}
+
+export async function fetch_json_and_write_to_cache(url: string, filename: string): Promise<void>{
+    console.log(`fetching URL: ${url}`)
+    return new Promise((resolve, reject)=>{
+        fetch(url)
+        .then((response)=>{
+            if (!response.ok){
+                reject(`response is not okay: ${response.status}`)
+                return
+            }
+            response.json()
+            .then((text)=>{
+                write_to_cache(filename, text)
+                .then(()=>{
+                    resolve()
+                })
+                .catch((err)=>{
+                    reject(`failed to write to cache: ${err}`)
+                })
+            })
+            .catch((err)=>{
+                reject(`failed to transform to json: ${err}`)
+            })
+            
+        })
+        .catch((err)=>{
+            reject(`failed to fetch: ${err}`)
+        })
     })
     
 }
