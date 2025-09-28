@@ -53,6 +53,10 @@ export async function get_from_cache_json<T>(filename: string): Promise<T>{
     return Bun.file(filepath).json()
 }
 
+export async function does_cache_file_exist(filename: string): Promise<boolean>{
+    const filepath = `./cache/${filename}`
+    return Bun.file(filepath).exists()
+}
 
 export async function fetch_and_write_to_cache(url: string, filename: string): Promise<void>{
     console.log(`fetching URL: ${url}`)
@@ -127,3 +131,4 @@ export async function write_nist_compounds_data(compounds: NIST_Compound[]){
 export async function get_nist_compounds_data(): Promise<NIST_Compound[]>{
     return Bun.file(NIST_COMPOUNDS_DATA_JSON).json() as unknown as NIST_Compound[]
 }
+
