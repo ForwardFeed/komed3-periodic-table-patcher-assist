@@ -45,8 +45,9 @@ export async function write_to_cache(filename:string, data: string){
 
 export async function write_to_cache_json(filename:string, data: any){
     const filepath = `./cache/${filename}`
-    console.log(`writing to cache: ${filepath}; ${data.length} characters`)
-    return Bun.write(filepath, JSON.stringify(data, null, 2))
+    const str_data = JSON.stringify(data, null, 2)
+    console.log(`writing to cache: ${filepath}; ${str_data.length} characters`)
+    return Bun.write(filepath, str_data)
 }
 
 export async function get_from_cache(filename: string): Promise<string>{
