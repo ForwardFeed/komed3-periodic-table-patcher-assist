@@ -13,7 +13,8 @@
     "dev": "bun ./src/index.ts",
     "schema": "bunx ts-json-schema-generator -o schema.json --type ",
     "compounds-nist": "bun ./src/compounds/nist.ts",
-    "compounds-common": "bun ./src/compounds/common_chemistry.ts"
+    "compounds-common": "bun ./src/compounds/common_chemistry.ts",
+    "compounds-pubchem": "bun ./src/compounds/pubchem.ts"
   },
   "dependencies": {
     "@types/ajv": "^1.0.4",
