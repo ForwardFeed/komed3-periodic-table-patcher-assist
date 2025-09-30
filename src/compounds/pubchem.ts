@@ -11,6 +11,9 @@ import type { NIST_Compound } from "./nist";
  * => Chemical and Physical Properties
  */
 
+/** */
+const nist_entries: readonly NIST_Compound[] = await get_nist_compounds_data()
+
 async function download_with_(entry: NIST_Compound, filename: string, term: string): Promise<boolean>{
     const URL = `https://www.ncbi.nlm.nih.gov/pccompound/?term=${term}`
     try {
@@ -28,7 +31,6 @@ async function download_with_(entry: NIST_Compound, filename: string, term: stri
 }
 
 async function download_to_cache(){
-    const nist_entries = await get_nist_compounds_data()
     for (const entry of nist_entries){
         const filename = `compounds_${entry.original_formula}_pubchem_search.html`
         // make sure we don't redownload it
@@ -47,9 +49,50 @@ async function download_to_cache(){
         // I'm scared of timeout
         await Bun.sleep(0.4)
     }
-    
-    // step two parse the searches
-    // step download the data in JSON from the REST API
-    // at https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24261/JSON/
 }
 await download_to_cache()
+
+
+async function download_json_from_API(){
+    for (const entry of nist_entries){
+        const filename_json_data = `compounds_${entry.original_formula}_pubchem.json`
+        // make sure we don't redownload it
+        if (await does_cache_file_exist(filename_json_data)){
+            continue
+        }
+        const filename_html_search = `compounds_${entry.original_formula}_pubchem_search.html`
+        // prior steps may or may not have downloaded it
+        if (! await does_cache_file_exist(filename_html_search)){
+            continue
+        }
+        const file_html = await get_from_cache(filename_html_search)
+        const dom = new JSDOM(file_html)
+        const document = dom.window.document
+        // prior steps may have failed to find it
+        if (document.title ==  "No items found - PubChem Compound - NCBI"){
+            continue 
+        }
+        // parse the searches for the fist result id (only first result)
+        const first_search_result = document.querySelector<HTMLAnchorElement>('div.rprt p.title>a')
+        if (!first_search_result){
+            continue
+        }
+        const link = first_search_result.href
+        const searched_CIDs =  /[0-9]+$/.exec(link)
+        if (!searched_CIDs){
+            throw `regex failed link: ${link}, compounds: ${entry.original_formula}`
+        }
+        const CID = searched_CIDs[0]
+        const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/${CID}/JSON/`
+        // download the data in JSON from the REST API
+        try {
+            await fetch_json_and_write_to_cache(URL, filename_json_data, "GET")
+        } catch(err_msg: any){
+            console.error(`failed to get: ${entry.original_formula} json data`)
+        }
+        // I'm scared of timeout
+        await Bun.sleep(0.4)
+    }
+}
+
+await download_json_from_API()
